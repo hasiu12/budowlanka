@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/index/static/css/main.3ce097b8.css",
-    "main.js": "/index/static/js/main.cfcabbeb.js",
-    "index.html": "/index/index.html",
-    "main.3ce097b8.css.map": "/index/static/css/main.3ce097b8.css.map",
-    "main.cfcabbeb.js.map": "/index/static/js/main.cfcabbeb.js.map"
+    "main.css": "/budowlanka/static/css/main.3ce097b8.css",
+    "main.js": "/budowlanka/static/js/main.cfcabbeb.js",
+    "index.html": "/budowlanka/index.html",
+    "main.3ce097b8.css.map": "/budowlanka/static/css/main.3ce097b8.css.map",
+    "main.cfcabbeb.js.map": "/budowlanka/static/js/main.cfcabbeb.js.map"
   },
   "entrypoints": [
     "static/css/main.3ce097b8.css",
