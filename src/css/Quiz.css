@@ -1,0 +1,38 @@
+/* Quiz.css */
+
+/* Styl głównego kontenera quizu */
+.quiz-container {
+    background-color: #f9f9f9; /* Jasne tło dla kontenera */
+    padding: 20px; /* Odstępy wewnątrz kontenera */
+    border-radius: 8px; /* Zaokrąglenie rogów kontenera */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    margin: 20px auto; /* Wyśrodkowanie kontenera */
+    text-align: center; /* Wyśrodkowanie tekstu */
+  }
+  
+  /* Styl dla przycisków nawigacyjnych */
+  .nav-button {
+    background-color: #0056b3; /* Tło przycisków */
+    color: white; /* Kolor tekstu przycisków */
+    padding: 10px 20px; /* Odstępy wewnątrz przycisków */
+    border: none; /* Usunięcie obwódki */
+    border-radius: 4px; /* Zaokrąglenie rogów przycisków */
+    cursor: pointer; /* Kursor wskazujący */
+    margin: 10px; /* Odstęp między przyciskami */
+    font-size: 1rem; /* Rozmiar czcionki przycisków */
+  }
+  
+  .nav-button:hover {
+    background-color: #004494; /* Ciemniejsze tło przycisku po najechaniu */
+  }
+  
+  /* Styl dla kontenera przycisków nawigacyjnych */
+  .nav-buttons-container {
+    margin-top: 20px; /* Odstęp nad przyciskami nawigacyjnymi */
+  }
+
+  .nav-button:disabled {
+    background-color: #ccc; /* Jasniejsze tło dla nieaktywnego przycisku */
+    cursor: not-allowed; /* Kursor wskazujący, że przycisk jest nieaktywny */
+  }

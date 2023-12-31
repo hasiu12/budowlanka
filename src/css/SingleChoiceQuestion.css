@@ -1,0 +1,35 @@
+/* SingleChoiceQuestion.css */
+
+.single-choice-container {
+  background-color: #f9f9f9; /* Jasne tło dla kontenera */
+  padding: 20px; /* Odstępy wewnątrz kontenera */
+  border-radius: 8px; /* Zaokrąglenie rogów kontenera */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+  max-width: 500px; /* Maksymalna szerokość kontenera */
+  margin: 20px auto; /* Wyśrodkowanie kontenera */
+  text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.question-header {
+  color: #333; /* Kolor tekstu pytania */
+  font-size: 1.4rem; /* Wielkość czcionki pytania */
+  margin-bottom: 20px; /* Odstęp pod pytaniem */
+}
+
+.answer-button {
+  background-color: #fff; /* Tło przycisków */
+  color: #333; /* Kolor tekstu przycisków */
+  border: 1px solid #ddd; /* Obwódka przycisków */
+  padding: 10px 20px; /* Odstępy wewnątrz przycisków */
+  border-radius: 4px; /* Zaokrąglenie rogów przycisków */
+  cursor: pointer; /* Kursor wskazujący */
+  margin: 5px 0; /* Odstęp między przyciskami */
+  transition: background-color 0.2s, box-shadow 0.2s; /* Animacja zmiany tła i cienia */
+  width: 100%; /* Pełna szerokość dla lepszego wyglądu mobilnego */
+}
+
+.answer-button:hover, .answer-button:focus {
+  background-color: #eaeaea; /* Zmiana tła przycisku po najechaniu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Cień pod przyciskiem */
+  outline: none; /* Usunięcie obwódki fokusa */
+}

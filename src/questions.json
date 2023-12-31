@@ -1,0 +1,27 @@
+[
+    {
+        "id": 3,
+        "type": "single-choice",
+        "text": "Pytanie jednokrotnego wyboru",
+        "odpowiedzi": ["Odp A", "Odp B", "Odp C"],
+        "poprawnaOdpowiedz": "Odp B"
+      }
+      ,
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "text": "Pytanie wielokrotnego wyboru",
+        "odpowiedzi": ["Odp A", "Odp B", "Odp C"],
+        "poprawneOdpowiedzi": ["Odp A", "Odp C"]
+      }
+      ,
+      {
+        "id": 1,
+        "type": "matching",
+        "text": "Dopasuj odpowiedzi",
+        "pary": [["1", "A"], ["2", "B"], ["3", "C"]],
+        "poprawnePary": [["1", "A"], ["2", "B"], ["3", "C"]]
+      }
+      
+  ]
+  

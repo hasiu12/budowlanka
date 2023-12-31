@@ -1,0 +1,43 @@
+/* MultipleChoiceQuestion.css */
+.multiple-choice-container {
+    background-color: #f4f4f4; /* Jasne tło dla kontenera */
+    padding: 20px; /* Odstępy wewnątrz kontenera */
+    border-radius: 8px; /* Zaokrąglenie rogów kontenera */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    max-width: 600px; /* Maksymalna szerokość kontenera */
+    margin: 20px auto; /* Wyśrodkowanie kontenera */
+  }
+  
+  .multiple-choice-container h2 {
+    color: #333; /* Kolor tekstu pytania */
+    font-size: 1.2rem; /* Wielkość czcionki pytania */
+    margin-bottom: 15px; /* Odstęp pod pytaniem */
+  }
+  
+  .multiple-choice-container button {
+    background-color: #fff; /* Tło przycisków */
+    color: #333; /* Kolor tekstu przycisków */
+    border: 1px solid #ddd; /* Subtelna obwódka przycisków */
+    padding: 10px 15px; /* Odstępy wewnątrz przycisków */
+    border-radius: 4px; /* Zaokrąglenie rogów przycisków */
+    cursor: pointer; /* Kursor wskazujący */
+    margin-right: 10px; /* Odstęp między przyciskami */
+    transition: background-color 0.3s; /* Animacja zmiany tła */
+  }
+  
+  .multiple-choice-container button:hover {
+    background-color: #eaeaea; /* Zmiana tła przycisku po najechaniu */
+  }
+  
+  .multiple-choice-container button:focus {
+    outline: none; /* Usunięcie obwódki przy fokusie */
+    box-shadow: 0 0 0 2px #0056b3; /* Dodanie cienia przy fokusie */
+  }
+  
+
+  .answer-button.selected {
+    /* Styl dla wybranych przycisków odpowiedzi */
+    background-color: #4CAF50; /* Zmieniony kolor tła */
+    color: white; /* Zmieniony kolor tekstu */
+    /* Możesz tutaj dodać więcej stylów, aby wyróżnić wybrane odpowiedzi */
+  }

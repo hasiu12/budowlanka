@@ -1,0 +1,48 @@
+/* MatchingQuestion.css */
+
+/* Styl ogólny kontenera */
+.matching-question-container {
+    background-color: #f9f9f9; /* Jasne tło dla kontenera */
+    padding: 20px; /* Odstępy wewnątrz kontenera */
+    border-radius: 8px; /* Zaokrąglenie rogów kontenera */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    max-width: 600px; /* Maksymalna szerokość kontenera */
+    margin: 20px auto; /* Wyśrodkowanie kontenera */
+    text-align: center; /* Wyśrodkowanie tekstu */
+  }
+  
+  /* Styl dla nagłówka pytania */
+  .matching-question-header {
+    color: #333; /* Kolor tekstu pytania */
+    font-size: 1.4rem; /* Wielkość czcionki pytania */
+    margin-bottom: 20px; /* Odstęp pod pytaniem */
+  }
+  
+  /* Styl dla pojedynczej pary dopasowań */
+  .pair-container {
+    margin-bottom: 10px; /* Odstęp między parami */
+  }
+  
+  /* Styl dla elementów <select> */
+  .pair-select {
+    padding: 8px 10px; /* Odstępy wewnątrz elementu select */
+    border-radius: 4px; /* Zaokrąglenie rogów */
+    border: 1px solid #ddd; /* Kolor i styl obwódki */
+    margin: 0 5px; /* Odstępy od innych elementów */
+  }
+  
+  /* Styl dla przycisku potwierdzającego */
+  .confirm-button {
+    background-color: #0056b3; /* Tło przycisku potwierdzenia */
+    color: white; /* Kolor tekstu przycisku potwierdzenia */
+    padding: 10px 20px; /* Odstępy wewnątrz przycisku */
+    border-radius: 4px; /* Zaokrąglenie rogów przycisku */
+    border: none; /* Usunięcie obwódki */
+    cursor: pointer; /* Kursor wskazujący */
+    margin-top: 15px; /* Odstęp nad przyciskiem potwierdzenia */
+  }
+  
+  .confirm-button:hover {
+    background-color: #004494; /* Ciemniejsze tło przycisku po najechaniu */
+  }
+  

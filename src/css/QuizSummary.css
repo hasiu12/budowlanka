@@ -1,0 +1,75 @@
+/* QuizSummary.css */
+
+/* Styl głównego kontenera podsumowania quizu */
+.quiz-summary-container {
+    background-color: #f9f9f9; /* Jasne tło dla kontenera */
+    padding: 20px; /* Odstępy wewnątrz kontenera */
+    border-radius: 8px; /* Zaokrąglenie rogów kontenera */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+    max-width: 600px; /* Maksymalna szerokość kontenera */
+    margin: 30px auto; /* Wyśrodkowanie kontenera */
+    text-align: left; /* Wyrównanie tekstu do lewej */
+}
+
+/* Styl dla nagłówków w podsumowaniu */
+.quiz-summary-header {
+    color: #333; /* Kolor tekstu nagłówka */
+    font-size: 1.6rem; /* Wielkość czcionki nagłówka */
+    margin-bottom: 15px; /* Odstęp pod nagłówkiem */
+}
+
+/* Styl dla paragrafów z wynikami i odpowiedziami */
+.quiz-summary-text {
+    color: #555; /* Kolor tekstu */
+    font-size: 1rem; /* Wielkość czcionki tekstu */
+    margin-bottom: 10px; /* Odstęp pod paragrafem */
+}
+
+/* Styl dla kontenera z pytaniem i odpowiedziami */
+.question-answer-container {
+    background-color: #fff; /* Tło dla kontenera z pytaniem i odpowiedziami */
+    padding: 15px; /* Odstępy wewnątrz kontenera */
+    border: 1px solid #ddd; /* Obwódka kontenera */
+    border-radius: 4px; /* Zaokrąglenie rogów kontenera */
+    margin-bottom: 20px; /* Odstęp między kontenerami pytań */
+}
+
+/* Styl dla nagłówków pytań */
+.question-header {
+    color: #333; /* Kolor tekstu pytania */
+    font-weight: bold; /* Pogrubienie tekstu pytania */
+    margin-bottom: 10px; /* Odstęp pod pytaniem */
+}
+
+
+/* Dodaj ten styl do pliku QuizSummary.css */
+
+.quiz-summary-link, .quiz-summary-link:visited, .quiz-summary-button, .quiz-summary-button:visited {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border: none; /* Usuwa domyślną obwódkę przycisku */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Daje efekt ręki przy najechaniu */
+    outline: none; /* Usuwa domyślne podświetlenie przycisku przy fokusie */
+    font-family: inherit; /* Upewnia się, że font jest spójny */
+    font-size: 1rem; /* Dostosowuje wielkość czcionki */
+}
+
+/* Styl dla hover dla obu, linku i przycisku */
+.quiz-summary-link:hover, .quiz-summary-button:hover {
+    background-color: #0056b3;
+}
+
+/* Usunięcie dodatkowych stylów dla elementów 'button' */
+button.quiz-summary-button {
+    border: none;
+    appearance: none;
+    -webkit-appearance: none; /* Dla przeglądarek opartych na WebKit jak Chrome/Safari */
+    -moz-appearance: none; /* Dla przeglądarek opartych na Gecko jak Firefox */
+}
+

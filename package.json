@@ -1,7 +1,7 @@
 {
   "name": "budowlanka",
   "version": "0.1.0",
-  "homepage": "https://hasiu12.github.io/budowlanka",
+  "homepage": "https://hasiu12.github.io/index",
   "private": true,
   "dependencies": {
     "gh-pages": "^6.1.1",
