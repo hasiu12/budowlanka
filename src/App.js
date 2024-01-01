@@ -25,7 +25,7 @@ function App() {
 };
 
   return (
-    <Router>
+    <Router basename="/budowlanka">
       <Routes>
         <Route path="/" element={<HomePage />} /> 
         <Route path="/Quiz" element={

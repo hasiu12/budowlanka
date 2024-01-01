@@ -70,11 +70,14 @@ const Quiz = ({ questions, handleAnswerUpdate, handleQuizCompletion, userAnswers
       }
     };
       
-      const goToPreviousQuestion = () => {
-        if (currentQuestionIndex > 0) {
-          setCurrentQuestionIndex(currentQuestionIndex - 1);
-        }
-      };
+    const goToPreviousQuestion = () => {
+      if (currentQuestionIndex > 0) {
+        const previousAnswer = userAnswers[currentQuestionIndex - 1];
+        setCurrentAnswer(previousAnswer);
+        setCurrentQuestionIndex(currentQuestionIndex - 1);
+        setIsOptionSelected(previousAnswer != null);
+      }
+    };
 
       
 
@@ -97,22 +100,26 @@ const Quiz = ({ questions, handleAnswerUpdate, handleQuizCompletion, userAnswers
           return (
             <SingleChoiceQuestion 
               pytanie={currentQuestion} 
+              externalSelectedAnswer={userAnswers[currentQuestionIndex]}
               onAnswer={handleAnswer} 
               onOptionSelect={onOptionSelect}
             />
           );
           case "multiple-choice":
+            
             return (
               <MultipleChoiceQuestion 
                 pytanie={currentQuestion} 
                 onOptionSelect={onOptionSelect} 
                 setTemporaryAnswer={setTemporaryAnswer}
+                externalSelectedAnswer={userAnswers[currentQuestionIndex]}
               />
             );
             case "matching":
               return (
                 <MatchingQuestion 
                     pytanie={currentQuestion} 
+                    selectedPairs1={userAnswers[currentQuestionIndex]}
                     onOptionSelect={(allPairsSelected, pairs) => onOptionSelect(allPairsSelected, pairs)}
                 />
             );

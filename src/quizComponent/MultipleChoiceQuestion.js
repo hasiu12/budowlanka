@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import '../css/MultipleChoiceQuestion.css'; 
 
-const MultipleChoiceQuestion = ({ pytanie, onOptionSelect, setTemporaryAnswer }) => {
-  const [selectedAnswers, setSelectedAnswers] = useState([]);
+const MultipleChoiceQuestion = ({ pytanie, onOptionSelect, setTemporaryAnswer, externalSelectedAnswer }) => {
+  const [selectedAnswers, setSelectedAnswers] = useState(externalSelectedAnswer || []);
+
+  useEffect(() => {
+    setSelectedAnswers(externalSelectedAnswer || []);
+  }, [externalSelectedAnswer]);
 
   const handleAnswerToggle = (answer) => {
     setSelectedAnswers(currentAnswers => {
-      return currentAnswers.includes(answer)
+      const isAlreadySelected = currentAnswers.includes(answer);
+      return isAlreadySelected
         ? currentAnswers.filter(ans => ans !== answer)
         : [...currentAnswers, answer];
     });
@@ -14,8 +19,16 @@ const MultipleChoiceQuestion = ({ pytanie, onOptionSelect, setTemporaryAnswer })
 
   useEffect(() => {
     onOptionSelect(selectedAnswers.length > 0);
+    // Aktualizacja stanu nadrzędnego komponentu z opóźnieniem
     setTemporaryAnswer(selectedAnswers); 
   }, [selectedAnswers, onOptionSelect, setTemporaryAnswer]);
+
+
+  useEffect(() => {
+    if (externalSelectedAnswer) {
+      setSelectedAnswers(externalSelectedAnswer);
+    }
+  }, [externalSelectedAnswer]);
 
   return (
     <div className="multiple-choice-container">

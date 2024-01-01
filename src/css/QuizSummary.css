@@ -73,3 +73,64 @@ button.quiz-summary-button {
     -moz-appearance: none; /* Dla przeglądarek opartych na Gecko jak Firefox */
 }
 
+/* Ogólne style dla boxów z odpowiedziami */
+.answer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+}
+
+/* Styl dla poprawnych odpowiedzi */
+.answer-box.correct {
+    background-color: green;
+    color: white;
+}
+
+/* Styl dla zaznaczonych, ale niepoprawnych odpowiedzi */
+.answer-box.incorrect {
+    background-color: red;
+    color: white;
+}
+
+/* Styl dla odpowiedzi, które nie zostały zaznaczone */
+.answer-box.neutral {
+    background-color: #f0f0f0; /* jasne tło dla neutralnego wyglądu */
+    color: black;
+}
+
+/* Styl dla boxów z poprawnymi odpowiedziami w rozwijanym panelu */
+.correct-answers-container {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fff; /* jasne tło dla poprawnych odpowiedzi */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.correct-answer {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/* Style dla przycisku rozwijania odpowiedzi */
+.toggle-correct-answers {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: block; /* aby przycisk był wyśrodkowany */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style dla wyśrodkowania nagłówków pytań */
+.question-header {
+    text-align: center;
+}

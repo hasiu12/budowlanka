@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/SingleChoiceQuestion.css'; 
 
-const SingleChoiceQuestion = ({ pytanie, onOptionSelect }) => {
-  const [selectedAnswer, setSelectedAnswer] = useState('');
+const SingleChoiceQuestion = ({ pytanie, externalSelectedAnswer, onOptionSelect }) => {
+  const [selectedAnswer, setSelectedAnswer] = useState(externalSelectedAnswer || '');
+
+  useEffect(() => {
+    setSelectedAnswer(externalSelectedAnswer);
+  }, [externalSelectedAnswer]);
 
   const handleAnswerSelect = (odpowiedz) => {
     setSelectedAnswer(odpowiedz);
-    onOptionSelect(odpowiedz); //Informuje komponent nadrzędny, że opcja została wybrana
+    onOptionSelect(odpowiedz); // Informuje komponent nadrzędny, że opcja została wybrana
   };
 
   return (
