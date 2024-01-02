@@ -26,17 +26,20 @@ const QuizSummary = ({ questions, userAnswers, resetQuiz1 }) => {
                     }
                     break;
 
-                case "matching":
-                    let userPairsSet = new Set(userAnswer.map(pair => `${pair.left}-${pair.right}`));
-                    let correctPairsSet = new Set(question.poprawnePary.map(pair => `${pair[0]}-${pair[1]}`));
-                
-                    if (userPairsSet.size === correctPairsSet.size && 
-                        [...userPairsSet].every(pair => correctPairsSet.has(pair))) {
-                        score++;
-                    }
+                    case "matching":
+                        // Przekształć odpowiedzi użytkownika na zestaw unikalnych par w formacie "lewyPrawy"
+                        let userPairsSet = new Set(Object.entries(userAnswer).map(([left, right]) => `${left}-${right}`));
                     
-                    break;
-
+                        // Przekształć poprawne odpowiedzi na zestaw unikalnych par w formacie "lewyPrawy"
+                        let correctPairsSet = new Set(question.poprawnePary.map(([left, right]) => `${left}-${right}`));
+                    
+                        // Porównaj zestawy, aby stwierdzić, czy wszystkie odpowiedzi użytkownika są poprawne
+                        if (userPairsSet.size === correctPairsSet.size && 
+                            [...userPairsSet].every(pair => correctPairsSet.has(pair))) {
+                            score++;
+                        }
+                        
+                        break;
                 default:
                     break;
             }
@@ -53,9 +56,25 @@ const QuizSummary = ({ questions, userAnswers, resetQuiz1 }) => {
                     return question.poprawnaOdpowiedz === answer;
                 case "multiple-choice":
                     return question.poprawneOdpowiedzi.includes(answer);
-                case "matching":
-                    return question.poprawnePary.some(pair => pair[0] === answer.left && pair[1] === answer.right);
-                default:
+                    case "matching":
+                        return question.lewaStrona.map((leftItem, index) => {
+                            const rightItem = userAnswer[leftItem]; // Pobierz dopasowanie z odpowiedzi użytkownika
+                            const isCorrect = question.poprawnePary.some(pair => pair[0] === leftItem && pair[1] === rightItem);
+                            const rightAnswerClass = isCorrect ? 'correct' : 'incorrect';
+                            
+                            return (
+                                <div key={index} className="answer-pair-container">
+                                    <div className="answer-box left-item">
+                                        {leftItem}
+                                    </div>
+                                    <div className={`answer-box right-item ${rightAnswerClass}`}>
+                                        {rightItem || "N/A"}
+                                    </div>
+                                </div>
+                            );
+                        });
+                    
+                        default:
                     return false;
             }
         };
@@ -99,30 +118,36 @@ const QuizSummary = ({ questions, userAnswers, resetQuiz1 }) => {
                     );
                 });
         
-case "matching":
-    return question.pary.map((pair, index) => {
-        // Znajdź wszystkie odpowiedzi użytkownika dla lewej strony bieżącej pary
-        const userPairsForLeft = userAnswer.filter(p => p.left === pair[0]);
-        const isPairCorrect = userPairsForLeft.some(userPair => pair[1] === userPair.right);
-        const isPairSelected = userPairsForLeft.length > 0;
-
-        // Jeśli para nie została wybrana, użyj "N/A", w przeciwnym razie pokaż wybrane wartości
-        const displayedRight = isPairSelected 
-            ? userPairsForLeft.map(userPair => userPair.right).join(", ") 
-            : "N/A";
-
-        const answerClass = isPairCorrect ? 'correct' : (isPairSelected ? 'incorrect' : 'neutral');
-
-        return (
-            <div key={index} className={`answer-box matching ${answerClass}`}>
-                {pair[0]} dla {displayedRight}
-            </div>
-        );
-    });
-            default:
-                return <div>Brak odpowiedzi</div>;
-        }
-    };
+                case "matching":
+                    return question.lewaStrona.map((leftItem, index) => {
+                        // Znajdź dopasowaną odpowiedź użytkownika dla danego elementu z lewej strony
+                        const rightItem = userAnswer[leftItem];
+                    
+                        // Sprawdź, czy para jest poprawna
+                        const isPairCorrect = question.poprawnePary.some(pair => pair[0] === leftItem && pair[1] === rightItem);
+                    
+                        // Ustal klasę odpowiedzi na podstawie tego, czy para jest poprawna
+                        const leftAnswerClass = 'left-answer'; // Klasa dla lewej strony (zawsze szara)
+                        const rightAnswerClass = isPairCorrect ? 'right-answer correct' : (rightItem ? 'right-answer incorrect' : 'right-answer neutral');
+                    
+                        // Wyświetl dopasowaną odpowiedź lub "N/A", jeśli żadna nie została wybrana
+                        const displayedRight = rightItem || "N/A";
+                    
+                        return (
+                            <div key={index} className="matching-pair-container">
+                                <div className={`answer-box ${leftAnswerClass}`}>
+                                    {leftItem}
+                                </div>
+                                <div className={`answer-box ${rightAnswerClass}`}>
+                                    {displayedRight}
+                                </div>
+                            </div>
+                        );
+                    });
+                    default:
+                        return <div>Brak odpowiedzi</div>;
+                }
+            };
     
     const toggleAnswerVisibility = (questionId) => {
         setExpandedAnswers(prevState => ({
@@ -139,19 +164,26 @@ case "matching":
                 return question.poprawneOdpowiedzi.map((answer, index) => (
                     <div key={index} className="correct-answer">{answer}</div>
                 ));
-            case "matching":
-                return question.poprawnePary.map((pair, index) => (
-                    <div key={index} className="correct-answer">{pair[0]} dla {pair[1]}</div>
-                ));
+                case "matching":
+                    return question.poprawnePary.map((pair, index) => (
+                        <div key={index} className="answer-pair-container">
+                            <div className="answer-box left-answer">{pair[0]}</div>
+                            <div className="answer-box right-answer">{pair[1]}</div>
+                        </div>
+                    ));
         }
     };
 
     return (
         <div className="quiz-summary-container">
-          <div className="quiz-summary-actions">
-            <button onClick={resetQuiz1} className="quiz-summary-button">Rozwiąż ponownie</button>
-            <Link to="/" className="quiz-summary-link">Powrót do wyboru quizów</Link>
-          </div>
+            <div className="quiz-summary-actions">
+                <button onClick={resetQuiz1} className="quiz-summary-button">
+                    Rozwiąż ponownie
+                </button>
+                <Link to="/" className="quiz-summary-link" onClick={resetQuiz1}>
+                    Powrót do wyboru quizów
+                </Link>
+            </div>
       
           <h2 className="quiz-summary-header">Podsumowanie Quizu</h2>
           <p className="quiz-summary-text">Twój wynik: {score} z {questions.length}</p>

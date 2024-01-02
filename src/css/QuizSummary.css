@@ -134,3 +134,25 @@ button.quiz-summary-button {
 .question-header {
     text-align: center;
 }
+
+
+.answer-pair-container {
+    margin-bottom: 10px; /* lub inna wartość, aby oddzielić pary odpowiedzi */
+}
+
+.answer-box {
+    padding: 10px; /* lub inna wartość dla odpowiedniego paddingu */
+    margin: 5px 0; /* dodaje margines pomiędzy boxami */
+}
+
+.left-item {
+    background-color: #f0f0f0; /* szare tło dla lewej strony */
+}
+
+.right-item.correct {
+    background-color: #c8e6c9; /* zielone tło dla poprawnych odpowiedzi po prawej stronie */
+}
+
+.right-item.incorrect {
+    background-color: #ffcdd2; /* czerwone tło dla niepoprawnych odpowiedzi po prawej stronie */
+}

@@ -46,3 +46,21 @@
     background-color: #004494; /* Ciemniejsze tło przycisku po najechaniu */
   }
   
+
+  .answer-pair-container {
+    margin-bottom: 10px;
+}
+
+.answer-box {
+    padding: 8px;
+    margin-top: 4px; /* Dodaje odstęp między boxami */
+    border: 1px solid #ddd; /* Opcjonalnie, dodać obramowanie dla boxów */
+}
+
+.left-answer {
+    background-color: #f0f0f0; /* Szare tło dla lewej strony */
+}
+
+.right-answer.correct {
+    background-color: #c8e6c9; /* Zielone tło dla poprawnych odpowiedzi po prawej stronie */
+}

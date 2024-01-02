@@ -16,11 +16,34 @@
       }
       ,
       {
-        "id": 1,
+        "id": 0,
         "type": "matching",
-        "text": "Dopasuj odpowiedzi",
-        "pary": [["1", "A"], ["2", "B"], ["3", "C"]],
-        "poprawnePary": [["1", "A"], ["2", "B"], ["3", "C"]]
-      }
+        "text": "Dopasuj nazwy kategorii systemów czasu rzeczywistego do ich opisów.",
+        "lewaStrona": [
+            "W systemach o rygorystycznych wymaganiach czasowych (ang. hard real-time system)",
+            "W systemach o łagodnych wymaganiach czasowych (ang. soft real-time system)",
+            "W systemach o mocnych wymaganiach czasowych (ang. firm real-time system)"
+        ],
+        "prawaStrona": [
+            "dane wypracowane z opóźnieniem są nieprzydatne, ale sytuacja taka (jeśli występuje sporadycznie) nie zagraża poprawności działania całego systemu.",
+            "sporadyczne niedotrzymanie ograniczenia czasowego jest niekorzystne ale dopuszczalne. Dane wypracowane z opóźnieniem są przydatne i wykorzystywane w pracy systemu.",
+            "dopuszczalne jest niedotrzymanie ograniczenia czasowego.",
+            "wymagane jest bezwzględne spełnianie wszystkich wymagań czasowych. Jakiekolwiek niedotrzymanie  ograniczenia czasowego jest niedopuszczalne i traktowane jest jako awaria systemu."
+        ],
+        "poprawnePary": [
+            [
+                "W systemach o rygorystycznych wymaganiach czasowych (ang. hard real-time system)",
+                "dopuszczalne jest niedotrzymanie ograniczenia czasowego."
+            ],
+            [
+                "W systemach o łagodnych wymaganiach czasowych (ang. soft real-time system)",
+                "sporadyczne niedotrzymanie ograniczenia czasowego jest niekorzystne ale dopuszczalne. Dane wypracowane z opóźnieniem są przydatne i wykorzystywane w pracy systemu."
+            ],
+            [
+                "W systemach o mocnych wymaganiach czasowych (ang. firm real-time system)",
+                "dane wypracowane z opóźnieniem są nieprzydatne, ale sytuacja taka (jeśli występuje sporadycznie) nie zagraża poprawności działania całego systemu."
+            ]
+        ]
+    }
   ]
   
