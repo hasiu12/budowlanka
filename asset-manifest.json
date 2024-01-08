@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/budowlanka/static/css/main.b1316046.css",
-    "main.js": "/budowlanka/static/js/main.649cd77a.js",
+    "main.js": "/budowlanka/static/js/main.3e55ae0d.js",
     "index.html": "/budowlanka/index.html",
     "main.b1316046.css.map": "/budowlanka/static/css/main.b1316046.css.map",
-    "main.649cd77a.js.map": "/budowlanka/static/js/main.649cd77a.js.map"
+    "main.3e55ae0d.js.map": "/budowlanka/static/js/main.3e55ae0d.js.map"
   },
   "entrypoints": [
     "static/css/main.b1316046.css",
-    "static/js/main.649cd77a.js"
+    "static/js/main.3e55ae0d.js"
   ]
 }
