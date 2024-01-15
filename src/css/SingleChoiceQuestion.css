@@ -5,7 +5,7 @@
   padding: 20px; /* Odstępy wewnątrz kontenera */
   border-radius: 8px; /* Zaokrąglenie rogów kontenera */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtelny cień */
-  max-width: 500px; /* Maksymalna szerokość kontenera */
+  max-width: 600px; /* Maksymalna szerokość kontenera */
   margin: 20px auto; /* Wyśrodkowanie kontenera */
   text-align: center; /* Wyśrodkowanie tekstu */
 }

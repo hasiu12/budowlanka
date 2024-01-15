@@ -9,13 +9,15 @@
     max-width: 600px; /* Maksymalna szerokość kontenera */
     margin: 30px auto; /* Wyśrodkowanie kontenera */
     text-align: left; /* Wyrównanie tekstu do lewej */
+    
 }
 
 /* Styl dla nagłówków w podsumowaniu */
 .quiz-summary-header {
     color: #333; /* Kolor tekstu nagłówka */
-    font-size: 1.6rem; /* Wielkość czcionki nagłówka */
+    font-size: 2.5rem; /* Wielkość czcionki nagłówka */
     margin-bottom: 15px; /* Odstęp pod nagłówkiem */
+    
 }
 
 /* Styl dla paragrafów z wynikami i odpowiedziami */
@@ -23,6 +25,7 @@
     color: #555; /* Kolor tekstu */
     font-size: 1rem; /* Wielkość czcionki tekstu */
     margin-bottom: 10px; /* Odstęp pod paragrafem */
+    font-size: 1.1rem;
 }
 
 /* Styl dla kontenera z pytaniem i odpowiedziami */
@@ -39,22 +42,23 @@
     color: #333; /* Kolor tekstu pytania */
     font-weight: bold; /* Pogrubienie tekstu pytania */
     margin-bottom: 10px; /* Odstęp pod pytaniem */
+    font-size: 1.6rem;
 }
 
 
 /* Dodaj ten styl do pliku QuizSummary.css */
 
 .quiz-summary-link, .quiz-summary-link:visited, .quiz-summary-button, .quiz-summary-button:visited {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 10px 20px;
-    color: white;
-    background-color: #007bff;
-    text-decoration: none;
+    display: inline-block; /* Zachowuje elementy w lini */
+    margin: 0 10px; /* Odstępy po bokach dla oddzielenia elementów */
+    padding: 10px 20px; /* Odstępy wewnątrz przycisków/linków */
+    color: white; /* Kolor tekstu */
+    background-color: #007bff; /* Kolor tła */
+    text-decoration: none; /* Usuwa podkreślenie linków */
     border: none; /* Usuwa domyślną obwódkę przycisku */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    cursor: pointer; /* Daje efekt ręki przy najechaniu */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    transition: background-color 0.3s ease; /* Animacja zmiany koloru tła */
+    cursor: pointer; /* Kursor 'ręka' przy najechaniu */
     outline: none; /* Usuwa domyślne podświetlenie przycisku przy fokusie */
     font-family: inherit; /* Upewnia się, że font jest spójny */
     font-size: 1rem; /* Dostosowuje wielkość czcionki */
@@ -155,4 +159,33 @@ button.quiz-summary-button {
 
 .right-item.incorrect {
     background-color: #ffcdd2; /* czerwone tło dla niepoprawnych odpowiedzi po prawej stronie */
+}
+
+
+.correct-answer-box {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.explanation-container {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+
+
+
+.quiz-summary-actions {
+    display: flex; /* Ustawia flexbox dla kontenera */
+    justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
+    align-items: center; /* Wyśrodkowanie zawartości w pionie (opcjonalnie) */
+    margin-top: 20px; /* Odstęp nad przyciskami nawigacyjnymi */
 }

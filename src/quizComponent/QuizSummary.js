@@ -4,6 +4,7 @@ import '../css/QuizSummary.css';
 
 const QuizSummary = ({ questions, userAnswers, resetQuiz1 }) => {
     const [expandedAnswers, setExpandedAnswers] = useState({}); 
+    const [expandedExplanations, setExpandedExplanations] = useState({});
 
     const calculateScore = () => {
         let score = 0;
@@ -46,6 +47,8 @@ const QuizSummary = ({ questions, userAnswers, resetQuiz1 }) => {
         });
         return score;
     };
+    
+
     
     const score = calculateScore();
 
@@ -152,27 +155,50 @@ const QuizSummary = ({ questions, userAnswers, resetQuiz1 }) => {
     const toggleAnswerVisibility = (questionId) => {
         setExpandedAnswers(prevState => ({
             ...prevState,
-            [questionId]: !prevState[questionId] // Przełącza widoczność dla danego pytania
+            [questionId]: !prevState[questionId] 
         }));
     };
+
+    const toggleExplanationVisibility = (questionId) => {
+        setExpandedExplanations(prevState => ({
+            ...prevState,
+            [questionId]: !prevState[questionId] // Toggle visibility for the explanation of a particular question
+        }));
+    };
+    
 
     const renderCorrectAnswer = (question) => {
         switch (question.type) {
             case "single-choice":
-                return <div className="correct-answer">{question.poprawnaOdpowiedz}</div>;
+                // Display the correct answer in a box for single-choice questions
+                return (
+                    <div className="correct-answer-box">
+                        {question.poprawnaOdpowiedz}
+                    </div>
+                );
+    
             case "multiple-choice":
+                // Display each correct answer in a box for multiple-choice questions
                 return question.poprawneOdpowiedzi.map((answer, index) => (
-                    <div key={index} className="correct-answer">{answer}</div>
+                    <div key={index} className="correct-answer-box">
+                        {answer}
+                    </div>
                 ));
-                case "matching":
-                    return question.poprawnePary.map((pair, index) => (
-                        <div key={index} className="answer-pair-container">
-                            <div className="answer-box left-answer">{pair[0]}</div>
-                            <div className="answer-box right-answer">{pair[1]}</div>
-                        </div>
-                    ));
+    
+            case "matching":
+                // Display pairs of correct answers for matching questions
+                return question.poprawnePary.map((pair, index) => (
+                    <div key={index} className="answer-pair-container">
+                        <div className="answer-box left-answer">{pair[0]}</div>
+                        <div className="answer-box right-answer">{pair[1]}</div>
+                    </div>
+                ));
+    
+            default:
+                return <div>Brak odpowiedzi</div>;
         }
     };
+    
 
     return (
         <div className="quiz-summary-container">
@@ -189,21 +215,39 @@ const QuizSummary = ({ questions, userAnswers, resetQuiz1 }) => {
           <p className="quiz-summary-text">Twój wynik: {score} z {questions.length}</p>
       
           {questions.map((question, index) => (
-            <div key={index} className="question-answer-container">
-              <h3 className="question-header">{question.text}</h3>
-              <div className="quiz-summary-text">
-                {displayAnswer(question, userAnswers[index])}
-                <button onClick={() => toggleAnswerVisibility(question.id)} className="toggle-correct-answers">
-                  {expandedAnswers[question.id] ? 'Ukryj poprawne odpowiedzi' : 'Pokaż poprawne odpowiedzi'}
-                </button>
-              </div>
-              {expandedAnswers[question.id] && (
-                <div className="correct-answers-container">
-                  {renderCorrectAnswer(question)}
+                <div key={index} className="question-answer-container">
+                <h3 className="question-header">{question.text}</h3>
+                <div className="quiz-summary-text">
+                    {displayAnswer(question, userAnswers[index])}
+                    <button onClick={() => toggleAnswerVisibility(question.id)} className="toggle-correct-answers">
+                    {expandedAnswers[question.id] ? 'Ukryj poprawne odpowiedzi' : 'Pokaż poprawne odpowiedzi'}
+                    </button>
                 </div>
-              )}
+                {expandedAnswers[question.id] && (
+                <div>
+                    <div className="correct-answers-container">
+                        {renderCorrectAnswer(question)}
+                    </div>
+                    <button onClick={() => toggleExplanationVisibility(question.id)} className="toggle-explanation">
+                        {expandedExplanations[question.id] ? 'Ukryj wyjaśnienie' : 'Pokaż wyjaśnienie'}
+                    </button>
+                    {expandedExplanations[question.id] && (
+                        <div className="explanation-container">
+                            {question.wyjasnienie || "Brak wyjaśnienia"}
+                        </div>
+                    )}
+                     </div>
+                    )}
+                </div>
+            ))}
+        <div className="quiz-summary-actions">
+                <button onClick={resetQuiz1} className="quiz-summary-button">
+                        Rozwiąż ponownie
+                 </button>
+             <Link to="/" className="quiz-summary-link" onClick={resetQuiz1}>
+                  Powrót do wyboru quizów
+            </Link>
             </div>
-          ))}
         </div>
       );      
 };

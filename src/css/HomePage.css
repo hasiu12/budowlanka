@@ -1,27 +1,111 @@
 /* Styl dla kontenera */
 .home-container {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Styl dla nagłówka */
+.home-header {
+  font-size: 4rem;
+  color: blue;
+  margin-bottom: 20px;
+}
+
+/* Styl dla linku */
+.quiz-link {
+  font-size: 1.2rem;
+  color: green;
+  text-decoration: none;
+  border: 1px solid #ddd; /* Dodanie obramowania */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff; /* Białe tło dla lepszej widoczności */
+  display: block; /* Ustawienie jako blok, aby zająć całą komórkę siatki */
+}
+
+/* Styl dla akapitu */
+.home-paragraph {
+  font-size: 16px;
+  color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c0c0c0; /* Slightly darker background color */
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trzy kolumny o równych rozmiarach */
+  gap: 10px; /* Odstęp pomiędzy elementami siatki */
+  margin-top: 20px; /* Margines na górze dla odstępu */
+}
+
+
+.random-quiz-section {
+  margin-bottom: 30px; /* Dodaj trochę miejsca pomiędzy sekcjami */
+}
+
+.series-header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Styl dla sekcji quizów z historii */
+.history-quiz-section {
+  margin-bottom: 30px; /* Odległość między sekcjami */
+}
+
+/* Styl dla nagłówka quizów z historii */
+.history-header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Styl dla linków quizów z historii */
+.history-quiz-link {
+  font-size: 1.2rem;
+  color: purple; /* Inny kolor, aby odróżnić od innych quizów */
+  text-decoration: none;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  margin-bottom: 10px; /* Dodatkowy margines na dole */
+}
+
+/* Styl dla aktywnego linku (opcjonalnie) */
+.quiz-link.active {
+  background-color: #e0e0e0; /* Ciemniejsze tło dla aktywnego linku */
+  color: red; /* Zmiana koloru tekstu dla aktywnego linku */
+}
+
+/* Odpowiednie dostosowania dla małych ekranów i responsywność */
+@media (max-width: 600px) {
+  .home-container {
+    width: 90%; /* Szerokość kontenera na mniejszych ekranach */
+    max-width: none;
   }
-  
-  /* Styl dla nagłówka */
-  .home-header {
-    font-size: 24px;
-    color: blue;
-    margin-bottom: 20px;
+
+  .quiz-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dwie kolumny na małych ekranach */
   }
-  
-  /* Styl dla linku */
-  .quiz-link {
-    font-size: 18px;
-    color: green;
-    text-decoration: none;
-  }
-  
-  /* Styl dla akapitu */
-  .home-paragraph {
-    font-size: 16px;
-    color: #333;
-  }
-  
+}

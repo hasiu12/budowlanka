@@ -10,7 +10,7 @@
   
   .multiple-choice-container h2 {
     color: #333; /* Kolor tekstu pytania */
-    font-size: 1.2rem; /* Wielkość czcionki pytania */
+    font-size: 2.1rem; /* Wielkość czcionki pytania */
     margin-bottom: 15px; /* Odstęp pod pytaniem */
   }
   
@@ -34,10 +34,18 @@
     box-shadow: 0 0 0 2px #0056b3; /* Dodanie cienia przy fokusie */
   }
   
+  .answer-button {
+    font-size: 1.3rem;
+    color: #333; /* kolor tekstu */
+    font-family: 'Arial', sans-serif; /* rodzaj czcionki */
+    /* Dodaj więcej stylów według potrzeb */
+}
 
   .answer-button.selected {
     /* Styl dla wybranych przycisków odpowiedzi */
     background-color: #4CAF50; /* Zmieniony kolor tła */
     color: white; /* Zmieniony kolor tekstu */
     /* Możesz tutaj dodać więcej stylów, aby wyróżnić wybrane odpowiedzi */
+
+    font-size: 1.4rem;
   }

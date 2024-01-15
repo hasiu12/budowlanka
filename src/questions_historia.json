@@ -1,0 +1,613 @@
+[
+    {
+        "id": 1,
+        "type": "single-choice",
+        "text": "W której generacji komputerów znajdują się komputery kwantowe?",
+        "odpowiedzi": [
+            "Piątej generacji",
+            "Trzeciej generacji",
+            "Czwartej generacji",
+            "Drugiej generacji"
+        ],
+        "poprawnaOdpowiedz": "Piątej generacji",
+        "wyjasnienie": "Komputery kwantowe należą do piątej generacji komputerów, która wykorzystuje zaawansowane technologie kwantowe."
+    },
+    {
+        "id": 2,
+        "type": "single-choice",
+        "text": "Czy ciąg Fibonacciego jest ciągiem rozbieżnym czy zbieżnym?",
+        "odpowiedzi": [
+            "Rozbieżnym",
+            "Zbieżnym",
+            "Stałym",
+            "Oszczędzającym"
+        ],
+        "poprawnaOdpowiedz": "Rozbieżnym",
+        "wyjasnienie": "Ciąg Fibonacciego jest ciągiem rozbieżnym, co oznacza, że jego wartości rosną do nieskończoności."
+    },
+    {
+        "id": 3,
+        "type": "single-choice",
+        "text": "Ile wynosi liczba 2010 zapisana w systemie dziesiątkowym, gdy przekształcimy ją na system siódemkowy?",
+        "odpowiedzi": [
+            "5663",
+            "4130",
+            "3502",
+            "6521"
+        ],
+        "poprawnaOdpowiedz": "5663",
+        "wyjasnienie": "Liczba 2010 z systemu dziesiątkowego równa się 5663 w systemie siódemkowym."
+    },
+    {
+        "id": 4,
+        "type": "single-choice",
+        "text": "Jaką wartość ma liczba 1010 zapisana w systemie binarnym, gdy przekonwertujemy ją na system szesnastkowy?",
+        "odpowiedzi": [
+            "A",
+            "10",
+            "F",
+            "1A"
+        ],
+        "poprawnaOdpowiedz": "A",
+        "wyjasnienie": "Liczba 1010 w systemie binarnym to 10 w systemie dziesiętnym, co odpowiada wartości 'A' w systemie szesnastkowym."
+    },
+    {
+        "id": 5,
+        "type": "single-choice",
+        "text": "Na jaką liczbę w systemie szóstkowym przekształca się liczba 510 z systemu dziesiątkowego?",
+        "odpowiedzi": [
+            "2230",
+            "1345",
+            "2101",
+            "3022"
+        ],
+        "poprawnaOdpowiedz": "2230",
+        "wyjasnienie": "Liczba 510 w systemie dziesiątkowym równa się 2230 w systemie szóstkowym."
+    },
+    {
+        "id": 6,
+        "type": "single-choice",
+        "text": "Jaka jest granica ciągu Fibonacciego?",
+        "odpowiedzi": [
+            "Nieskończoność",
+            "1",
+            "0",
+            "½φ"
+        ],
+        "poprawnaOdpowiedz": "Nieskończoność",
+        "wyjasnienie": "Granica ciągu Fibonacciego to nieskończoność, ponieważ ciąg ten nie ma ograniczenia w rosnących wartościach."
+    },
+    {
+        "id": 7,
+        "type": "single-choice",
+        "text": "W jaki sposób Grace Hopper przyczyniła się do powstania terminu \"pluskwa\" w kontekście informatyki?",
+        "odpowiedzi": [
+            "Znalezienie prawdziwej ćmy w komputerze",
+            "Stworzenie programu o nazwie \"Bug\"",
+            "Napisanie pierwszego podręcznika o błędach programowania",
+            "Wygłoszenie przemówienia na temat błędów w kodzie"
+        ],
+        "poprawnaOdpowiedz": "Znalezienie prawdziwej ćmy w komputerze",
+        "wyjasnienie": "Grace Hopper znalazła prawdziwą ćmę w komputerze, co doprowadziło do stworzenia terminu bug (pluskwa) w informatyce."
+    },
+    {
+        "id": 8,
+        "type": "single-choice",
+        "text": "Jaka jest podstawa systemu liczbowego używanego przez starożytnych Babilończyków?",
+        "odpowiedzi": [
+            "60",
+            "10",
+            "12",
+            "100"
+        ],
+        "poprawnaOdpowiedz": "60",
+        "wyjasnienie": "System liczbowy Babilończyków miał podstawę 60, co jest jednym z najwcześniejszych przykładów systemu pozycyjnego."
+    },
+    {
+        "id": 9,
+        "type": "single-choice",
+        "text": "Ile cyfr zawiera system liczbowy Majów?",
+        "odpowiedzi": [
+            "3",
+            "5",
+            "20",
+            "10"
+        ],
+        "poprawnaOdpowiedz": "3",
+        "wyjasnienie": "System liczbowy Majów używał trzech cyfr, włączając w to zero, co było unikatowe wśród starożytnych cywilizacji."
+    },
+    {
+        "id": 10,
+        "type": "single-choice",
+        "text": "W którym roku zakończono pracę nad komputerem ENIAC?",
+        "odpowiedzi": [
+            "1946",
+            "1952",
+            "1939",
+            "1945"
+        ],
+        "poprawnaOdpowiedz": "1946",
+        "wyjasnienie": "Prace nad komputerem ENIAC zakończono w 1946 roku."
+    },
+    {
+        "id": 11,
+        "type": "single-choice",
+        "text": "Z ilu części składa się maszyna Babbage’a?",
+        "odpowiedzi": [
+            "4",
+            "2",
+            "6",
+            "3"
+        ],
+        "poprawnaOdpowiedz": "4",
+        "wyjasnienie": "Maszyna Babbage’a składała się z czterech głównych części, w tym mechanizmu obliczeniowego i mechanizmu drukującego."
+    },
+    {
+        "id": 12,
+        "type": "single-choice",
+        "text": "Kto i w jaki sposób ścisłe ujął problem kwadratury koła?",
+        "odpowiedzi": [
+            "Archimedes",
+            "Euclid",
+            "Newton",
+            "Aristotle"
+        ],
+        "poprawnaOdpowiedz": "Archimedes",
+        "wyjasnienie": "Archimedes jako pierwszy przedstawił ścisłe ujęcie problemu kwadratury koła."
+    },
+    {
+        "id": 13,
+        "type": "single-choice",
+        "text": "Czym jest kwadratura koła?",
+        "odpowiedzi": [
+            "Zadaniem polegającym na skonstruowaniu kwadratu o powierzchni równej danej okręgu",
+            "Teorią dotyczącą kształtu Ziemi",
+            "Metodą obliczania obwodu koła",
+            "Starożytną grą logiczną"
+        ],
+        "poprawnaOdpowiedz": "Zadaniem polegającym na skonstruowaniu kwadratu o powierzchni równej danej okręgu",
+        "wyjasnienie": "Kwadratura koła to zadanie polegające na skonstruowaniu kwadratu o powierzchni równej danej okręgu przy użyciu jedynie linijki i cyrkla."
+    },
+    {
+        "id": 14,
+        "type": "single-choice",
+        "text": "Jakie jest najczęściej występujące pojęcie abstrakcyjne?",
+        "odpowiedzi": [
+            "Miłość",
+            "Sprawiedliwość",
+            "Piękno",
+            "Przestrzeń"
+        ],
+        "poprawnaOdpowiedz": "Miłość",
+        "wyjasnienie": "Miłość jest często uznawana za najbardziej uniwersalne i najczęściej występujące pojęcie abstrakcyjne."
+    },
+    {
+        "id": 15,
+        "type": "single-choice",
+        "text": "Czego nie potrafili robić ludzie prehistoryczni, związane z matematyką?",
+        "odpowiedzi": [
+            "Liczyć",
+            "Rysować",
+            "Pisać",
+            "Myśleć abstrakcyjnie"
+        ],
+        "poprawnaOdpowiedz": "Liczyć",
+        "wyjasnienie": "Ludzie prehistoryczni prawdopodobnie nie potrafili liczyć w sposób, który rozumiemy obecnie."
+    },
+    {
+        "id": 16,
+        "type": "single-choice",
+        "text": "Jak inaczej nazywa się system karbowy w kontekście liczenia?",
+        "odpowiedzi": [
+            "Jedynkowy",
+            "Dwójkowy",
+            "Trójkowy",
+            "Dziesiątkowy"
+        ],
+        "poprawnaOdpowiedz": "Jedynkowy",
+        "wyjasnienie": "System karbowy, znany również jako system jedynkowy, jest najprostszym systemem liczbowym."
+    },
+    {
+        "id": 17,
+        "type": "single-choice",
+        "text": "Co oznacza litera \"S\" w notacji rzymskiej bez kropki i z kropką?",
+        "odpowiedzi": [
+            "½ bez kropki, 7/12 z kropką",
+            "5 bez kropki, 6 z kropką",
+            "1/3 bez kropki, 1/4 z kropką",
+            "1 bez kropki, 2 z kropką"
+        ],
+        "poprawnaOdpowiedz": "½ bez kropki, 7/12 z kropką",
+        "wyjasnienie": "W notacji rzymskiej litera S oznaczała ½ bez kropki i 7/12 z kropką, co odpowiada różnym ułamkom."
+    },
+    {
+        "id": 18,
+        "type": "single-choice",
+        "text": "Co to jest Quipu?",
+        "odpowiedzi": [
+            "Liczydło sznurkowe używane przez starożytne cywilizacje w Ameryce Południowej",
+            "Starożytny instrument muzyczny",
+            "Typ starożytnej wazy",
+            "Nazwa starożytnego miasta"
+        ],
+        "poprawnaOdpowiedz": "Liczydło sznurkowe używane przez starożytne cywilizacje w Ameryce Południowej",
+        "wyjasnienie": "Quipu to liczydło sznurkowe używane przez starożytne cywilizacje w Ameryce Południowej, zwłaszcza przez Inków, do zapisywania informacji."
+    },
+    {
+        "id": 19,
+        "type": "single-choice",
+        "text": "Na jakiej zasadzie działa suwak logarytmiczny?",
+        "odpowiedzi": [
+            "Na własnościach logarytmicznych",
+            "Na zasadzie mnożenia",
+            "Na zasadzie dzielenia",
+            "Na zasadzie potęgowania"
+        ],
+        "poprawnaOdpowiedz": "Na własnościach logarytmicznych",
+        "wyjasnienie": "Suwak logarytmiczny działa na zasadzie własności logarytmicznych, umożliwiając wykonywanie operacji matematycznych, takich jak mnożenie i dzielenie."
+    },
+    {
+        "id": 20,
+        "type": "single-choice",
+        "text": "Co oznacza termin \"Ludolfina\"?",
+        "odpowiedzi": [
+            "Liczba pi",
+            "Rodzaj kwadratu",
+            "Nazwa teoretycznej figury geometrycznej",
+            "Nazwa starożytnej jednostki miary"
+        ],
+        "poprawnaOdpowiedz": "Liczba pi",
+        "wyjasnienie": "Ludolfina to inna nazwa liczby pi, która jest stosunkiem obwodu koła do jego średnicy."
+    },
+    {
+        "id": 21,
+        "type": "single-choice",
+        "text": "Kto i kiedy wprowadził cyfry hinduskie do Europy?",
+        "odpowiedzi": [
+            "Arabowie, w średniowieczu",
+            "Rzymianie, w czasach antycznych",
+            "Grecy, w czasach hellenistycznych",
+            "Wikingowie, w czasach wczesnośredniowiecznych"
+        ],
+        "poprawnaOdpowiedz": "Arabowie, w średniowieczu",
+        "wyjasnienie": "Arabowie wprowadzili cyfry hinduskie do Europy w średniowieczu, co zrewolucjonizowało europejską matematykę."
+    },
+    {
+        "id": 22,
+        "type": "single-choice",
+        "text": "Jak zapisuje się liczbę 450 w systemie rzymskim?",
+        "odpowiedzi": [
+            "CDL",
+            "CCL",
+            "DXX",
+            "CCC"
+        ],
+        "poprawnaOdpowiedz": "CDL",
+        "wyjasnienie": "Liczba 450 w systemie rzymskim zapisuje się jako CDL."
+    },
+    {
+        "id": 23,
+        "type": "single-choice",
+        "text": "W których cywilizacjach nie występowało zero?",
+        "odpowiedzi": [
+            "Starożytnym Rzymie i Grecji",
+            "Egipcie i Babilonii",
+            "Majach i Aztekach",
+            "Chinach i Japonii"
+        ],
+        "poprawnaOdpowiedz": "Starożytnym Rzymie i Grecji",
+        "wyjasnienie": "Starożytny Rzym i Grecja nie używały zera w swoich systemach liczbowych."
+    },
+    {
+        "id": 24,
+        "type": "single-choice",
+        "text": "Który system liczbowy nie był systemem pozycyjnym?",
+        "odpowiedzi": [
+            "Rzymski",
+            "Arabski",
+            "Babiloński",
+            "Majów"
+        ],
+        "poprawnaOdpowiedz": "Rzymski",
+        "wyjasnienie": "System liczbowy Rzymian nie był systemem pozycyjnym, co oznacza, że wartość cyfry nie zależała od jej pozycji."
+    },
+    {
+        "id": 25,
+        "type": "single-choice",
+        "text": "Jaki jest siódmy wyraz ciągu Fibonacciego?",
+        "odpowiedzi": [
+            "13",
+            "21",
+            "8",
+            "34"
+        ],
+        "poprawnaOdpowiedz": "13",
+        "wyjasnienie": "Siódmy wyraz ciągu Fibonacciego to 13."
+    },
+    {
+        "id": 26,
+        "type": "single-choice",
+        "text": "Które systemy liczbowe miały ograniczoną liczbę cyfr?",
+        "odpowiedzi": [
+            "Systemy pozycyjne",
+            "Systemy nieliniowe",
+            "Systemy logarytmiczne",
+            "Systemy algebraiczne"
+        ],
+        "poprawnaOdpowiedz": "Systemy pozycyjne",
+        "wyjasnienie": "Systemy pozycyjne, takie jak system dziesiętny, mają ograniczoną liczbę cyfr, które są powtarzane w różnych kombinacjach."
+    },
+    {
+        "id": 27,
+        "type": "single-choice",
+        "text": "Jaki jest najstarszy znany system liczbowy?",
+        "odpowiedzi": [
+            "Sumeryjski",
+            "Egipski",
+            "Grecki",
+            "Indyjski"
+        ],
+        "poprawnaOdpowiedz": "Sumeryjski",
+        "wyjasnienie": "Najstarszym znanym systemem liczbowym jest system sumeryjski."
+    },
+    {
+        "id": 28,
+        "type": "single-choice",
+        "text": "Jaki znak występuje w systemie liczbowym Jonów?",
+        "odpowiedzi": [
+            "Symbol M",
+            "Symbol Γ (gamma)",
+            "Symbol Δ (delta)",
+            "Symbol Ω (omega)"
+        ],
+        "poprawnaOdpowiedz": "Symbol M",
+        "wyjasnienie": "W systemie liczbowym Jonów występuje symbol M."
+    },
+    {
+        "id": 29,
+        "type": "single-choice",
+        "text": "Co oznaczała pozioma kreska nad liczbą w systemie rzymskim?",
+        "odpowiedzi": [
+            "Pomnożenie liczby przez 1000",
+            "Dzielenie liczby przez 2",
+            "Pomnożenie liczby przez 100",
+            "Odejmowanie jednostki"
+        ],
+        "poprawnaOdpowiedz": "Pomnożenie liczby przez 1000",
+        "wyjasnienie": "Pozioma kreska nad liczbą w systemie rzymskim oznaczała pomnożenie tej liczby przez 1000."
+    },
+    {
+        "id": 30,
+        "type": "single-choice",
+        "text": "Na czym polega matematyczna teoria algorytmów?",
+        "odpowiedzi": [
+            "Na badaniu procedur obliczeniowych",
+            "Na analizie struktur danych",
+            "Na projektowaniu efektywnych metod rozwiązywania problemów",
+            "Na badaniu teorii liczb"
+        ],
+        "poprawnaOdpowiedz": "Na badaniu procedur obliczeniowych",
+        "wyjasnienie": "Matematyczna teoria algorytmów polega na badaniu procedur obliczeniowych."
+    },
+    {
+        "id": 31,
+        "type": "single-choice",
+        "text": "W jakich miejscach lub kulturach nie używa się systemu dziesiątkowego?",
+        "odpowiedzi": [
+            "W niektórych kulturach afrykańskich i amerykańskich plemion",
+            "W starożytnym Egipcie",
+            "W starożytnej Grecji",
+            "W średniowiecznej Europie"
+        ],
+        "poprawnaOdpowiedz": "W niektórych kulturach afrykańskich i amerykańskich plemion",
+        "wyjasnienie": "W niektórych kulturach afrykańskich i amerykańskich plemion nie używa się systemu dziesiątkowego."
+    },
+    {
+        "id": 32,
+        "type": "single-choice",
+        "text": "Jak brzmi definicja cyfry?",
+        "odpowiedzi": [
+            "Umowny znak do zapisywania liczb",
+            "Najmniejsza jednostka informacji",
+            "Symbol używany w matematyce do reprezentowania stałych",
+            "Podstawowa jednostka systemu liczbowego"
+        ],
+        "poprawnaOdpowiedz": "Umowny znak do zapisywania liczb",
+        "wyjasnienie": "Cyfra to umowny znak do zapisywania liczb."
+    },
+    {
+        "id": 33,
+        "type": "single-choice",
+        "text": "Kto jest twórcą pierwszego w pełni programowalnego komputera?",
+        "odpowiedzi": [
+            "Konrad Zuse",
+            "Alan Turing",
+            "John von Neumann",
+            "Charles Babbage"
+        ],
+        "poprawnaOdpowiedz": "Konrad Zuse",
+        "wyjasnienie": "Konrad Zuse jest uznawany za twórcę pierwszego w pełni programowalnego komputera."
+    },
+    {
+        "id": 34,
+        "type": "single-choice",
+        "text": "Jaki rodzaj sygnału przetwarzał komputer analogowy?",
+        "odpowiedzi": [
+            "Ciągły sygnał",
+            "Sygnał cyfrowy",
+            "Sygnał impulsowy",
+            "Sygnał elektromagnetyczny"
+        ],
+        "poprawnaOdpowiedz": "Ciągły sygnał",
+        "wyjasnienie": "Komputery analogowe przetwarzały ciągłe sygnały."
+    },
+    {
+        "id": 35,
+        "type": "single-choice",
+        "text": "Od jakiego systemu Rzymianie wzięli swoje ułamki?",
+        "odpowiedzi": [
+            "Monetarnego",
+            "Agrarnego",
+            "Wojskowego",
+            "Handlowego"
+        ],
+        "poprawnaOdpowiedz": "Monetarnego",
+        "wyjasnienie": "Rzymianie wzięli swoje ułamki z systemu monetarnego."
+    },
+    {
+        "id": 36,
+        "type": "single-choice",
+        "text": "Kto wprowadził pojęcie liczby pi?",
+        "odpowiedzi": [
+            "Archimedes",
+            "Euclid",
+            "Newton",
+            "Aristoteles"
+        ],
+        "poprawnaOdpowiedz": "Archimedes",
+        "wyjasnienie": "Archimedes wprowadził pojęcie liczby pi."
+    },
+    {
+        "id": 37,
+        "type": "single-choice",
+        "text": "Co osiągnął Hipokrates z Chios w dziedzinie matematyki?",
+        "odpowiedzi": [
+            "Twierdzenie o półksiężycach",
+            "Odkrycie złotej proporcji",
+            "Wprowadzenie geometrii analitycznej",
+            "Rozwój teorii liczb"
+        ],
+        "poprawnaOdpowiedz": "Twierdzenie o półksiężycach",
+        "wyjasnienie": "Hipokrates z Chios osiągnął twierdzenie o półksiężycach."
+    },
+    {
+        "id": 38,
+        "type": "single-choice",
+        "text": "W jakim systemie liczbowym pracował ENIAC?",
+        "odpowiedzi": [
+            "Dziesiątkowym",
+            "Dwójkowym",
+            "Szesnastkowym",
+            "Siódemkowym"
+        ],
+        "poprawnaOdpowiedz": "Dziesiątkowym",
+        "wyjasnienie": "ENIAC pracował w systemie liczbowym dziesiątkowym."
+    },
+    {
+        "id": 39,
+        "type": "single-choice",
+        "text": "Kto opracował pierwszy algorytmiczny język programowania?",
+        "odpowiedzi": [
+            "Konrad Zuse",
+            "Alan Turing",
+            "Ada Lovelace",
+            "John Backus"
+        ],
+        "poprawnaOdpowiedz": "Konrad Zuse",
+        "wyjasnienie": "Konrad Zuse opracował pierwszy algorytmiczny język programowania."
+    },
+    {
+        "id": 40,
+        "type": "single-choice",
+        "text": "Jakie firmy są znane z innowacji w dziedzinie pamięci komputerowej?",
+        "odpowiedzi": [
+            "HP i Microsoft",
+            "Apple i Samsung",
+            "IBM i Google",
+            "Intel i AMD"
+        ],
+        "poprawnaOdpowiedz": "HP i Microsoft",
+        "wyjasnienie": "HP i Microsoft są znane z innowacji w dziedzinie pamięci komputerowej."
+    },
+    {
+        "id": 41,
+        "type": "single-choice",
+        "text": "Kto jest twórcą maszyny analitycznej?",
+        "odpowiedzi": [
+            "Charles Babbage",
+            "Blaise Pascal",
+            "Gottfried Wilhelm Leibniz",
+            "John von Neumann"
+        ],
+        "poprawnaOdpowiedz": "Charles Babbage",
+        "wyjasnienie": "Charles Babbage jest twórcą maszyny analitycznej."
+    },
+    {
+        "id": 42,
+        "type": "single-choice",
+        "text": "Co to jest astrolabium i do czego służy?",
+        "odpowiedzi": [
+            "Starożytny instrument do obserwacji astronomicznych",
+            "Mechanizm zegarowy",
+            "Urządzenie nawigacyjne",
+            "Starożytny kalkulator"
+        ],
+        "poprawnaOdpowiedz": "Starożytny instrument do obserwacji astronomicznych",
+        "wyjasnienie": "Astrolabium to starożytny instrument do obserwacji astronomicznych."
+    },
+    {
+        "id": 43,
+        "type": "single-choice",
+        "text": "Jaki podział wprowadził Leonardo Fibonacci, znany jako \"Złoty podział\"?",
+        "odpowiedzi": [
+            "Podział oparty na proporcjach sekwencji Fibonacciego",
+            "Podział na liczby pierwsze i złożone",
+            "Podział geometryczny oparty na stosunku złotym",
+            "Podział na liczby parzyste i nieparzyste"
+        ],
+        "poprawnaOdpowiedz": "Podział oparty na proporcjach sekwencji Fibonacciego",
+        "wyjasnienie": "Złoty podział Leonarda Fibonacciego opiera się na proporcjach sekwencji Fibonacciego."
+    },
+    {
+        "id": 44,
+        "type": "single-choice",
+        "text": "Jakie jest jedno z najczęściej występujących pojęć abstrakcyjnych w kontekście finansów?",
+        "odpowiedzi": [
+            "Procent od pożyczki",
+            "Wartość nominalna",
+            "Stopa zwrotu",
+            "Kapitalizacja odsetek"
+        ],
+        "poprawnaOdpowiedz": "Procent od pożyczki",
+        "wyjasnienie": "Jednym z najczęściej występujących pojęć abstrakcyjnych w kontekście finansów jest procent od pożyczki."
+    },
+    {
+        "id": 45,
+        "type": "single-choice",
+        "text": "Co oznaczał znak litery \"S\" w języku rzymskim w kontekście ułamków?",
+        "odpowiedzi": [
+            "Ułamek semis (1/2 lub 6/12)",
+            "Ułamek dodatek (1/3 lub 4/12)",
+            "Ułamek kwadrans (1/4 lub 3/12)",
+            "Ułamek octans (1/8 lub 1,5/12)"
+        ],
+        "poprawnaOdpowiedz": "Ułamek semis (1/2 lub 6/12)",
+        "wyjasnienie": "Litera S w języku rzymskim w kontekście ułamków oznaczała ułamek semis (1/2 lub 6/12)."
+    },
+    {
+        "id": 46,
+        "type": "single-choice",
+        "text": "Jaki jest inny znany termin na określenie komputera ENIAC?",
+        "odpowiedzi": [
+            "Electronic Numerical Integrator and Computer",
+            "Electronic Data Processing Machine",
+            "Automatic Computing Engine",
+            "Digital Electronic Mainframe"
+        ],
+        "poprawnaOdpowiedz": "Electronic Numerical Integrator and Computer",
+        "wyjasnienie": "Inny znany termin na określenie komputera ENIAC to Electronic Numerical Integrator and Computer."
+    },
+    {
+        "id": 47,
+        "type": "single-choice",
+        "text": "Jaką generację komputerów obecnie intensywnie używamy i nad jaką generacją trwają zaawansowane prace?",
+        "odpowiedzi": [
+            "Czwartą generację, trwają prace nad piątą",
+            "Trzecią generację, trwają prace nad czwartą",
+            "Drugą generację, trwają prace nad trzecią",
+            "Pierwszą generację, trwają prace nad drugą"
+        ],
+        "poprawnaOdpowiedz": "Czwartą generację, trwają prace nad piątą",
+        "wyjasnienie": "Obecnie intensywnie używamy komputerów czwartej generacji, a trwają zaawansowane prace nad komputerami piątej generacji."
+    }
+]
