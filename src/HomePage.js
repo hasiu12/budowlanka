@@ -20,6 +20,7 @@ function HomePage({ questions, historyQuestions }) {
       {/* Sekcja dla losowego quizu */}
       <div className="random-quiz-section">
       <h2 className="history-header">Quizy z systemów wbudowanych</h2>
+      <p > Z racji że z jakiegos nie wyjasnionego powodu, buguja sie znaki specjalne to w 3 zadaniach odpowiedzi pokazuja sie jako nie poprawne ;/</p>
         <Link to="/random-quiz" className="quiz-link">Losowy Quiz</Link>
       </div>
 

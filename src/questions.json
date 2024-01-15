@@ -702,7 +702,7 @@
                 "które zostało utworzone jako pierwsze.",
                 "o najwyższym priorytecie."
             ],
-            "poprawnaOdpowiedz": "o najwyższym priorytecie, które nie jest w trybie oczekiwania lub zablokowania (tj. WAIT lub BLOCKED).",
+            "poprawnaOdpowiedz": "o najwyższy priorytecie, które nie jest w trybie oczekiwania lub zablokowania (tj. WAIT lub BLOCKED).",
             "wyjasnienie": "Brak",
             "zdobytePunkty": 100
         },
