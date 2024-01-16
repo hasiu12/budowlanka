@@ -1,983 +1,1004 @@
 [
     {
-            "id": 1,
-            "type": "matching",
-            "text": "Dopasuj nazwy kategorii systemów czasu rzeczywistego do ich opisów.",
-            "lewaStrona": [
-                "W systemach o łagodnych wymaganiach czasowych (ang. soft real-time system)",
-                "W systemach o mocnych wymaganiach czasowych (ang. firm real-time system)",
-                "W systemach o rygorystycznych wymaganiach czasowych (ang. hard real-time system)"
-            ],
-            "prawaStrona": [
-                "dopuszczalne jest niedotrzymanie ograniczenia czasowego.",
-                "dane wypracowane z opóźnieniem są nieprzydatne, ale sytuacja taka (jeśli występuje sporadycznie) nie zagraża poprawności działania całego systemu.",
-                "sporadyczne niedotrzymanie ograniczenia czasowego jest niekorzystne ale dopuszczalne. Dane wypracowane z opóźnieniem są przydatne i wykorzystywane w pracy systemu.",
-                "wymagane jest bezwzględne spełnianie wszystkich wymagań czasowych. Jakiekolwiek niedotrzymanie  ograniczenia czasowego jest niedopuszczalne i traktowane jest jako awaria systemu."
-            ],
-            "poprawnePary": [
-                [
-                    "W systemach o łagodnych wymaganiach czasowych (ang. soft real-time system)",
-                    "sporadyczne niedotrzymanie ograniczenia czasowego jest niekorzystne ale dopuszczalne. Dane wypracowane z opóźnieniem są przydatne i wykorzystywane w pracy systemu."
-                ],
-                [
-                    "W systemach o mocnych wymaganiach czasowych (ang. firm real-time system)",
-                    "dane wypracowane z opóźnieniem są nieprzydatne, ale sytuacja taka (jeśli występuje sporadycznie) nie zagraża poprawności działania całego systemu."
-                ],
-                [
-                    "W systemach o rygorystycznych wymaganiach czasowych (ang. hard real-time system)",
-                    "wymagane jest bezwzględne spełnianie wszystkich wymagań czasowych. Jakiekolwiek niedotrzymanie  ograniczenia czasowego jest niedopuszczalne i traktowane jest jako awaria systemu."
-                ]
-            ],
-            "wyjasnienie": "Slajdy 57,58,59",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 2,
-            "type": "multiple-choice",
-            "text": "Wskaż właściwe zakończenie następującego zdania: Modyfikator \"volatile\" ...",
-            "odpowiedzi": [
-                "wymusza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
-                "wyłącza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
-                "jest konieczny w przypadku definicji wskaźników na fizyczne rejestry znajdujące się w przestrzeni I/O procesora.",
-                "służy do definicji zmiennej lokalnej."
-            ],
-            "poprawneOdpowiedzi": [
-                "wyłącza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
-                "jest konieczny w przypadku definicji wskaźników na fizyczne rejestry znajdujące się w przestrzeni I/O procesora."
-            ],
-            "wyjasnienie": "Modyfikator volatile wyłącza zatem optymalizację dostępu do przestrzeni I/O procesora dla danej zmiennej lub rejestru.",
-            "zdobytePunkty": 1
-        },
-        {
-            "id": 3,
-            "type": "multiple-choice",
-            "text": "Wskaż funkcje, jakie może pełnić dyrektywa preprocesora #define.(W tym pytaniu prawidłowa jest więcej niż jedna odpowiedź.)",
-            "odpowiedzi": [
-                "Dyrektywa #define jest przeznaczona do tworzenia funkcji typu inline.",
-                "Dyrektywa #define może być wykorzystana do definicji symboli (lub pustych symboli, tj. etykiet).",
-                "Dyrektywa #define jest przeznaczona do definicji funkcji nie zwracających wyniku (tj. oznaczonych jakovoid ).",
-                "Dyrektywa #define może być wykorzystana do tworzenia makrodefinicji.",
-                "Dyrektywa #define może być wykorzystana do definicji stałych."
-            ],
-            "poprawneOdpowiedzi": [
-                "Dyrektywa #define może być wykorzystana do definicji symboli (lub pustych symboli, tj. etykiet).",
-                "Dyrektywa #define może być wykorzystana do tworzenia makrodefinicji.",
-                "Dyrektywa #define może być wykorzystana do definicji stałych."
-            ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 4,
-            "type": "matching",
-            "text": "Dopasuj kod w języku C dla mikrokontrolera ARM Cortex-F4 do opisu efektu jego działania.",
-            "lewaStrona": [
-                "GPIOB->ODR = ( 1 << 5 ); ",
-                "#define GPIOB_ODR  *(volatile uint32_t*)0x40020414GPIOB_ODR &= ~( 1 << 5 );",
-                "GPIOB->ODR = 0xFFFF;",
-                "GPIOB->BSRR = ( (uint32_t)1<< (16+0) ); ",
-                "*( (volatile uint32_t*)0x40020414) |= ( 1 << 5 ); (Gdzie 0x40020414 to adres rejestru ODR portu GPIO B w pamięci przestrzeni adresowej mikrokontrolera.)",
-                "GPIOB->BSRR = ( 1 << 0 ); ",
-                "GPIOB->ODR = 0;"
-            ],
-            "prawaStrona": [
-                "Powoduje ustawienie linii PB5 w stan wysoki, a wszystkich pozostałych linii tego portu w stan niski.",
-                "Powoduje wyłącznie ustawienie linii PB5 w stan wysoki.",
-                "Powoduje wyłącznie ustawienie linii PB0 w stan niski.",
-                "Ustawia w stan niski wszystkie linie portu PB.",
-                "Powoduje wyłącznie ustawienie linii PB0 w stan wysoki.",
-                "Ustawia w stan wysoki wszystkie linie portu PB.",
-                "Powoduje ustawienie linii PB5 w stan niski, a wszystkich pozostałych linii tego portu w stan wysoki.",
-                "Powoduje wyłącznie ustawienie linii PB5 w stan niski."
-            ],
-            "poprawnePary": [
-                [
-                    "GPIOB->BSRR = ( 1 << 0 ); ",
-                    "Powoduje wyłącznie ustawienie linii PB0 w stan wysoki."
-                ],
-                [
-                    "GPIOB->ODR = 0;",
-                    "Ustawia w stan niski wszystkie linie portu PB."
-                ],
-                [
-                    "GPIOB->ODR = 0xFFFF;",
-                    "Ustawia w stan wysoki wszystkie linie portu PB."
-                ],
-                [
-                    "GPIOB->BSRR = ( (uint32_t)1<< (16+0) ); ",
-                    "Powoduje wyłącznie ustawienie linii PB0 w stan niski."
-                ],
-                [
-                    "GPIOB->ODR = ( 1 << 5 ); ",
-                    "Powoduje ustawienie linii PB5 w stan wysoki, a wszystkich pozostałych linii tego portu w stan niski."
-                ],
-                [
-                    "*( (volatile uint32_t*)0x40020414) |= ( 1 << 5 ); (Gdzie 0x40020414 to adres rejestru ODR portu GPIO B w pamięci przestrzeni adresowej mikrokontrolera.)",
-                    "Powoduje wyłącznie ustawienie linii PB5 w stan wysoki."
-                ],
-                [
-                    "#define GPIOB_ODR  *(volatile uint32_t*)0x40020414GPIOB_ODR &= ~( 1 << 5 );",
-                    "Powoduje wyłącznie ustawienie linii PB5 w stan niski."
-                ]
-            ],
-            "wyjasnienie": "?",
-            "zdobytePunkty": 14
-        },
-        {
-            "id": 5,
-            "type": "matching",
-            "text": "Dopasuj nazwę stanu (status), w jakim mogą się znajdować wyjątki w procesorach ARM Cortex-M do do opisu tego stanu.",
-            "lewaStrona": [
-                "Active and pending",
-                "Blocked",
-                "Active",
-                "Inactive",
-                "Pending"
-            ],
-            "prawaStrona": [
-                "Wyjątek jest aktualnie niszczony.",
-                "Dany wyjątek nie jest aktywny i nie jest oczekujący.",
-                "Wyjątek oczekuje na obsługę ze strony procesora.",
-                "Nie ma takiego stanu wyjątku w procesorach ARM Cortex-M.",
-                "Jest to wyjątek który jest aktualnie przetwarzany przez procesor i jego przetwarzanie nie jest jeszcze zakończone.",
-                "Wyjątek jest aktualnie obsługiwany przez procesor oraz, w tym samym czasie, w wyniku kolejnego zgłoszenia istnieje oczekujący wyjątek pochodzący z tego samego źródła."
-            ],
-            "poprawnePary": [
-                [
-                    "Active and pending",
-                    "Wyjątek jest aktualnie obsługiwany przez procesor oraz, w tym samym czasie, w wyniku kolejnego zgłoszenia istnieje oczekujący wyjątek pochodzący z tego samego źródła."
-                ],
-                [
-                    "Blocked",
-                    "Nie ma takiego stanu wyjątku w procesorach ARM Cortex-M."
-                ],
-                [
-                    "Active",
-                    "Jest to wyjątek który jest aktualnie przetwarzany przez procesor i jego przetwarzanie nie jest jeszcze zakończone."
-                ],
-                [
-                    "Inactive",
-                    "Dany wyjątek nie jest aktywny i nie jest oczekujący."
-                ],
-                [
-                    "Pending",
-                    "Wyjątek oczekuje na obsługę ze strony procesora."
-                ]
-            ],
-            "wyjasnienie": "Slajd 298",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 6,
-            "type": "multiple-choice",
-            "text": "Charakterystyczne parametry ADC i DAC to:(Na to pytanie jest więcej niż jedna poprawna odpowiedź.)",
-            "odpowiedzi": [
-                "typowa temperatura układu podczas pracy.",
-                "typ używanej arytmetyki zmiennoprzecinkowej.",
-                "rozdzielczość wyrażona liczbą bitów liczby całkowitej będącej wyjściem ADC lub wejściem DAC.",
-                "liczba kanałów - czyli oddzielnych wejściowych lub wyjściowych linii analogowych.",
-                "czas przetwarzania wyrażony w sekundach (lub prędkość przetwarzania / częstotliwość próbkowania / itd. wyrażona w próbkach na sekundę, SPS)."
-            ],
-            "poprawneOdpowiedzi": [
-                "rozdzielczość wyrażona liczbą bitów liczby całkowitej będącej wyjściem ADC lub wejściem DAC.",
-                "czas przetwarzania wyrażony w sekundach (lub prędkość przetwarzania / częstotliwość próbkowania / itd. wyrażona w próbkach na sekundę, SPS).",
-                "liczba kanałów - czyli oddzielnych wejściowych lub wyjściowych linii analogowych."
-            ],
-            "wyjasnienie": "Slajd 334",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 7,
-            "type": "matching",
-            "text": "Dopasuj prawidłowe wyrażenia.",
-            "lewaStrona": [
-                "W trybie edge-align generatora MSI, ",
-                "W trybie center-align generatora MSI",
-                "Punkty pomiarowe w trybie center-aligned"
-            ],
-            "prawaStrona": [
-                "licznik generatora może liczyć w górę lub w dół w zależności od konfiguracji.",
-                "są umieszczone z dala od punktów komutacyjnych.",
-                "są umieszczane dokładnie w punktach komutacyjnych.",
-                "licznik generatora MSI liczy w górę, a następnie przestaje liczyć.",
-                "licznik generatora liczy naprzemiennie, w górę i w dół."
-            ],
-            "poprawnePary": [
-                [
-                    "W trybie edge-align generatora MSI, ",
-                    "licznik generatora może liczyć w górę lub w dół w zależności od konfiguracji."
-                ],
-                [
-                    "W trybie center-align generatora MSI",
-                    "licznik generatora liczy naprzemiennie, w górę i w dół."
-                ],
-                [
-                    "Punkty pomiarowe w trybie center-aligned",
-                    "są umieszczone z dala od punktów komutacyjnych."
-                ]
-            ],
-            "wyjasnienie": "Slajdy 395, 407",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 8,
-            "type": "multiple-choice",
-            "text": "Wskaż prawidłowe sformułowania dotyczące magistrali CAN.",
-            "odpowiedzi": [
-                "W CAN zastosowano taką metodę arbitrażu dostępu wielu nadawców do współdzielonego medium, któragwarantuje deterministyczne dostarczanie komunikatów w zdefiniowanym przedzialeczasu. ",
-                "CAN jest siecią typu master-slaves.",
-                "CAN jest siecią typu multi-slaves.",
-                "CAN jest siecią typu multi-master.",
-                "CAN to magistrala, który efektywnie wspierakomunikację czasu rzeczywistego na odległość do 40m lub w pewnych warunkach na wyższe odległości."
-            ],
-            "poprawneOdpowiedzi": [
-                "W CAN zastosowano taką metodę arbitrażu dostępu wielu nadawców do współdzielonego medium, któragwarantuje deterministyczne dostarczanie komunikatów w zdefiniowanym przedzialeczasu. ",
-                "CAN jest siecią typu multi-master.",
-                "CAN to magistrala, który efektywnie wspierakomunikację czasu rzeczywistego na odległość do 40m lub w pewnych warunkach na wyższe odległości."
-            ],
-            "wyjasnienie": "Slajd 483",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 9,
-            "type": "multiple-choice",
-            "text": "Wskaż prawidłowe sformułowania dotyczące metod komunikacji wyzwalanej zdarzeniami (ang. event-driven) w porównaniu do metody wyzwalanej upływem czasu (ang. time-driven).",
-            "odpowiedzi": [
-                "Wadą komunikacji event-driven (w porównaniu do time-driven) jest dłuższyczas reakcji w sytuacjach, w których występuje nagromadzenie zbyt dużej ilości zdarzeń w krótkim odcinkuczasu.",
-                "Komunikacja time-driven nie pozwala na uzyskanie determinizmu czasowego.",
-                "Zaletą komunikacji event-driven (w porównaniu do time-driven) jest w niektórych sytuacjach krótszy czas reakcji.",
-                "Komunikacja event-driven gwarantuje determinizm czasowy w każdych warunkach."
-            ],
-            "poprawneOdpowiedzi": [
-                "Zaletą komunikacji event-driven (w porównaniu do time-driven) jest w niektórych sytuacjach krótszy czas reakcji.",
-                "Wadą komunikacji event-driven (w porównaniu do time-driven) jest dłuższyczas reakcji w sytuacjach, w których występuje nagromadzenie zbyt dużej ilości zdarzeń w krótkim odcinkuczasu."
-            ],
-            "wyjasnienie": "Slajdy 519 ,520",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 10,
-            "type": "single-choice",
-            "text": "Wskaż właściwy opis wyjaśniający skrót RTX z obszaru systemów operacyjnych czasu rzeczywistego.",
-            "odpowiedzi": [
-                "RTX to skrót od pojęcia \"Read Time eXtension\".",
-                "RTX to implementacja jądra (ang. kernel) systemu operacyjnego czasu rzeczywistego.",
-                "RTX to kompletny system operacyjny czasu rzeczywistego."
-            ],
-            "poprawnaOdpowiedz": "RTX to implementacja jądra (ang. kernel) systemu operacyjnego czasu rzeczywistego.",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 11,
-            "type": "single-choice",
-            "text": "Oprogramowanie bazujące na RTOS jest w stanie zareagować na zdarzenia zewnętrzne równie szybko jak oprogramowanie utworzone w oparciu o model \"bare-metal\".",
-            "odpowiedzi": [
-                "Prawda",
-                "Fałsz"
-            ],
-            "poprawnaOdpowiedz": "Fałsz",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 12,
-            "type": "matching",
-            "text": "Wskaż prawidłowe wyniki operacji binarnych, gdzie 'a', 'b' i 'c' to zmienne 8-bitowe bez znaku (uint8_t).",
-            "lewaStrona": [
-                "a = 0x0F;b = a << 4;",
-                "a = 0x7F;b = 0x87;c = a | b;",
-                "a = 0x7F;b = 0x87;c = a & b;",
-                "a = ~( 1 << 4 );",
-                "a = 1 << 4;",
-                "a = 0x0F;b = 1 << 6;c = a | b;"
-            ],
-            "prawaStrona": [
-                "Wybierz...",
-                "0x10",
-                "0x4F",
-                "0xEF",
-                "0xF0",
-                "0xFF",
-                "0x11",
-                "0x07",
-                "0x00"
-            ],
-            "poprawnePary": [
-                [
-                    "a = 0x0F;b = a << 4;",
-                    "0xF0"
-                ],
-                [
-                    "a = 0x7F;b = 0x87;c = a | b;",
-                    "0xFF"
-                ],
-                [
-                    "a = 0x7F;b = 0x87;c = a & b;",
-                    "0x07"
-                ],
-                [
-                    "a = ~( 1 << 4 );",
-                    "0xEF"
-                ],
-                [
-                    "a = 1 << 4;",
-                    "0x10"
-                ],
-                [
-                    "a = 0x0F;b = 1 << 6;c = a | b;",
-                    "0x4F"
-                ]
-            ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 13,
-            "type": "matching",
-            "text": "Dopasuj pary instrukcji do ich opisów.",
-            "lewaStrona": [
-                "uint32_t * Pa;",
-                "uint32_t a;",
-                "Pa = 0x200000;",
-                "*Pa = 0x200000;"
-            ],
-            "prawaStrona": [
-                "to definicja wskaźnika (zmiennej wskaźnikowej) na 32-bitową zmienną całkowitą bez znaku.",
-                "to definicja zmiennej wskaźnikowej wskazującej na zmienną Pa.",
-                "to operacja wpisania do zmiennej wskazywanej wskaźnikiem stałej wartości liczbowej.",
-                "to definicja wskaźnika na zmienną typu bajt.",
-                "to operacja wpisania do zmiennej wskaźnikowej stałej wartości liczbowej.",
-                "to definicja 32-bitowej zmiennej całkowitej bez znaku."
-            ],
-            "poprawnePary": [
-                [
-                    "uint32_t * Pa;",
-                    "to definicja wskaźnika (zmiennej wskaźnikowej) na 32-bitową zmienną całkowitą bez znaku."
-                ],
-                [
-                    "uint32_t a;",
-                    "to definicja 32-bitowej zmiennej całkowitej bez znaku."
-                ],
-                [
-                    "Pa = 0x200000;",
-                    "to operacja wpisania do zmiennej wskaźnikowej stałej wartości liczbowej."
-                ],
-                [
-                    "*Pa = 0x200000;",
-                    "to operacja wpisania do zmiennej wskazywanej wskaźnikiem stałej wartości liczbowej."
-                ]
-            ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 14,
-            "type": "multiple-choice",
-            "text": "Wskaż prawidłowe odpowiedzi dla mikrokontrolerów ARM Cortex-M z rodziny STM32F1xx.(Dopuszczalna jest więcej niż jedna prawidłowa odpowiedź).",
-            "odpowiedzi": [
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 63 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 64 i wartość wpisana do rejestru Auto-reload wynosi 100 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 10kHz.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 0 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 1MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 999 wtedy cykl generacji przerwań przez ten przez timer będzie miał długość 1milisekundy.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 2MHz, wartość wpisana do rejestru Prescaler wynosi 1 i wartość wpisana do rejestru Auto-reload wynosi 999 wtedy cykl generacji przerwań przez ten przez timer będzie miał długość 1mikrosekundy.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 99 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 10kHz."
-            ],
-            "poprawneOdpowiedzi": [
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 63 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 0 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 1MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 999 wtedy cykl generacji przerwań przez ten przez timer będzie miał długość 1milisekundy.",
-                "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 99 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 10kHz."
-            ],
-            "wyjasnienie": "częstotliwość taktowania timera/[(wartość wpisana do rejestru Prescaler+1) x (wartość wpisana do rejestru Auto-reload +1)]",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 15,
-            "type": "matching",
-            "text": "Wskaż prawidłowe pary wartości sygnału analogowego podłączonego do wejścia ADC i wyniku konwersji analogowo-cyfrowej. Parametry ADC są następujące: unipolarny zakres przetwarzania („VREF-” = 0V),  dodatnie napięcie odniesienia „VREF +” = 3,3V, rozdzielczość przetwarzania wynosi: n = 12 bitów.",
-            "lewaStrona": [
-                "Wynik przetwarzania wynosi: d = 4095.",
-                "Wynik przetwarzania wynosi: d = 8192.",
-                "Wynik przetwarzania wynosi: d = 0.",
-                "Wynik przetwarzania wynosi: d = 2048."
-            ],
-            "prawaStrona": [
-                "Wartość analogowa na wejściu ADC: u ≈ 3,3V",
-                "Wartość analogowa na wejściu ADC: u ≈ 0,8192V",
-                "Wartość analogowa na wejściu ADC: u ≈ 2,048V",
-                "Wartość analogowa na wejściu ADC: u ≈ 1,65V",
-                "To nie jest prawidłowa wartość wyjściowa dla takiego przetwornika.",
-                "Wartość analogowa na wejściu ADC: u ≈ 0V"
-            ],
-            "poprawnePary": [
-                [
-                    "Wynik przetwarzania wynosi: d = 4095.",
-                    "Wartość analogowa na wejściu ADC: u ≈ 3,3V"
-                ],
-                [
-                    "Wynik przetwarzania wynosi: d = 8192.",
-                    "To nie jest prawidłowa wartość wyjściowa dla takiego przetwornika."
-                ],
-                [
-                    "Wynik przetwarzania wynosi: d = 0.",
-                    "Wartość analogowa na wejściu ADC: u ≈ 0V"
-                ],
-                [
-                    "Wynik przetwarzania wynosi: d = 2048.",
-                    "Wartość analogowa na wejściu ADC: u ≈ 1,65V"
-                ]
-            ],
-            "wyjasnienie": "d=u/V*(2^n-1)   mamy 12 bitowy czyli max 4095 stąd odpada nr 1",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 16,
-            "type": "multiple-choice",
-            "text": "Wybierz poprawne sformułowania dotyczące metody określanej jako MSI.",
-            "odpowiedzi": [
-                "Suma wartości dwóch komplementarnych sygnałów cyfrowych wynosi zawsze dwa, gdyż sygnały te używają standardu uzupełnień do dwójki (U2).",
-                "Suma wartości dwóch komplementarnych sygnałów cyfrowych jest zawsze równa jeden. Oznacza to, że dwa komplementarne sygnały cyfrowe nigdy nie są jednocześnie aktywne.",
-                "Czas martwy to czas opóźnienia po włączeniu zasilania całego systemu mikroprocesorowego.",
-                "Czas martwy to czas opóźnienia od chwili wyłączenia jednego z tranzystorów do chwili włączenia drugiego tranzystora w danej gałęzi mostka energoelektronicznego."
-            ],
-            "poprawneOdpowiedzi": [
-                "Suma wartości dwóch komplementarnych sygnałów cyfrowych jest zawsze równa jeden. Oznacza to, że dwa komplementarne sygnały cyfrowe nigdy nie są jednocześnie aktywne.",
-                "Czas martwy to czas opóźnienia od chwili wyłączenia jednego z tranzystorów do chwili włączenia drugiego tranzystora w danej gałęzi mostka energoelektronicznego."
-            ],
-            "wyjasnienie": "Slajdy 399, 400",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 17,
-            "type": "multiple-choice",
-            "text": "Wskaż prawidłowe sformułowania dotyczące warstwy fizycznej magistrali CAN.",
-            "odpowiedzi": [
-                "Magistrala CAN pozwala na wysyłanie pola danych o długości do 1500 bajtów.",
-                "Na magistrali CAN występują trzy stany elektryczne: dodatni, zerowy i ujemny.",
-                "Magistrala CAN jest oparta na komunikacji za pomocą tzw. \"skrętki\" jednoparowej i sygnałów różnicowych.",
-                "Identyfikator wiadomości w ramce CAN służy wyłącznie do zaadresowania potencjalnego odbiorcy danych.",
-                "Na magistrali CAN występują dwa stany elektryczne: dominujący i recesywny.",
-                "Magistrala CAN nadaje i jednocześnie odbiera nadawane dane co przyczynia się do unikania potencjalnych kolizji i wykrywania zakłóceń komunikacji."
-            ],
-            "poprawneOdpowiedzi": [
-                "Magistrala CAN jest oparta na komunikacji za pomocą tzw. \"skrętki\" jednoparowej i sygnałów różnicowych.",
-                "Na magistrali CAN występują dwa stany elektryczne: dominujący i recesywny.",
-                "Magistrala CAN nadaje i jednocześnie odbiera nadawane dane co przyczynia się do unikania potencjalnych kolizji i wykrywania zakłóceń komunikacji."
-            ],
-            "wyjasnienie": "Slajd 491",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 18,
-            "type": "matching",
-            "text": "Dopasuj prawidłowe pary dotyczące Ethernetu czasu rzeczywistego.",
-            "lewaStrona": [
-                "Dla najmniej rygorystycznych wymagań",
-                "Dla najbardziej rygorystycznych aplikacji typu „isochronous RT” („RT Class 3”)",
-                "Przywymaganiach zgodnych z kategorią „hard RT” (tj. „RT Class 2”) "
-            ],
-            "prawaStrona": [
-                "nie jest możliwe wykorzystanie warstwy fizycznej (ang. PHY) Ethernetu.",
-                "typowe jest zastosowanie rozwiązań zgodnych ze standardowym Ethernetem, ale niezgodnych z wyższymi warstwami stosu TCP/IP.",
-                "możliwe jest zastosowanie standardowego stosu TCP/IP.",
-                "zazwyczaj wymagane jest zastosowanie rozwiązań niezgodnych ze stosem TCP IP oraz zastosowanie specjalizowanych sterowników sprzętowych."
-            ],
-            "poprawnePary": [
-                [
-                    "Dla najmniej rygorystycznych wymagań",
-                    "możliwe jest zastosowanie standardowego stosu TCP/IP."
-                ],
-                [
-                    "Dla najbardziej rygorystycznych aplikacji typu „isochronous RT” („RT Class 3”)",
-                    "zazwyczaj wymagane jest zastosowanie rozwiązań niezgodnych ze stosem TCP IP oraz zastosowanie specjalizowanych sterowników sprzętowych."
-                ],
-                [
-                    "Przy wymaganiach zgodnych z kategorią „hard RT” (tj. „RT Class 2”) ",
-                    "typowe jest zastosowanie rozwiązań zgodnych ze standardowym Ethernetem, ale niezgodnych z wyższymi warstwami stosu TCP/IP."
-                ]
-            ],
-            "wyjasnienie": "Slajd 558",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 19,
-            "type": "single-choice",
-            "text": "Sekcje krytyczne to:",
-            "odpowiedzi": [
-                "kod użytkownika, w którym występuje wyjątek krytyczny (ang. critical exception).",
-                "specjalnie oznaczony fragment kodu programu, który musi się wykonywać jako nieprzerwany blok.",
-                "fragment kodu systemu RTOS, którego użytkownik nie może modyfikować."
-            ],
-            "poprawnaOdpowiedz": "specjalnie oznaczony fragment kodu programu, który musi się wykonywać jako nieprzerwany blok.",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 20,
-            "type": "matching",
-            "text": "Proszę wskazać pary liczb o takiej samej wartości dziesiętnej.",
-            "lewaStrona": [
-                "0x0C",
-                "0xFF (w interpretacji U2)",
-                "0x80 (w interpretacji NKB)",
-                "0111 1111b",
-                "0xFF (w interpretacji NKB)",
-                "0x80  (w interpretacji U2)"
-            ],
-            "prawaStrona": [
-                "-1",
-                "128",
-                "0000 1100b",
-                "-128",
-                "127",
-                "255"
-            ],
-            "poprawnePary": [
-                [
-                    "0x0C",
-                    "0000 1100b"
-                ],
-                [
-                    "0xFF (w interpretacji U2)",
-                    "-1"
-                ],
-                [
-                    "0x80 (w interpretacji NKB)",
-                    "128"
-                ],
-                [
-                    "0111 1111b",
-                    "127"
-                ],
-                [
-                    "0xFF (w interpretacji NKB)",
-                    "255"
-                ],
-                [
-                    "0x80  (w interpretacji U2)",
-                    "-128"
-                ]
-            ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 21,
-            "type": "matching",
-            "text": "Dopasuj słowa kluczowe języka C do ich opisów.",
-            "lewaStrona": [
-                "Static",
-                "Extern"
-            ],
-            "prawaStrona": [
-                "oznacza, że poprzedzona nim zmienna musi być zmienną lokalną.",
-                "oznacza, że poprzedzona nim zmienna została zdefiniowana w innym module kodu źródłowego.",
-                "oznacza, że przydzielony tak oznaczonej zmiennej obszar pamięci nie zostanie zwolniony w trakcie działania programu, a zmienna będzie widoczna jedynie w obrębie danego modułu.",
-                "oznacza wyłącznie to, że tak oznaczona zmienna będzie widoczna jedynie w obrębie danego modułu.",
-                "oznacza, że poprzedzona nim zmienna będzie widoczna na zewnątrz dane go modułu.",
-                "oznacza wyłącznie to, że przydzielony tak oznaczonej zmiennej obszar pamięci nie zostanie zwolniony w trakcie działania programu."
-            ],
-            "poprawnePary": [
-                [
-                    "Static",
-                    "oznacza, że przydzielony tak oznaczonej zmiennej obszar pamięci nie zostanie zwolniony w trakcie działania programu, a zmienna będzie widoczna jedynie w obrębie danego modułu."
-                ],
-                [
-                    "Extern",
-                    "oznacza, że poprzedzona nim zmienna została zdefiniowana w innym module kodu źródłowego."
-                ]
-            ],
-            "wyjasnienie": "Slajdy 203, 205",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 22,
-            "type": "multiple-choice",
-            "text": "(niepewne) Wyjaśnij, dlaczego modyfikację wybranych bitów rejestru danych (ODR) portu GPIO dobrze jest wykonywać wykorzystując rejestr BSRR (bit set reset register).(W tym pytaniu jest więcej niż jedna prawidłowa odpowiedź).",
-            "odpowiedzi": [
-                "Ponieważ w mikrokontrolerach ARM Cortex nie ma innej możliwości dokonania takiej operacji.",
-                "Ponieważ jest to operacja bardziej uniwersalna, dostępna na wszystkich rodzajach mikrokontrolerów.",
-                "Ponieważ taka operacja jest szybsza niż dostęp za pomocą \"normalnej\" modyfikacji bitów rejestru ODR.",
-                "Ponieważ jest to taka operacja niepodzielna, tj. atomową (ang. atomic) i dzięki temu nie zostanie przerwana przez żadną funkcję obsługi przerwań (ISR)."
-            ],
-            "poprawneOdpowiedzi": [
-                "Ponieważ taka operacja jest szybsza niż dostęp za pomocą \"normalnej\" modyfikacji bitów rejestru ODR.",
-                "Ponieważ jest to taka operacja niepodzielna, tj. atomową (ang. atomic) i dzięki temu nie zostanie przerwana przez żadną funkcję obsługi przerwań (ISR)."
-            ],
-            "wyjasnienie": "Slajdy 245 do weryfikacji i to w chuj",
-            "zdobytePunkty": 0
-        },
-        {
-            "id": 23,
-            "type": "multiple-choice",
-            "text": "Wskaż prawidłowe zdanie(a).",
-            "odpowiedzi": [
-                "Im wyższa częstotliwość komutacji (czyli częstotliwość generowanych impulsów MSI), tym lepsza jakość sterowanego nimi sygnału ciągłego.",
-                "Wydajność mikrokontrolera jest jedynym ograniczeniem dla zwiększenia częstotliwości impulsów MSI do dowolnej wartości w praktycznych zastosowaniach z wykorzystaniem urządzeń energoelektronicznych.",
-                "Im wyższa częstotliwość komutacji (tj. częstotliwość generowanych impulsów MSI), tym MCU ma mniej czasu na wykonanie określonego algorytmu sterowania zaimplementowanego w funkcji ISR zsynchronizowanej z cyklem pracy generatora MSI.",
-                "Częstotliwość komutacji (czyli częstotliwość generowanych impulsów MSI) nie ma wpływu na jakość sterowanego nimi sygnału ciągłego.Częstotliwość komutacji (czyli częstotliwość generowanych impulsów MSI) nie ma wpływu na jakość sterowanego nimi sygnału ciągłego."
-            ],
-            "poprawneOdpowiedzi": [
-                "Im wyższa częstotliwość komutacji (czyli częstotliwość generowanych impulsów MSI), tym lepsza jakość sterowanego nimi sygnału ciągłego.",
-                "Im wyższa częstotliwość komutacji (tj. częstotliwość generowanych impulsów MSI), tym MCU ma mniej czasu na wykonanie określonego algorytmu sterowania zaimplementowanego w funkcji ISR zsynchronizowanej z cyklem pracy generatora MSI."
-            ],
-            "wyjasnienie": "Slajd 371 nie znalazłem do ma mniej czasu na ...",
-            "zdobytePunkty": 0
-        },
-        {
-            "id": 24,
-            "type": "matching",
-            "text": "(niepewne) Dopasuj prawidłowe pary.",
-            "lewaStrona": [
-                "SPI",
-                "I2C",
-                "Fast Ethernet"
-            ],
-            "prawaStrona": [
-                "to wewnętrzna magistrala szeregowa asynchroniczna oferująca komunikację dwukierunkowa niejednoczesną (ang. half-duplex).",
-                "to zewnętrzna magistrala szeregowa asynchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex).",
-                "to wewnętrzna magistrala szeregowa asynchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex).",
-                "to wewnętrzna magistrala szeregowa synchroniczna oferująca komunikację dwukierunkowa niejednoczesną (ang. half-duplex).",
-                "to wewnętrzna magistrala szeregowa synchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex).",
-                "to zewnętrzna magistrala szeregowa synchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex)."
-            ],
-            "poprawnePary": [
-                [
-                    "SPI",
-                    "to wewnętrzna magistrala szeregowa synchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex)."
-                ],
-                [
-                    "I2C",
-                    "to wewnętrzna magistrala szeregowa synchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex)."
-                ],
-                [
-                    "Fast Ethernet",
-                    "to zewnętrzna magistrala szeregowa asynchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex)."
-                ]
-            ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 0
-        },
-        {
-            "id": 25,
-            "type": "matching",
-            "text": "Dopasuj prawidłowe pary dotyczące modeli interakcji w systemach komunikacji.",
-            "lewaStrona": [
-                "Model wydawca-prenumerator (ang. publisher-subscriber)",
-                "Model producent-konsument (ang. producer-consumer)",
-                "Model klient-serwer (ang. client-server)"
-            ],
-            "prawaStrona": [
-                "oparty jest na jawnym (ang. explicit), indywidualnym (ang. unicast) adresowaniu.",
-                "oparty jest na adresowaniu grupowym (ang. multicast).",
-                "jest jedynym modelem gwarantującym determinizm w systemach komunikacji czasu rzeczywistego.",
-                "oparty jest na adresowaniu rozgłoszeniowym (ang. broadcast).",
-                "nie nadaje się do zastosowania w systemach komunikacji czasu rzeczywistego."
-            ],
-            "poprawnePary": [
-                [
-                    "Model wydawca-prenumerator (ang. publisher-subscriber)",
-                    "oparty jest na adresowaniu grupowym (ang. multicast)."
-                ],
-                [
-                    "Model producent-konsument (ang. producer-consumer)",
-                    "oparty jest na adresowaniu rozgłoszeniowym (ang. broadcast)."
-                ],
-                [
-                    "Model klient-serwer (ang. client-server)",
-                    "oparty jest na jawnym (ang. explicit), indywidualnym (ang. unicast) adresowaniu."
-                ]
-            ],
-            "wyjasnienie": "Slajdy 529, 530",
-            "zdobytePunkty": 0
-        },
-        {
-            "id": 26,
-            "type": "single-choice",
-            "text": "W RTOS w pierwszej kolejności zawsze będzie się wykonywało zadanie:",
-            "odpowiedzi": [
-                "o najwyższy priorytecie, które nie jest w trybie oczekiwania lub zablokowania (tj. WAIT lub BLOCKED).",
-                "o najniższym priorytecie.",
-                "które zostało utworzone jako pierwsze.",
-                "o najwyższym priorytecie."
-            ],
-            "poprawnaOdpowiedz": "o najwyższy priorytecie, które nie jest w trybie oczekiwania lub zablokowania (tj. WAIT lub BLOCKED).",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 27,
-            "type": "single-choice",
-            "text": "Sposób organizacji pamięci komputera, w którym mniej znaczące bajty słowa zapisywane są w komórkach o niższych adresach, nosi nazwę",
-            "odpowiedzi": [
-                "big endian.",
-                "little endian.",
-                "Harvard.",
-                "middle endian."
-            ],
-            "poprawnaOdpowiedz": "little endian.",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 28,
-            "type": "matching",
-            "text": "(niepewne) Dopasuj nazwy zjawisk do ich opisów.",
-            "lewaStrona": [
-                "Przesterowanie (ang. overshoot)",
-                "Przesłuch jest większy",
-                "Przesłuch (ang. crosstalk) ",
-                "Zarówno przesłuch jak i przesterowanie"
-            ],
-            "prawaStrona": [
-                "to niekorzystne zjawiska, które mogą prowadzić do nieprawidłowej pracy systemu cyfrowego i z tego powodu muszą być eliminowane.",
-                "to efekt polegający na przedostawanie się zakłóceń z jednego sygnału na drugi sygnał (znajdujący się w pobliżu) podczas szybkiej zmiany stanu pierwszego sygnału.",
-                "gdy szybkość narastania sygnału jest wyższa, tj. czas narastania jest krótszy.",
-                "to efekt polegający na przekroczeniu przez sygnał cyfrowy wartości docelowej podczas jego zmiany z wartości niskiej na wysoką lub odwrotnie.",
-                "gdy szybkość narastania sygnału jest niższa, tj. czas narastania jest dłuższy.",
-                "to zjawiska korzystne dla systemu cyfrowego."
-            ],
-            "poprawnePary": [
-                [
-                    "Przesterowanie (ang. overshoot)",
-                    "to efekt polegający na przekroczeniu przez sygnał cyfrowy wartości docelowej podczas jego zmiany z wartości niskiej na wysoką lub odwrotnie."
-                ],
-                [
-                    "Przesłuch jest większy",
-                    "gdy szybkość narastania sygnału jest wyższa, tj. czas narastania jest krótszy."
-                ],
-                [
-                    "Przesłuch (ang. crosstalk) ",
-                    "to efekt polegający na przedostawanie się zakłóceń z jednego sygnału na drugi sygnał (znajdujący się w pobliżu) podczas szybkiej zmiany stanu pierwszego sygnału."
-                ],
-                [
-                    "Zarówno przesłuch jak i przesterowanie",
-                    "to niekorzystne zjawiska, które mogą prowadzić do nieprawidłowej pracy systemu cyfrowego i z tego powodu muszą być eliminowane."
-                ]
-            ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 0
-        },
-        {
-            "id": 28,
-            "type": "matching",
-            "text": "Dopasuj do siebie prawdziwe początki i końce następujących zdań dotyczących przerwań o konfigurowalnym priorytecie.",
-            "lewaStrona": [
+        "id": 0,
+        "type": "multiple-choice",
+        "text": "Wyjaśnij, dlaczego modyfikację wybranych bitów rejestru danych (ODR) portu GPIO dobrze jest wykonywać wykorzystując rejestr BSRR (bit set reset register).(W tym pytaniu jest więcej niż jedna prawidłowa odpowiedź).",
+        "odpowiedzi": [
+            "Ponieważ jest to taka operacja niepodzielna, tj. atomową (ang. atomic) i dzięki temu nie zostanie przerwana przez żadną funkcję obsługi przerwań (ISR).",
+            "Ponieważ taka operacja jest szybsza niż dostęp za pomocą \"normalnej\" modyfikacji bitów rejestru ODR.",
+            "Ponieważ jest to operacja bardziej uniwersalna, dostępna na wszystkich rodzajach mikrokontrolerów.",
+            "Ponieważ w mikrokontrolerach ARM Cortex nie ma innej możliwości dokonania takiej operacji."
+        ],
+        "poprawneOdpowiedzi": [
+            "Ponieważ jest to taka operacja niepodzielna, tj. atomową (ang. atomic) i dzięki temu nie zostanie przerwana przez żadną funkcję obsługi przerwań (ISR).",
+            "Ponieważ taka operacja jest szybsza niż dostęp za pomocą \"normalnej\" modyfikacji bitów rejestru ODR."
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 1,
+        "type": "matching",
+        "text": "Dopasuj do siebie prawdziwe początki i końce następujących zdań dotyczących przerwań o konfigurowalnym priorytecie.",
+        "lewaStrona": [
+            "Jeśli przerwanie IRQ[1] ma ustawiony taki priorytet jak przerwanie IRQ[0], ale IRQ[0] zostało zgłoszone wcześniej i procesor jest już w trakcie jego obsługi , wtedy",
+            "Jeśli przerwanie IRQ[1] ma ustawioną niższą liczbę określającą priorytet (czyli wyższy priorytet) niż przerwanie IRQ[0] i oba przerwania zostaną zgłoszone w tym samym czasie, wtedy"
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "obsługa IRQ[1] będzie opóźniona względem obsługi IRQ[0].",
+            "zarówno obsługa IRQ[1] jak i IRQ[0] będzie wykonana w tym samym czasie.",
+            "IRQ[1] będzie obsłużone przed IRQ[0]."
+        ],
+        "poprawnePary": [
+            [
                 "Jeśli przerwanie IRQ[1] ma ustawiony taki priorytet jak przerwanie IRQ[0], ale IRQ[0] zostało zgłoszone wcześniej i procesor jest już w trakcie jego obsługi , wtedy",
-                "Jeśli przerwanie IRQ[1] ma ustawioną niższą liczbę określającą priorytet (czyli wyższy priorytet) niż przerwanie IRQ[0] i oba przerwania zostaną zgłoszone w tym samym czasie, wtedy"
-            ],
-            "prawaStrona": [
-                "IRQ[1] będzie obsłużone przed IRQ[0].",
-                "zarówno obsługa IRQ[1] jak i IRQ[0] będzie wykonana w tym samym czasie.",
                 "obsługa IRQ[1] będzie opóźniona względem obsługi IRQ[0]."
             ],
-            "poprawnePary": [
-                [
-                    "Jeśli przerwanie IRQ[1] ma ustawiony taki priorytet jak przerwanie IRQ[0], ale IRQ[0] zostało zgłoszone wcześniej i procesor jest już w trakcie jego obsługi , wtedy",
-                    "obsługa IRQ[1] będzie opóźniona względem obsługi IRQ[0]."
-                ],
-                [
-                    "Jeśli przerwanie IRQ[1] ma ustawioną niższą liczbę określającą priorytet (czyli wyższy priorytet) niż przerwanie IRQ[0] i oba przerwania zostaną zgłoszone w tym samym czasie, wtedy",
-                    "IRQ[1] będzie obsłużone przed IRQ[0]."
-                ]
+            [
+                "Jeśli przerwanie IRQ[1] ma ustawioną niższą liczbę określającą priorytet (czyli wyższy priorytet) niż przerwanie IRQ[0] i oba przerwania zostaną zgłoszone w tym samym czasie, wtedy",
+                "IRQ[1] będzie obsłużone przed IRQ[0]."
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 2,
+        "type": "single-choice",
+        "text": "Wskaż właściwy opis wyjaśniający skrót RTX z obszaru systemów operacyjnych czasu rzeczywistego.",
+        "odpowiedzi": [
+            "RTX to implementacja jądra (ang. kernel) systemu operacyjnego czasu rzeczywistego.",
+            "RTX to skrót od pojęcia \"Read Time eXtension\".",
+            "RTX to kompletny system operacyjny czasu rzeczywistego."
+        ],
+        "poprawnaOdpowiedz": "RTX to implementacja jądra (ang. kernel) systemu operacyjnego czasu rzeczywistego.",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 3,
+        "type": "matching",
+        "text": "Dopasuj nazwy kategorii systemów czasu rzeczywistego do ich opisów.",
+        "lewaStrona": [
+            "W systemach o łagodnych wymaganiach czasowych (ang. soft real-time system)",
+            "W systemach o mocnych wymaganiach czasowych (ang. firm real-time system)",
+            "W systemach o rygorystycznych wymaganiach czasowych (ang. hard real-time system)"
+        ],
+        "prawaStrona": [
+            "dopuszczalne jest niedotrzymanie ograniczenia czasowego.",
+            "dane wypracowane z opóźnieniem są nieprzydatne, ale sytuacja taka (jeśli występuje sporadycznie) nie zagraża poprawności działania całego systemu.",
+            "sporadyczne niedotrzymanie ograniczenia czasowego jest niekorzystne ale dopuszczalne. Dane wypracowane z opóźnieniem są przydatne i wykorzystywane w pracy systemu.",
+            "wymagane jest bezwzględne spełnianie wszystkich wymagań czasowych. Jakiekolwiek niedotrzymanie  ograniczenia czasowego jest niedopuszczalne i traktowane jest jako awaria systemu."
+        ],
+        "poprawnePary": [
+            [
+                "W systemach o łagodnych wymaganiach czasowych (ang. soft real-time system)",
+                "sporadyczne niedotrzymanie ograniczenia czasowego jest niekorzystne ale dopuszczalne. Dane wypracowane z opóźnieniem są przydatne i wykorzystywane w pracy systemu."
             ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 29,
-            "type": "multiple-choice",
-            "text": "Wyjaśnij, w jaki sposób można mierzyć wiele sygnałów analogowych (kanałów) za pomocą pojedynczego przetwornika ADC.",
-            "odpowiedzi": [
-                "Konfiguracja multipleksera w ADC, aby podłączyć jednocześnie wszystkie mierzone kanały do wejścia ADC. Następnie rozpoczęcie procesu konwersji, oczekiwanie na jej zakończenie i odczyt wyników.Konfiguracja multipleksera w ADC, aby podłączyć jednocześnie wszystkie mierzone kanały do wejścia ADC. Następnie rozpoczęcie procesu konwersji, oczekiwanie na jej zakończenie i odczyt wyników.",
-                "Konfiguracja multipleksera w ADC w celu wskazania pierwszego kanału, rozpoczęcie procesu konwersji, oczekiwanie na jej zakończenie, a następnie odczyt wyniku konwersji. Powtórzenie tych czynności dla kolejnych kanałów.",
-                "Nie jest to możliwe za pomocą pojedynczego ADC.Nie jest to możliwe za pomocą pojedynczego ADC.",
-                "Zdefiniowanie grupy kanałów, które będą automatycznie i sekwencyjnie konwertowane przez ADC, uruchomienie konwersji, a po jej zakończeniu odczyt wyników z tablicy w pamięci RAM."
+            [
+                "W systemach o mocnych wymaganiach czasowych (ang. firm real-time system)",
+                "dane wypracowane z opóźnieniem są nieprzydatne, ale sytuacja taka (jeśli występuje sporadycznie) nie zagraża poprawności działania całego systemu."
             ],
-            "poprawneOdpowiedzi": [
-                "Zdefiniowanie grupy kanałów, które będą automatycznie i sekwencyjnie konwertowane przez ADC, uruchomienie konwersji, a po jej zakończeniu odczyt wyników z tablicy w pamięci RAM.",
-                "Konfiguracja multipleksera w ADC w celu wskazania pierwszego kanału, rozpoczęcie procesu konwersji, oczekiwanie na jej zakończenie, a następnie odczyt wyniku konwersji. Powtórzenie tych czynności dla kolejnych kanałów."
+            [
+                "W systemach o rygorystycznych wymaganiach czasowych (ang. hard real-time system)",
+                "wymagane jest bezwzględne spełnianie wszystkich wymagań czasowych. Jakiekolwiek niedotrzymanie  ograniczenia czasowego jest niedopuszczalne i traktowane jest jako awaria systemu."
+            ]
+        ],
+        "wyjasnienie": "Slajdy 57,58,59",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 4,
+        "type": "multiple-choice",
+        "text": "Wskaż właściwe zakończenie następującego zdania: Modyfikator \"volatile\" ...",
+        "odpowiedzi": [
+            "wymusza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
+            "wyłącza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
+            "jest konieczny w przypadku definicji wskaźników na fizyczne rejestry znajdujące się w przestrzeni I/O procesora.",
+            "służy do definicji zmiennej lokalnej."
+        ],
+        "poprawneOdpowiedzi": [
+            "wyłącza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
+            "jest konieczny w przypadku definicji wskaźników na fizyczne rejestry znajdujące się w przestrzeni I/O procesora."
+        ],
+        "wyjasnienie": "Modyfikator volatile wyłącza zatem optymalizację dostępu do przestrzeni I/O procesora dla danej zmiennej lub rejestru.",
+        "zdobytePunkty": 1
+    },
+    {
+        "id": 5,
+        "type": "multiple-choice",
+        "text": "Wskaż funkcje, jakie może pełnić dyrektywa preprocesora #define.(W tym pytaniu prawidłowa jest więcej niż jedna odpowiedź.)",
+        "odpowiedzi": [
+            "Dyrektywa #define jest przeznaczona do tworzenia funkcji typu inline.",
+            "Dyrektywa #define może być wykorzystana do definicji symboli (lub pustych symboli, tj. etykiet).",
+            "Dyrektywa #define jest przeznaczona do definicji funkcji nie zwracających wyniku (tj. oznaczonych jakovoid ).",
+            "Dyrektywa #define może być wykorzystana do tworzenia makrodefinicji.",
+            "Dyrektywa #define może być wykorzystana do definicji stałych."
+        ],
+        "poprawneOdpowiedzi": [
+            "Dyrektywa #define może być wykorzystana do definicji symboli (lub pustych symboli, tj. etykiet).",
+            "Dyrektywa #define może być wykorzystana do tworzenia makrodefinicji.",
+            "Dyrektywa #define może być wykorzystana do definicji stałych."
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 6,
+        "type": "matching",
+        "text": "Dopasuj nazwę stanu (status), w jakim mogą się znajdować wyjątki w procesorach ARM Cortex-M do do opisu tego stanu.",
+        "lewaStrona": [
+            "Active and pending",
+            "Blocked",
+            "Active",
+            "Inactive",
+            "Pending"
+        ],
+        "prawaStrona": [
+            "Wyjątek jest aktualnie niszczony.",
+            "Dany wyjątek nie jest aktywny i nie jest oczekujący.",
+            "Wyjątek oczekuje na obsługę ze strony procesora.",
+            "Nie ma takiego stanu wyjątku w procesorach ARM Cortex-M.",
+            "Jest to wyjątek który jest aktualnie przetwarzany przez procesor i jego przetwarzanie nie jest jeszcze zakończone.",
+            "Wyjątek jest aktualnie obsługiwany przez procesor oraz, w tym samym czasie, w wyniku kolejnego zgłoszenia istnieje oczekujący wyjątek pochodzący z tego samego źródła."
+        ],
+        "poprawnePary": [
+            [
+                "Active and pending",
+                "Wyjątek jest aktualnie obsługiwany przez procesor oraz, w tym samym czasie, w wyniku kolejnego zgłoszenia istnieje oczekujący wyjątek pochodzący z tego samego źródła."
             ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 30,
-            "type": "matching",
-            "text": "Dopasuj prawidłowe sformułowania.",
-            "lewaStrona": [
+            [
+                "Blocked",
+                "Nie ma takiego stanu wyjątku w procesorach ARM Cortex-M."
+            ],
+            [
+                "Active",
+                "Jest to wyjątek który jest aktualnie przetwarzany przez procesor i jego przetwarzanie nie jest jeszcze zakończone."
+            ],
+            [
+                "Inactive",
+                "Dany wyjątek nie jest aktywny i nie jest oczekujący."
+            ],
+            [
+                "Pending",
+                "Wyjątek oczekuje na obsługę ze strony procesora."
+            ]
+        ],
+        "wyjasnienie": "Slajd 298",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 7,
+        "type": "multiple-choice",
+        "text": "Charakterystyczne parametry ADC i DAC to:(Na to pytanie jest więcej niż jedna poprawna odpowiedź.)",
+        "odpowiedzi": [
+            "typowa temperatura układu podczas pracy.",
+            "typ używanej arytmetyki zmiennoprzecinkowej.",
+            "rozdzielczość wyrażona liczbą bitów liczby całkowitej będącej wyjściem ADC lub wejściem DAC.",
+            "liczba kanałów - czyli oddzielnych wejściowych lub wyjściowych linii analogowych.",
+            "czas przetwarzania wyrażony w sekundach (lub prędkość przetwarzania / częstotliwość próbkowania / itd. wyrażona w próbkach na sekundę, SPS)."
+        ],
+        "poprawneOdpowiedzi": [
+            "rozdzielczość wyrażona liczbą bitów liczby całkowitej będącej wyjściem ADC lub wejściem DAC.",
+            "liczba kanałów - czyli oddzielnych wejściowych lub wyjściowych linii analogowych.",
+            "czas przetwarzania wyrażony w sekundach (lub prędkość przetwarzania / częstotliwość próbkowania / itd. wyrażona w próbkach na sekundę, SPS)."
+        ],
+        "wyjasnienie": "Slajd 334",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 8,
+        "type": "matching",
+        "text": "Dopasuj prawidłowe wyrażenia.(MSITryb)",
+        "lewaStrona": [
+            "W trybie edge-align generatora MSI, ",
+            "W trybie center-align generatora MSI",
+            "Punkty pomiarowe w trybie center-aligned"
+        ],
+        "prawaStrona": [
+            "licznik generatora może liczyć w górę lub w dół w zależności od konfiguracji.",
+            "są umieszczone z dala od punktów komutacyjnych.",
+            "są umieszczane dokładnie w punktach komutacyjnych.",
+            "licznik generatora MSI liczy w górę, a następnie przestaje liczyć.",
+            "licznik generatora liczy naprzemiennie, w górę i w dół."
+        ],
+        "poprawnePary": [
+            [
+                "W trybie edge-align generatora MSI, ",
+                "licznik generatora może liczyć w górę lub w dół w zależności od konfiguracji."
+            ],
+            [
+                "W trybie center-align generatora MSI",
+                "licznik generatora liczy naprzemiennie, w górę i w dół."
+            ],
+            [
+                "Punkty pomiarowe w trybie center-aligned",
+                "są umieszczone z dala od punktów komutacyjnych."
+            ]
+        ],
+        "wyjasnienie": "Slajdy 395, 407",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 9,
+        "type": "multiple-choice",
+        "text": "Wskaż prawidłowe sformułowania dotyczące magistrali CAN.",
+        "odpowiedzi": [
+            "W CAN zastosowano taką metodę arbitrażu dostępu wielu nadawców do współdzielonego medium, któragwarantuje deterministyczne dostarczanie komunikatów w zdefiniowanym przedzialeczasu. ",
+            "CAN jest siecią typu master-slaves.",
+            "CAN jest siecią typu multi-slaves.",
+            "CAN jest siecią typu multi-master.",
+            "CAN to magistrala, który efektywnie wspierakomunikację czasu rzeczywistego na odległość do 40m lub w pewnych warunkach na wyższe odległości."
+        ],
+        "poprawneOdpowiedzi": [
+            "W CAN zastosowano taką metodę arbitrażu dostępu wielu nadawców do współdzielonego medium, któragwarantuje deterministyczne dostarczanie komunikatów w zdefiniowanym przedzialeczasu. ",
+            "CAN jest siecią typu multi-master.",
+            "CAN to magistrala, który efektywnie wspierakomunikację czasu rzeczywistego na odległość do 40m lub w pewnych warunkach na wyższe odległości."
+        ],
+        "wyjasnienie": "Slajd 483",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 10,
+        "type": "multiple-choice",
+        "text": "Wskaż prawidłowe sformułowania dotyczące metod komunikacji wyzwalanej zdarzeniami (ang. event-driven) w porównaniu do metody wyzwalanej upływem czasu (ang. time-driven).",
+        "odpowiedzi": [
+            "Wadą komunikacji event-driven (w porównaniu do time-driven) jest dłuższyczas reakcji w sytuacjach, w których występuje nagromadzenie zbyt dużej ilości zdarzeń w krótkim odcinkuczasu.",
+            "Komunikacja time-driven nie pozwala na uzyskanie determinizmu czasowego.",
+            "Zaletą komunikacji event-driven (w porównaniu do time-driven) jest w niektórych sytuacjach krótszy czas reakcji.",
+            "Komunikacja event-driven gwarantuje determinizm czasowy w każdych warunkach."
+        ],
+        "poprawneOdpowiedzi": [
+            "Wadą komunikacji event-driven (w porównaniu do time-driven) jest dłuższyczas reakcji w sytuacjach, w których występuje nagromadzenie zbyt dużej ilości zdarzeń w krótkim odcinkuczasu.",
+            "Zaletą komunikacji event-driven (w porównaniu do time-driven) jest w niektórych sytuacjach krótszy czas reakcji."
+        ],
+        "wyjasnienie": "Slajdy 519 ,520",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 11,
+        "type": "single-choice",
+        "text": "Oprogramowanie bazujące na RTOS jest w stanie zareagować na zdarzenia zewnętrzne równie szybko jak oprogramowanie utworzone w oparciu o model \"bare-metal\".",
+        "odpowiedzi": [
+            "Prawda",
+            "Fałsz"
+        ],
+        "poprawnaOdpowiedz": "Fałsz",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 12,
+        "type": "matching",
+        "text": "Wskaż prawidłowe wyniki operacji binarnych, gdzie 'a', 'b' i 'c' to zmienne 8-bitowe bez znaku (uint8_t).",
+        "lewaStrona": [
+            "a = 0x0F;b = a << 4;",
+            "a = 0x7F;b = 0x87;c = a | b;",
+            "a = 0x7F;b = 0x87;c = a & b;",
+            "a = ~( 1 << 4 );",
+            "a = 1 << 4;",
+            "a = 0x0F;b = 1 << 6;c = a | b;"
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "0x10",
+            "0x4F",
+            "0xEF",
+            "0xF0",
+            "0xFF",
+            "0x11",
+            "0x07",
+            "0x00"
+        ],
+        "poprawnePary": [
+            [
+                "a = 0x0F;b = a << 4;",
+                "0xF0"
+            ],
+            [
+                "a = 0x7F;b = 0x87;c = a | b;",
+                "0xFF"
+            ],
+            [
+                "a = 0x7F;b = 0x87;c = a & b;",
+                "0x07"
+            ],
+            [
+                "a = ~( 1 << 4 );",
+                "0xEF"
+            ],
+            [
+                "a = 1 << 4;",
+                "0x10"
+            ],
+            [
+                "a = 0x0F;b = 1 << 6;c = a | b;",
+                "0x4F"
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 13,
+        "type": "multiple-choice",
+        "text": "Wskaż prawidłowe odpowiedzi dla mikrokontrolerów ARM Cortex-M z rodziny STM32F1xx.(Dopuszczalna jest więcej niż jedna prawidłowa odpowiedź).",
+        "odpowiedzi": [
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 63 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 64 i wartość wpisana do rejestru Auto-reload wynosi 100 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 10kHz.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 0 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 1MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 999 wtedy cykl generacji przerwań przez ten przez timer będzie miał długość 1milisekundy.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 2MHz, wartość wpisana do rejestru Prescaler wynosi 1 i wartość wpisana do rejestru Auto-reload wynosi 999 wtedy cykl generacji przerwań przez ten przez timer będzie miał długość 1mikrosekundy.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 99 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 10kHz."
+        ],
+        "poprawneOdpowiedzi": [
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 63 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 0 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 1MHz.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 1MHz, wartość wpisana do rejestru Prescaler wynosi 0 i wartość wpisana do rejestru Auto-reload wynosi 999 wtedy cykl generacji przerwań przez ten przez timer będzie miał długość 1milisekundy.",
+            "Jeśli częstotliwość taktowania timera liczącego w górę wynosi 64MHz, wartość wpisana do rejestru Prescaler wynosi 63 i wartość wpisana do rejestru Auto-reload wynosi 99 wtedy częstotliwość generacji sygnału przerwań ten przez timer będzie wynosiła 10kHz."
+        ],
+        "wyjasnienie": "częstotliwość taktowania timera/[(wartość wpisana do rejestru Prescaler+1) x (wartość wpisana do rejestru Auto-reload +1)]",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 14,
+        "type": "matching",
+        "text": "Wskaż prawidłowe pary wartości sygnału analogowego podłączonego do wejścia ADC i wyniku konwersji analogowo-cyfrowej. Parametry ADC są następujące: unipolarny zakres przetwarzania („VREF-” = 0V),  dodatnie napięcie odniesienia „VREF +” = 3,3V, rozdzielczość przetwarzania wynosi: n = 12 bitów.",
+        "lewaStrona": [
+            "Wynik przetwarzania wynosi: d = 4095.",
+            "Wynik przetwarzania wynosi: d = 8192.",
+            "Wynik przetwarzania wynosi: d = 0.",
+            "Wynik przetwarzania wynosi: d = 2048."
+        ],
+        "prawaStrona": [
+            "Wartość analogowa na wejściu ADC: u ≈ 3,3V",
+            "Wartość analogowa na wejściu ADC: u ≈ 0,8192V",
+            "Wartość analogowa na wejściu ADC: u ≈ 2,048V",
+            "Wartość analogowa na wejściu ADC: u ≈ 1,65V",
+            "To nie jest prawidłowa wartość wyjściowa dla takiego przetwornika.",
+            "Wartość analogowa na wejściu ADC: u ≈ 0V"
+        ],
+        "poprawnePary": [
+            [
+                "Wynik przetwarzania wynosi: d = 4095.",
+                "Wartość analogowa na wejściu ADC: u ≈ 3,3V"
+            ],
+            [
+                "Wynik przetwarzania wynosi: d = 8192.",
+                "To nie jest prawidłowa wartość wyjściowa dla takiego przetwornika."
+            ],
+            [
+                "Wynik przetwarzania wynosi: d = 0.",
+                "Wartość analogowa na wejściu ADC: u ≈ 0V"
+            ],
+            [
+                "Wynik przetwarzania wynosi: d = 2048.",
+                "Wartość analogowa na wejściu ADC: u ≈ 1,65V"
+            ]
+        ],
+        "wyjasnienie": "d=u/V*(2^n-1)   mamy 12 bitowy czyli max 4095 stąd odpada nr 1",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 15,
+        "type": "multiple-choice",
+        "text": "Wybierz poprawne sformułowania dotyczące metody określanej jako MSI.",
+        "odpowiedzi": [
+            "Suma wartości dwóch komplementarnych sygnałów cyfrowych wynosi zawsze dwa, gdyż sygnały te używają standardu uzupełnień do dwójki (U2).",
+            "Suma wartości dwóch komplementarnych sygnałów cyfrowych jest zawsze równa jeden. Oznacza to, że dwa komplementarne sygnały cyfrowe nigdy nie są jednocześnie aktywne.",
+            "Czas martwy to czas opóźnienia po włączeniu zasilania całego systemu mikroprocesorowego.",
+            "Czas martwy to czas opóźnienia od chwili wyłączenia jednego z tranzystorów do chwili włączenia drugiego tranzystora w danej gałęzi mostka energoelektronicznego."
+        ],
+        "poprawneOdpowiedzi": [
+            "Suma wartości dwóch komplementarnych sygnałów cyfrowych jest zawsze równa jeden. Oznacza to, że dwa komplementarne sygnały cyfrowe nigdy nie są jednocześnie aktywne.",
+            "Czas martwy to czas opóźnienia od chwili wyłączenia jednego z tranzystorów do chwili włączenia drugiego tranzystora w danej gałęzi mostka energoelektronicznego."
+        ],
+        "wyjasnienie": "Slajdy 399, 400",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 16,
+        "type": "multiple-choice",
+        "text": "Wskaż prawidłowe sformułowania dotyczące warstwy fizycznej magistrali CAN.",
+        "odpowiedzi": [
+            "Magistrala CAN pozwala na wysyłanie pola danych o długości do 1500 bajtów.",
+            "Na magistrali CAN występują trzy stany elektryczne: dodatni, zerowy i ujemny.",
+            "Magistrala CAN jest oparta na komunikacji za pomocą tzw. \"skrętki\" jednoparowej i sygnałów różnicowych.",
+            "Identyfikator wiadomości w ramce CAN służy wyłącznie do zaadresowania potencjalnego odbiorcy danych.",
+            "Na magistrali CAN występują dwa stany elektryczne: dominujący i recesywny.",
+            "Magistrala CAN nadaje i jednocześnie odbiera nadawane dane co przyczynia się do unikania potencjalnych kolizji i wykrywania zakłóceń komunikacji."
+        ],
+        "poprawneOdpowiedzi": [
+            "Magistrala CAN jest oparta na komunikacji za pomocą tzw. \"skrętki\" jednoparowej i sygnałów różnicowych.",
+            "Na magistrali CAN występują dwa stany elektryczne: dominujący i recesywny.",
+            "Magistrala CAN nadaje i jednocześnie odbiera nadawane dane co przyczynia się do unikania potencjalnych kolizji i wykrywania zakłóceń komunikacji."
+        ],
+        "wyjasnienie": "Slajd 491",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 17,
+        "type": "matching",
+        "text": "Dopasuj prawidłowe pary dotyczące Ethernetu czasu rzeczywistego.",
+        "lewaStrona": [
+            "Dla najmniej rygorystycznych wymagań",
+            "Dla najbardziej rygorystycznych aplikacji typu „isochronous RT” („RT Class 3”)",
+            "Przy wymaganiach zgodnych z kategorią „hard RT” (tj. „RT Class 2”) "
+        ],
+        "prawaStrona": [
+            "nie jest możliwe wykorzystanie warstwy fizycznej (ang. PHY) Ethernetu.",
+            "typowe jest zastosowanie rozwiązań zgodnych ze standardowym Ethernetem, ale niezgodnych z wyższymi warstwami stosu TCP/IP.",
+            "możliwe jest zastosowanie standardowego stosu TCP/IP.",
+            "zazwyczaj wymagane jest zastosowanie rozwiązań niezgodnych ze stosem TCP/IP oraz zastosowanie specjalizowanych sterowników sprzętowych."
+        ],
+        "poprawnePary": [
+            [
+                "Dla najmniej rygorystycznych wymagań",
+                "możliwe jest zastosowanie standardowego stosu TCP/IP."
+            ],
+            [
+                "Dla najbardziej rygorystycznych aplikacji typu „isochronous RT” („RT Class 3”)",
+                "zazwyczaj wymagane jest zastosowanie rozwiązań niezgodnych ze stosem TCP/IP oraz zastosowanie specjalizowanych sterowników sprzętowych."
+            ],
+            [
+                "Przy wymaganiach zgodnych z kategorią „hard RT” (tj. „RT Class 2”) ",
+                "typowe jest zastosowanie rozwiązań zgodnych ze standardowym Ethernetem, ale niezgodnych z wyższymi warstwami stosu TCP/IP."
+            ]
+        ],
+        "wyjasnienie": "Slajd 558",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 18,
+        "type": "matching",
+        "text": "Proszę wskazać pary liczb o takiej samej wartości dziesiętnej.",
+        "lewaStrona": [
+            "0x0C",
+            "0xFF (w interpretacji U2)",
+            "0x80 (w interpretacji NKB)",
+            "0111 1111b",
+            "0xFF (w interpretacji NKB)",
+            "0x80  (w interpretacji U2)"
+        ],
+        "prawaStrona": [
+            "-1",
+            "128",
+            "0000 1100b",
+            "-128",
+            "127",
+            "255"
+        ],
+        "poprawnePary": [
+            [
+                "0x0C",
+                "0000 1100b"
+            ],
+            [
+                "0xFF (w interpretacji U2)",
+                "-1"
+            ],
+            [
+                "0x80 (w interpretacji NKB)",
+                "128"
+            ],
+            [
+                "0111 1111b",
+                "127"
+            ],
+            [
+                "0xFF (w interpretacji NKB)",
+                "255"
+            ],
+            [
+                "0x80  (w interpretacji U2)",
+                "-128"
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 19,
+        "type": "matching",
+        "text": "Dopasuj słowa kluczowe języka C do ich opisów.",
+        "lewaStrona": [
+            "Static",
+            "Extern"
+        ],
+        "prawaStrona": [
+            "oznacza, że poprzedzona nim zmienna musi być zmienną lokalną.",
+            "oznacza, że poprzedzona nim zmienna została zdefiniowana w innym module kodu źródłowego.",
+            "oznacza, że przydzielony tak oznaczonej zmiennej obszar pamięci nie zostanie zwolniony w trakcie działania programu, a zmienna będzie widoczna jedynie w obrębie danego modułu.",
+            "oznacza wyłącznie to, że tak oznaczona zmienna będzie widoczna jedynie w obrębie danego modułu.",
+            "oznacza, że poprzedzona nim zmienna będzie widoczna na zewnątrz dane go modułu.",
+            "oznacza wyłącznie to, że przydzielony tak oznaczonej zmiennej obszar pamięci nie zostanie zwolniony w trakcie działania programu."
+        ],
+        "poprawnePary": [
+            [
+                "Static",
+                "oznacza, że przydzielony tak oznaczonej zmiennej obszar pamięci nie zostanie zwolniony w trakcie działania programu, a zmienna będzie widoczna jedynie w obrębie danego modułu."
+            ],
+            [
+                "Extern",
+                "oznacza, że poprzedzona nim zmienna została zdefiniowana w innym module kodu źródłowego."
+            ]
+        ],
+        "wyjasnienie": "Slajdy 203, 205",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 20,
+        "type": "single-choice",
+        "text": "Sposób organizacji pamięci komputera, w którym mniej znaczące bajty słowa zapisywane są w komórkach o niższych adresach, nosi nazwę",
+        "odpowiedzi": [
+            "big endian.",
+            "little endian.",
+            "Harvard.",
+            "middle endian."
+        ],
+        "poprawnaOdpowiedz": "little endian.",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 21,
+        "type": "single-choice",
+        "text": "Wyjaśnij, w jaki sposób można mierzyć wiele sygnałów analogowych (kanałów) za pomocą pojedynczego przetwornika ADC.",
+        "odpowiedzi": [
+            "Konfiguracja multipleksera w ADC, aby podłączyć jednocześnie wszystkie mierzone kanały do wejścia ADC. Następnie rozpoczęcie procesu konwersji, oczekiwanie na jej zakończenie i odczyt wyników.Konfiguracja multipleksera w ADC, aby podłączyć jednocześnie wszystkie mierzone kanały do wejścia ADC. Następnie rozpoczęcie procesu konwersji, oczekiwanie na jej zakończenie i odczyt wyników.",
+            "Konfiguracja multipleksera w ADC w celu wskazania pierwszego kanału, rozpoczęcie procesu konwersji, oczekiwanie na jej zakończenie, a następnie odczyt wyniku konwersji. Powtórzenie tych czynności dla kolejnych kanałów.",
+            "Nie jest to możliwe za pomocą pojedynczego ADC.Nie jest to możliwe za pomocą pojedynczego ADC.",
+            "Zdefiniowanie grupy kanałów, które będą automatycznie i sekwencyjnie konwertowane przez ADC, uruchomienie konwersji, a po jej zakończeniu odczyt wyników z tablicy w pamięci RAM."
+        ],
+        "poprawnaOdpowiedz": "Zdefiniowanie grupy kanałów, które będą automatycznie i sekwencyjnie konwertowane przez ADC, uruchomienie konwersji, a po jej zakończeniu odczyt wyników z tablicy w pamięci RAM.",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 22,
+        "type": "matching",
+        "text": "Dopasuj prawidłowe sformułowania.(PWM)",
+        "lewaStrona": [
+            "Jeśli częstotliwość impulsów wynosi 1 kHz, a współczynnik wypełnienia (ang. duty cycle) 50%,",
+            "Jeśli okres generowanych impulsów MSI wynosi 50 mikrosekund, a ich szerokość wynosi 10 mikrosekund,"
+        ],
+        "prawaStrona": [
+            "wtedy szerokość generowanego impulsu wynosi 500 mikrosekund.",
+            "wtedy szerokość generowanego impulsu wynosi 500 milisekund.",
+            "wtedy szerokość generowanego impulsu wynosi 1 milisekundę.",
+            "wtedy częstotliwość impulsów wynosi 20 kHz, a współczynnik wypełnienia (ang. duty cycle) 20%.",
+            "wtedy częstotliwość impulsów wynosi 50 kHz, a współczynnik wypełnienia (ang. duty cycle) 10%."
+        ],
+        "poprawnePary": [
+            [
                 "Jeśli częstotliwość impulsów wynosi 1 kHz, a współczynnik wypełnienia (ang. duty cycle) 50%,",
-                "Jeśli okres generowanych impulsów MSI wynosi 50 mikrosekund, a ich szerokość wynosi 10 mikrosekund,"
+                "wtedy szerokość generowanego impulsu wynosi 500 mikrosekund."
             ],
-            "prawaStrona": [
-                "wtedy szerokość generowanego impulsu wynosi 500 mikrosekund.",
-                "wtedy szerokość generowanego impulsu wynosi 500 milisekund.",
-                "wtedy szerokość generowanego impulsu wynosi 1 milisekundę.",
-                "wtedy częstotliwość impulsów wynosi 20 kHz, a współczynnik wypełnienia (ang. duty cycle) 20prc.",
-                "wtedy częstotliwość impulsów wynosi 50 kHz, a współczynnik wypełnienia (ang. duty cycle) 10prc."
-            ],
-            "poprawnePary": [
-                [
-                    "Jeśli częstotliwość impulsów wynosi 1 kHz, a współczynnik wypełnienia (ang. duty cycle) 50%,",
-                    "wtedy szerokość generowanego impulsu wynosi 500 mikrosekund."
-                ],
-                [
-                    "Jeśli okres generowanych impulsów MSI wynosi 50 mikrosekund, a ich szerokość wynosi 10 mikrosekund,",
-                    "wtedy częstotliwość impulsów wynosi 20 kHz, a współczynnik wypełnienia (ang. duty cycle) 20prc."
-                ]
-            ],
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 31,
-            "type": "multiple-choice",
-            "text": "Wskaż prawidłowe sformułowania dotyczące magistral równoległych.",
-            "odpowiedzi": [
-                "Im mniejsza liczba linii magistrali danych tym wyższa jest złożoność i koszt systemu cyfrowego.",
-                "Im większa liczba linii magistrali danych i im wyższa częstotliwość wysyłania danych tym większa jest przepustowość (ang. throughput)takiej magistrali.",
-                "Magistrale równoległe są wypierane w wielu współczesnych systemach cyfrowych przez szybkie magistrale szeregowe.",
-                "Magistrale równoległe to magistrale asynchroniczne."
-            ],
-            "poprawneOdpowiedzi": [
-                "Im większa liczba linii magistrali danych i im wyższa częstotliwość wysyłania danych tym większa jest przepustowość (ang. throughput)takiej magistrali.",
-                "Magistrale równoległe są wypierane w wielu współczesnych systemach cyfrowych przez szybkie magistrale szeregowe."
-            ],
-            "wyjasnienie": "slajdy 463 ",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 32,
-            "type": "multiple-choice",
-            "text": "Determinizm w komunikacji międzykomputerowej:",
-            "odpowiedzi": [
-                "opiera się przede wszystkim na:•wykorzystaniu metody CSMA/CD oraz•przełączników sieciowych.",
-                "opiera się przede wszystkim na:•odpowiednio zaprojektowanym modelu wymiany danych oraz•zastosowanej metodzie bezkolizyjnego dostępu do współdzielonego medium komunikacyjnego.",
-                "jest wymagany w rozproszonych systemach czasu rzeczywistego.",
-                "zależy wyłącznie od zastosowania sprzętu odpowiednio wysokiej jakości."
-            ],
-            "poprawneOdpowiedzi": [
-                "opiera się przede wszystkim na:•odpowiednio zaprojektowanym modelu wymiany danych oraz•zastosowanej metodzie bezkolizyjnego dostępu do współdzielonego medium komunikacyjnego.",
-                "jest wymagany w rozproszonych systemach czasu rzeczywistego."
-            ],
-            "wyjasnienie": "slajd 527",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 33,
-            "type": "single-choice",
-            "text": "Metoda \"Cooperative multitasking\":",
-            "odpowiedzi": [
-                "jest najwygodniejszą dla programisty metodą przełączania zadań w RTOS.",
-                "polega onana jawnym (tj. w sposób zaprojektowany w każdym zadaniu przez programistę)oddawaniu sterowania w celu umożliwienia pracy kolejnemu zadaniu.",
-                "bazuje na przydziale kwantu czasu (ang. time slice) do każdego z zadań."
-            ],
-            "poprawnaOdpowiedz": "polega onana jawnym (tj. w sposób zaprojektowany w każdym zadaniu przez programistę)oddawaniu sterowania w celu umożliwienia pracy kolejnemu zadaniu.",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 34,
-            "type": "single-choice",
-            "text": "Wskaż kod, który spowoduje zapisanie wartości liczbowej równej 5, do pola bitowego mieszczącego się w bitach b7..b4 zmiennej REG, nie zmieniając przy tym stanu innych bitów tej zmiennej.",
-            "odpowiedzi": [
-                "REG = ( REG & (0x0F << 4) )   |   (5<<4);",
-                "REG = 5<<4;",
-                "REG = ( REG & ~(0x0F << 4) )   |   (5<<4);",
-                "REG |= (5<<4);",
-                "REG &= ~(5<<4);"
-            ],
-            "poprawnaOdpowiedz": "REG = ( REG & ~(0x0F << 4) )   |   (5<<4);",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 35,
-            "type": "matching",
-            "text": "Wskaż, jakiego rzędu są czasy narastania i opadania dla poszczególnych trybów pracy linii GPIO.",
-            "lewaStrona": [
+            [
+                "Jeśli okres generowanych impulsów MSI wynosi 50 mikrosekund, a ich szerokość wynosi 10 mikrosekund,",
+                "wtedy częstotliwość impulsów wynosi 20 kHz, a współczynnik wypełnienia (ang. duty cycle) 20%."
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 23,
+        "type": "multiple-choice",
+        "text": "Wskaż prawidłowe sformułowania dotyczące magistral równoległych.",
+        "odpowiedzi": [
+            "Im mniejsza liczba linii magistrali danych tym wyższa jest złożoność i koszt systemu cyfrowego.",
+            "Im większa liczba linii magistrali danych i im wyższa częstotliwość wysyłania danych tym większa jest przepustowość (ang. throughput)takiej magistrali.",
+            "Magistrale równoległe są wypierane w wielu współczesnych systemach cyfrowych przez szybkie magistrale szeregowe.",
+            "Magistrale równoległe to magistrale asynchroniczne."
+        ],
+        "poprawneOdpowiedzi": [
+            "Im większa liczba linii magistrali danych i im wyższa częstotliwość wysyłania danych tym większa jest przepustowość (ang. throughput)takiej magistrali.",
+            "Magistrale równoległe są wypierane w wielu współczesnych systemach cyfrowych przez szybkie magistrale szeregowe."
+        ],
+        "wyjasnienie": "slajdy 463 ",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 24,
+        "type": "multiple-choice",
+        "text": "Determinizm w komunikacji międzykomputerowej:",
+        "odpowiedzi": [
+            "opiera się przede wszystkim na:•wykorzystaniu metody CSMA/CD oraz•przełączników sieciowych.",
+            "opiera się przede wszystkim na:•odpowiednio zaprojektowanym modelu wymiany danych oraz•zastosowanej metodzie bezkolizyjnego dostępu do współdzielonego medium komunikacyjnego.",
+            "jest wymagany w rozproszonych systemach czasu rzeczywistego.",
+            "zależy wyłącznie od zastosowania sprzętu odpowiednio wysokiej jakości."
+        ],
+        "poprawneOdpowiedzi": [
+            "opiera się przede wszystkim na:•odpowiednio zaprojektowanym modelu wymiany danych oraz•zastosowanej metodzie bezkolizyjnego dostępu do współdzielonego medium komunikacyjnego.",
+            "jest wymagany w rozproszonych systemach czasu rzeczywistego."
+        ],
+        "wyjasnienie": "slajd 527",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 25,
+        "type": "single-choice",
+        "text": "Metoda \"Cooperative multitasking\":",
+        "odpowiedzi": [
+            "jest najwygodniejszą dla programisty metodą przełączania zadań w RTOS.",
+            "polega onana jawnym (tj. w sposób zaprojektowany w każdym zadaniu przez programistę)oddawaniu sterowania w celu umożliwienia pracy kolejnemu zadaniu.",
+            "bazuje na przydziale kwantu czasu (ang. time slice) do każdego z zadań."
+        ],
+        "poprawnaOdpowiedz": "polega onana jawnym (tj. w sposób zaprojektowany w każdym zadaniu przez programistę)oddawaniu sterowania w celu umożliwienia pracy kolejnemu zadaniu.",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 26,
+        "type": "single-choice",
+        "text": "Wskaż kod, który spowoduje zapisanie wartości liczbowej równej 5, do pola bitowego mieszczącego się w bitach b7..b4 zmiennej REG, nie zmieniając przy tym stanu innych bitów tej zmiennej.",
+        "odpowiedzi": [
+            "REG = ( REG & (0x0F << 4) )   |   (5<<4);",
+            "REG = 5<<4;",
+            "REG = ( REG & ~(0x0F << 4) )   |   (5<<4);",
+            "REG |= (5<<4);",
+            "REG &= ~(5<<4);"
+        ],
+        "poprawnaOdpowiedz": "REG = ( REG & ~(0x0F << 4) )   |   (5<<4);",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 27,
+        "type": "matching",
+        "text": "Wskaż, jakiego rzędu są czasy narastania i opadania dla poszczególnych trybów pracy linii GPIO.",
+        "lewaStrona": [
+            "Tryb najszybszy (ang. fastest mode) linii GPIO mikrokontrolera ARM STM32-F4 jest rzędu",
+            "Tryb najwolniejszy (ang. slowest mode) linii GPIO mikrokontrolera ARM STM32-F4 jest rzędu"
+        ],
+        "prawaStrona": [
+            "kilkunastu mikrosekund.",
+            "100 nanosekund.",
+            "kilku milisekund.",
+            "kilku mikrosekund.",
+            "100 mikrosekund.",
+            "kilku nanosekund."
+        ],
+        "poprawnePary": [
+            [
                 "Tryb najszybszy (ang. fastest mode) linii GPIO mikrokontrolera ARM STM32-F4 jest rzędu",
-                "Tryb najwolniejszy (ang. slowest mode) linii GPIO mikrokontrolera ARM STM32-F4 jest rzędu"
-            ],
-            "prawaStrona": [
-                "kilkunastu mikrosekund.",
-                "100 nanosekund.",
-                "kilku milisekund.",
-                "kilku mikrosekund.",
-                "100 mikrosekund.",
                 "kilku nanosekund."
             ],
-            "poprawnePary": [
-                [
-                    "Tryb najszybszy (ang. fastest mode) linii GPIO mikrokontrolera ARM STM32-F4 jest rzędu",
-                    "kilku nanosekund."
-                ],
-                [
-                    "Tryb najwolniejszy (ang. slowest mode) linii GPIO mikrokontrolera ARM STM32-F4 jest rzędu",
-                    "100 nanosekund."
-                ]
+            [
+                "Tryb najwolniejszy (ang. slowest mode) linii GPIO mikrokontrolera ARM STM32-F4 jest rzędu",
+                "100 nanosekund."
+            ]
+        ],
+        "wyjasnienie": "Slajdy 258, 259",
+        "zdobytePunkty": 50
+    },
+    {
+        "id": 28,
+        "type": "single-choice",
+        "text": "Zadanie tła:",
+        "odpowiedzi": [
+            "to zawsze dostępne zadanie o najniższym priorytecie, które może zostać wypełnione kodem użytkownika.",
+            "to zawsze dostępne zadanie o najwyższym priorytecie (tzw. planista).",
+            "to zadanie RTOS wywoływane jawnie przez funkcje użytkownika."
+        ],
+        "poprawnaOdpowiedz": "to zawsze dostępne zadanie o najniższym priorytecie, które może zostać wypełnione kodem użytkownika.",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 29,
+        "type": "single-choice",
+        "text": "W RTOS w pierwszej kolejności zawsze będzie się wykonywało zadanie:",
+        "odpowiedzi": [
+            "o najwyższym priorytecie, które nie jest w trybie oczekiwania / zablokowania (tj. WAIT / BLOCKED).",
+            "o najwyższym priorytecie.",
+            "które zostało utworzone jako pierwsze.",
+            "o najniższym priorytecie."
+        ],
+        "poprawnaOdpowiedz": "o najwyższym priorytecie, które nie jest w trybie oczekiwania / zablokowania (tj. WAIT / BLOCKED).",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 30,
+        "type": "matching",
+        "text": "Dopasuj pary instrukcji do ich opisów.",
+        "lewaStrona": [
+            "uint32_t * Pa;",
+            "Pa = 0x200000;",
+            "uint32_t a;",
+            "*Pa = 0x200000;"
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "to definicja wskaźnika na zmienną typu bajt.",
+            "to definicja zmiennej wskaźnikowej wskazującej na zmienną Pa.",
+            "to definicja wskaźnika (zmiennej wskaźnikowej) na 32-bitową zmienną całkowitą bez znaku.",
+            "to definicja 32-bitowej zmiennej całkowitej bez znaku.",
+            "to operacja wpisania do zmiennej wskaźnikowej stałej wartości liczbowej.",
+            "to operacja wpisania do zmiennej wskazywanej wskaźnikiem stałej wartości liczbowej."
+        ],
+        "poprawnePary": [
+            [
+                "uint32_t * Pa;",
+                "to definicja wskaźnika (zmiennej wskaźnikowej) na 32-bitową zmienną całkowitą bez znaku."
             ],
-            "wyjasnienie": "Slajdy 258, 259",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 36,
-            "type": "matching",
-            "text": "(niepewne) Dopasuj prawidłowe pary.",
-            "lewaStrona": [
+            [
+                "Pa = 0x200000;",
+                "to operacja wpisania do zmiennej wskaźnikowej stałej wartości liczbowej."
+            ],
+            [
+                "uint32_t a;",
+                "to definicja 32-bitowej zmiennej całkowitej bez znaku."
+            ],
+            [
+                "*Pa = 0x200000;",
+                "to operacja wpisania do zmiennej wskazywanej wskaźnikiem stałej wartości liczbowej."
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 31,
+        "type": "matching",
+        "text": "Dopasuj kod w języku C dla mikrokontrolera ARM Cortex-F4 do opisu efektu jego działania.",
+        "lewaStrona": [
+            "#define GPIOB_ODR  *(volatile uint32_t*)0x40020414GPIOB_ODR &= ~( 1 << 5 );",
+            "GPIOB->ODR = ( 1 << 5 ); ",
+            "GPIOB->ODR = 0;",
+            "*( (volatile uint32_t*)0x40020414) |= ( 1 << 5 ); (Gdzie 0x40020414 to adres rejestru ODR portu GPIO B w pamięci przestrzeni adresowej mikrokontrolera.)",
+            "GPIOB->ODR = 0xFFFF;",
+            "GPIOB->BSRR = ( (uint32_t)1<< (16+0) ); ",
+            "GPIOB->BSRR = ( 1 << 0 ); "
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "Powoduje wyłącznie ustawienie linii PB0 w stan wysoki.",
+            "Ustawia w stan niski wszystkie linie portu PB.",
+            "Ustawia w stan wysoki wszystkie linie portu PB.",
+            "Powoduje wyłącznie ustawienie linii PB5 w stan wysoki.",
+            "Powoduje ustawienie linii PB5 w stan niski, a wszystkich pozostałych linii tego portu w stan wysoki.",
+            "Powoduje wyłącznie ustawienie linii PB0 w stan niski.",
+            "Powoduje wyłącznie ustawienie linii PB5 w stan niski.",
+            "Powoduje ustawienie linii PB5 w stan wysoki, a wszystkich pozostałych linii tego portu w stan niski."
+        ],
+        "poprawnePary": [
+            [
+                "#define GPIOB_ODR  *(volatile uint32_t*)0x40020414GPIOB_ODR &= ~( 1 << 5 );",
+                "Powoduje wyłącznie ustawienie linii PB5 w stan niski."
+            ],
+            [
+                "GPIOB->ODR = ( 1 << 5 ); ",
+                "Powoduje ustawienie linii PB5 w stan wysoki, a wszystkich pozostałych linii tego portu w stan niski."
+            ],
+            [
+                "GPIOB->ODR = 0;",
+                "Ustawia w stan niski wszystkie linie portu PB."
+            ],
+            [
+                "*( (volatile uint32_t*)0x40020414) |= ( 1 << 5 ); (Gdzie 0x40020414 to adres rejestru ODR portu GPIO B w pamięci przestrzeni adresowej mikrokontrolera.)",
+                "Powoduje wyłącznie ustawienie linii PB5 w stan wysoki."
+            ],
+            [
+                "GPIOB->ODR = 0xFFFF;",
+                "Ustawia w stan wysoki wszystkie linie portu PB."
+            ],
+            [
+                "GPIOB->BSRR = ( (uint32_t)1<< (16+0) ); ",
+                "Powoduje wyłącznie ustawienie linii PB0 w stan niski."
+            ],
+            [
+                "GPIOB->BSRR = ( 1 << 0 ); ",
+                "Powoduje wyłącznie ustawienie linii PB0 w stan wysoki."
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 32,
+        "type": "matching",
+        "text": "Dopasuj prawidłowe pary.(Magistrale)",
+        "lewaStrona": [
+            "I2C",
+            "SPI",
+            "Fast Ethernet"
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "to wewnętrzna magistrala szeregowa asynchroniczna oferująca komunikację dwukierunkowa niejednoczesną (ang. half-duplex).",
+            "to zewnętrzna magistrala szeregowa synchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex).",
+            "to wewnętrzna magistrala szeregowa synchroniczna oferująca komunikację dwukierunkowa niejednoczesną (ang. half-duplex).",
+            "to zewnętrzna magistrala szeregowa asynchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex).",
+            "to wewnętrzna magistrala szeregowa asynchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex).",
+            "to wewnętrzna magistrala szeregowa synchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex)."
+        ],
+        "poprawnePary": [
+            [
+                "I2C",
+                "to wewnętrzna magistrala szeregowa synchroniczna oferująca komunikację dwukierunkowa niejednoczesną (ang. half-duplex)."
+            ],
+            [
+                "SPI",
+                "to wewnętrzna magistrala szeregowa synchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex)."
+            ],
+            [
+                "Fast Ethernet",
+                "to zewnętrzna magistrala szeregowa asynchroniczna pozwalająca na komunikację dwukierunkową jednoczesną  (ang. full-duplex)."
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 33,
+        "type": "single-choice",
+        "text": "Metoda Round Robin:",
+        "odpowiedzi": [
+            "to mechanizm przełączania zadań dostępny wyłącznie w systemie FreeRTOS.",
+            "pozwala na jednoczesną pracę wielu zadań.",
+            "bazuje na przydziale kwantu czasu (ang. time slice) do każdego z zadań, po upływie którego następuje automatyczne przełączenie zadań."
+        ],
+        "poprawnaOdpowiedz": "bazuje na przydziale kwantu czasu (ang. time slice) do każdego z zadań, po upływie którego następuje automatyczne przełączenie zadań.",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 34,
+        "type": "multiple-choice",
+        "text": "Wskaż prawidłowe zdanie(a).",
+        "odpowiedzi": [
+            "Wydajność mikrokontrolera jest jedynym ograniczeniem dla zwiększenia częstotliwości impulsów MSI do dowolnej wartości w praktycznych zastosowaniach z wykorzystaniem urządzeń energoelektronicznych.",
+            "Im wyższa częstotliwość komutacji (czyli częstotliwość generowanych impulsów MSI), tym lepsza jakość sterowanego nimi sygnału ciągłego.",
+            "Im wyższa częstotliwość komutacji (tj. częstotliwość generowanych impulsów MSI), tym MCU ma mniej czasu na wykonanie określonego algorytmu sterowania zaimplementowanego w funkcji ISR zsynchronizowanej z cyklem pracy generatora MSI.",
+            "Częstotliwość komutacji (czyli częstotliwość generowanych impulsów MSI) nie ma wpływu na jakość sterowanego nimi sygnału ciągłego."
+        ],
+        "poprawneOdpowiedzi": [
+            "Im wyższa częstotliwość komutacji (czyli częstotliwość generowanych impulsów MSI), tym lepsza jakość sterowanego nimi sygnału ciągłego.",
+            "Im wyższa częstotliwość komutacji (tj. częstotliwość generowanych impulsów MSI), tym MCU ma mniej czasu na wykonanie określonego algorytmu sterowania zaimplementowanego w funkcji ISR zsynchronizowanej z cyklem pracy generatora MSI."
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 35,
+        "type": "matching",
+        "text": "Dopasuj nazwy zjawisk do ich opisów.",
+        "lewaStrona": [
+            "Przesterowanie (ang. overshoot)",
+            "Przesłuch (ang. crosstalk) ",
+            "Przesłuch jest większy",
+            "Zarówno przesłuch jak i przesterowanie"
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "to efekt polegający na przekroczeniu przez sygnał cyfrowy wartości docelowej podczas jego zmiany z wartości niskiej na wysoką lub odwrotnie.",
+            "to niekorzystne zjawiska, które mogą prowadzić do nieprawidłowej pracy systemu cyfrowego i z tego powodu muszą być eliminowane.",
+            "to zjawiska korzystne dla systemu cyfrowego.",
+            "gdy szybkość narastania sygnału jest wyższa, tj. czas narastania jest krótszy.",
+            "gdy szybkość narastania sygnału jest niższa, tj. czas narastania jest dłuższy.",
+            "to efekt polegający na przedostawanie się zakłóceń z jednego sygnału na drugi sygnał (znajdujący się w pobliżu) podczas szybkiej zmiany stanu pierwszego sygnału."
+        ],
+        "poprawnePary": [
+            [
+                "Przesterowanie (ang. overshoot)",
+                "to efekt polegający na przekroczeniu przez sygnał cyfrowy wartości docelowej podczas jego zmiany z wartości niskiej na wysoką lub odwrotnie."
+            ],
+            [
+                "Przesłuch (ang. crosstalk) ",
+                "to efekt polegający na przedostawanie się zakłóceń z jednego sygnału na drugi sygnał (znajdujący się w pobliżu) podczas szybkiej zmiany stanu pierwszego sygnału."
+            ],
+            [
+                "Przesłuch jest większy",
+                "gdy szybkość narastania sygnału jest wyższa, tj. czas narastania jest krótszy."
+            ],
+            [
+                "Zarówno przesłuch jak i przesterowanie",
+                "to niekorzystne zjawiska, które mogą prowadzić do nieprawidłowej pracy systemu cyfrowego i z tego powodu muszą być eliminowane."
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 36,
+        "type": "matching",
+        "text": "Dopasuj prawidłowe pary.(DMA)",
+        "lewaStrona": [
+            "Mechanizm \"Master-Slave burst pooling\"",
+            "Indywidualne odpytywanie kolejnych urządzeń w ramach cyklu komunikacyjnego ",
+            "Podział cyklu komunikacyjnego na odcinki czasowe (ang. time-slots) dedykowane dla poszczególnych urządzeń"
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "to mechanizm TDMA",
+            "to mechanizm DMA.",
+            "wymaga medium komunikacyjnego oferującego możliwość komunikacji typu full-duplex.",
+            "to \"Master-Slave pooling mechanism\"",
+            "nie gwarantuje determinizmu czasowego w żadnych warunkach."
+        ],
+        "poprawnePary": [
+            [
                 "Mechanizm \"Master-Slave burst pooling\"",
-                "Indywidualne odpytywanie kolejnych urządzeń w ramach cyklu komunikacyjnego ",
-                "Podział cyklu komunikacyjnego na odcinki czasowe (ang. time-slots) dedykowane dla poszczególnych urządzeń"
+                "wymaga medium komunikacyjnego oferującego możliwość komunikacji typu full-duplex."
             ],
-            "prawaStrona": [
-                "wymaga medium komunikacyjnego oferującego możliwość komunikacji typu full-duplex.",
-                "nie gwarantuje determinizmu czasowego w żadnych warunkach.",
-                "to mechanizm TDMA",
-                "to \"Master-Slave pooling mechanism\"",
-                "to mechanizm DMA."
+            [
+                "Indywidualne odpytywanie kolejnych urządzeń w ramach cyklu komunikacyjnego ",
+                "to \"Master-Slave pooling mechanism\""
             ],
-            "poprawnePary": [
-                [
-                    "Mechanizm \"Master-Slave burst pooling\"",
-                    "to mechanizm DMA."
-                ],
-                [
-                    "Indywidualne odpytywanie kolejnych urządzeń w ramach cyklu komunikacyjnego ",
-                    "nie gwarantuje determinizmu czasowego w żadnych warunkach."
-                ],
-                [
-                    "Podział cyklu komunikacyjnego na odcinki czasowe (ang. time-slots) dedykowane dla poszczególnych urządzeń",
-                    "to mechanizm TDMA"
-                ]
+            [
+                "Podział cyklu komunikacyjnego na odcinki czasowe (ang. time-slots) dedykowane dla poszczególnych urządzeń",
+                "to mechanizm TDMA"
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 37,
+        "type": "single-choice",
+        "text": "Sekcje krytyczne to:",
+        "odpowiedzi": [
+            "fragment kodu systemu RTOS, którego użytkownik nie może modyfikować.",
+            "kod użytkownika, w którym występuje wyjątek krytyczny (ang. critical exception).",
+            "specjalnie oznaczony fragment kodu programu, który musi się wykonywać jako nieprzerwany blok."
+        ],
+        "poprawnaOdpowiedz": "specjalnie oznaczony fragment kodu programu, który musi się wykonywać jako nieprzerwany blok.",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 38,
+        "type": "matching",
+        "text": "Dopasuj prawidłowe pary dotyczące modeli interakcji w systemach komunikacji.",
+        "lewaStrona": [
+            "Modelproducent-konsument (ang. producer-consumer)",
+            "Model klient-serwer (ang. client-server)",
+            "Model wydawca-prenumerator (ang. publisher-subscriber)"
+        ],
+        "prawaStrona": [
+            "Wybierz...",
+            "nie nadaje się do zastosowania w systemach komunikacji czasu rzeczywistego.",
+            "oparty jest na jawnym (ang. explicit), indywidualnym (ang. unicast) adresowaniu.",
+            "jest jedynym modelem gwarantującym determinizm w systemach komunikacji czasu rzeczywistego.",
+            "oparty jest na adresowaniu grupowym (ang. multicast).",
+            "oparty jest na adresowaniu rozgłoszeniowym (ang. broadcast)."
+        ],
+        "poprawnePary": [
+            [
+                "Modelproducent-konsument (ang. producer-consumer)",
+                "oparty jest na adresowaniu rozgłoszeniowym (ang. broadcast)."
             ],
-            "wyjasnienie": "nie jestem pewien co do tego ;/",
-            "zdobytePunkty": 67
-        },
-        {
-            "id": 37,
-            "type": "single-choice",
-            "text": "Zadanie tła:",
-            "odpowiedzi": [
-                "to zawsze dostępne zadanie o najniższym priorytecie, które może zostać wypełnione kodem użytkownika.",
-                "to zawsze dostępne zadanie o najwyższym priorytecie (tzw. planista).",
-                "to zadanie RTOS wywoływane jawnie przez funkcje użytkownika."
+            [
+                "Model klient-serwer (ang. client-server)",
+                "oparty jest na jawnym (ang. explicit), indywidualnym (ang. unicast) adresowaniu."
             ],
-            "poprawnaOdpowiedz": "to zawsze dostępne zadanie o najniższym priorytecie, które może zostać wypełnione kodem użytkownika.",
-            "wyjasnienie": "Brak",
-            "zdobytePunkty": 100
-        },
-        {
-            "id": 38,
-            "type": "single-choice",
-            "text": "(niepewne) Metoda Round Robin:",
-            "odpowiedzi": [
-                "pozwala na jednoczesną pracę wielu zadań.",
-                "to mechanizm przełączania zadań dostępny wyłącznie w systemie FreeRTOS.",
-                "bazuje na przydziale kwantu czasu (ang. time slice) do każdego z zadań, po upływie którego następuje automatyczne przełączenie zadań."
-            ],
-            "poprawnaOdpowiedz": "to mechanizm przełączania zadań dostępny wyłącznie w systemie FreeRTOS.",
-            "wyjasnienie": "do zweryfikowania odpada tez ostatie ;/",
-            "zdobytePunkty": 0
-        }
-    ]
+            [
+                "Model wydawca-prenumerator (ang. publisher-subscriber)",
+                "oparty jest na adresowaniu grupowym (ang. multicast)."
+            ]
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    },
+    {
+        "id": 39,
+        "type": "multiple-choice",
+        "text": "(Uwaga - w tym pytaniu może być więcej niż jedna poprawna odpowiedź).Wskaż właściwe zakończenie następującego zdania: Modyfikator \"volatile\" ...",
+        "odpowiedzi": [
+            "służy do definicji zmiennej lokalnej.",
+            "wyłącza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
+            "wymusza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
+            "jest konieczny w przypadku definicji wskaźników na fizyczne rejestry znajdujące się w przestrzeni I/O procesora."
+        ],
+        "poprawneOdpowiedzi": [
+            "wyłącza optymalizację dostępu do przestrzeni I/O procesora dla opisanej nim zmiennej lub rejestru.",
+            "jest konieczny w przypadku definicji wskaźników na fizyczne rejestry znajdujące się w przestrzeni I/O procesora."
+        ],
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
+    }
+]
