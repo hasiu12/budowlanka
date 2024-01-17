@@ -258,9 +258,9 @@
         "odpowiedzi": [
             "to proces podziału zbioru danych na grupy",
             "jest jednym z algorytmów grupowania danych",
-            "to sposób wyprowadzania ze zdań prawdziwych, zwanych przesłankami, zdań prawdziwych, zwanych wnioskami POPRAWNA"
+            "to sposób wyprowadzania ze zdań prawdziwych, zwanych przesłankami, zdań prawdziwych, zwanych wnioskami"
         ],
-        "poprawnaOdpowiedz": null,
+        "poprawnaOdpowiedz": "to sposób wyprowadzania ze zdań prawdziwych, zwanych przesłankami, zdań prawdziwych, zwanych wnioskami",
         "wyjasnienie": "Brak",
         "zdobytePunkty": 100
     },
@@ -328,11 +328,11 @@
         "type": "single-choice",
         "text": "Który algorytm jest najbardziej optymalnym do wyszukiwania najkrótszej drogi w grze komputerowej:",
         "odpowiedzi": [
-            "algorytm A*  POPRAWNA",
+            "algorytm A*",
             "algorytm mrówkowy",
             "alorytm Dijkstry"
         ],
-        "poprawnaOdpowiedz": null,
+        "poprawnaOdpowiedz": "algorytm A*",
         "wyjasnienie": "Brak",
         "zdobytePunkty": 100
     },
@@ -366,9 +366,9 @@
         "odpowiedzi": [
             "algorytmy oparte przede wszystkim na działaniu list tabu, posiadających informacje o odwiedzonych węzłach grafu",
             "algorytmy grupujące dane",
-            "metody przeszukiwania przestrzeni rozwiązań, wykorzystujące zasady ewolucji biologicznej i dziedziczności    POPRAWNA"
+            "metody przeszukiwania przestrzeni rozwiązań, wykorzystujące zasady ewolucji biologicznej i dziedziczności"
         ],
-        "poprawnaOdpowiedz": null,
+        "poprawnaOdpowiedz": "metody przeszukiwania przestrzeni rozwiązań, wykorzystujące zasady ewolucji biologicznej i dziedziczności",
         "wyjasnienie": "Brak",
         "zdobytePunkty": 100
     },
@@ -413,10 +413,10 @@
         "text": "Baza reguł w sterowniku rozmytym:",
         "odpowiedzi": [
             "wartości rzeczywiste przekształca na zbiór rozmyty",
-            "stanowi zbiór reguł rozmytych. Przykład reguły: JEŻELI x jest A TO y jest B  POPRAWNA",
+            "stanowi zbiór reguł rozmytych. Przykład reguły: JEŻELI x jest A TO y jest B",
             "zwraca wartość ostrą y obliczoną na podstawie wejściowej wartości zbioru rozmytego B'"
         ],
-        "poprawnaOdpowiedz": null,
+        "poprawnaOdpowiedz": "stanowi zbiór reguł rozmytych. Przykład reguły: JEŻELI x jest A TO y jest B",
         "wyjasnienie": "Brak",
         "zdobytePunkty": 100
     },
