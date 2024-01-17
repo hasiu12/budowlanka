@@ -1,613 +1,458 @@
 [
     {
-        "id": 1,
         "type": "single-choice",
-        "text": "W której generacji komputerów znajdują się komputery kwantowe?",
+        "text": "Funkcja przynależności w logice rozmytej:",
         "odpowiedzi": [
-            "Piątej generacji",
-            "Trzeciej generacji",
-            "Czwartej generacji",
-            "Drugiej generacji"
+            "stanowi zbiór regół rozmytych. Przykład reguły: JEŻELI x jest A to y jest B.",
+            "to sposób wyprowadzania ze zdań prawdziwych, zwanych przesłankami, zdań prawdziwych, zwanych wnioskami",
+            "odwzorowuje elementy zbioru na przedział [0,1]"
         ],
-        "poprawnaOdpowiedz": "Piątej generacji",
-        "wyjasnienie": "Komputery kwantowe należą do piątej generacji komputerów, która wykorzystuje zaawansowane technologie kwantowe."
+        "poprawnaOdpowiedz": "odwzorowuje elementy zbioru na przedział [0,1]",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 2,
         "type": "single-choice",
-        "text": "Czy ciąg Fibonacciego jest ciągiem rozbieżnym czy zbieżnym?",
+        "text": "Linia decyzyjna to:",
         "odpowiedzi": [
-            "Rozbieżnym",
-            "Zbieżnym",
-            "Stałym",
-            "Oszczędzającym"
+            "linia, przez które przechodzą wartości wszystkich wag",
+            "linia, która jest granicą dzielącą płaszczyznę przez perceptron",
+            "linia, przez które przechodzą wszystkie punkty podawane na wejście perceptronu"
         ],
-        "poprawnaOdpowiedz": "Rozbieżnym",
-        "wyjasnienie": "Ciąg Fibonacciego jest ciągiem rozbieżnym, co oznacza, że jego wartości rosną do nieskończoności."
+        "poprawnaOdpowiedz": "linia, która jest granicą dzielącą płaszczyznę przez perceptron",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 3,
         "type": "single-choice",
-        "text": "Ile wynosi liczba 2010 zapisana w systemie dziesiątkowym, gdy przekształcimy ją na system siódemkowy?",
+        "text": "Konwolucyjne sieci neuronowe najlepiej sprawdzają się przy:",
         "odpowiedzi": [
-            "5663",
-            "4130",
-            "3502",
-            "6521"
+            "analizie i rozpoznawaniu obrazów",
+            "klasyfikacji danych",
+            "grupowaniu danych tabelarycznych"
         ],
-        "poprawnaOdpowiedz": "5663",
-        "wyjasnienie": "Liczba 2010 z systemu dziesiątkowego równa się 5663 w systemie siódemkowym."
+        "poprawnaOdpowiedz": "analizie i rozpoznawaniu obrazów",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 4,
         "type": "single-choice",
-        "text": "Jaką wartość ma liczba 1010 zapisana w systemie binarnym, gdy przekonwertujemy ją na system szesnastkowy?",
+        "text": "Metoda poszukiwań w głąb polega na:",
         "odpowiedzi": [
-            "A",
-            "10",
-            "F",
-            "1A"
+            "heurystycznym przeglądaniu drzewa",
+            "systematycznym przeglądaniu przestrzeni, kolejne ścieżki grafu są stopniowo pogłębiane ",
+            "badaniu węzłów umieszczonych na tym samym poziomie"
         ],
-        "poprawnaOdpowiedz": "A",
-        "wyjasnienie": "Liczba 1010 w systemie binarnym to 10 w systemie dziesiętnym, co odpowiada wartości 'A' w systemie szesnastkowym."
+        "poprawnaOdpowiedz": "systematycznym przeglądaniu przestrzeni, kolejne ścieżki grafu są stopniowo pogłębiane ",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 5,
         "type": "single-choice",
-        "text": "Na jaką liczbę w systemie szóstkowym przekształca się liczba 510 z systemu dziesiątkowego?",
+        "text": "OpenAI to:",
         "odpowiedzi": [
-            "2230",
-            "1345",
-            "2101",
-            "3022"
+            "oprogramowanie służące do generowania tekstów na każdy temat",
+            "otwarte oprogramowanie zawierające implementacje algorytmów z dziedziny sztucznej inteligencji",
+            "labolatorium badawcze sztucznej inteligencji"
         ],
-        "poprawnaOdpowiedz": "2230",
-        "wyjasnienie": "Liczba 510 w systemie dziesiątkowym równa się 2230 w systemie szóstkowym."
+        "poprawnaOdpowiedz": "labolatorium badawcze sztucznej inteligencji",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 6,
         "type": "single-choice",
-        "text": "Jaka jest granica ciągu Fibonacciego?",
+        "text": "Sieć samoorganizująca:",
         "odpowiedzi": [
-            "Nieskończoność",
-            "1",
-            "0",
-            "½φ"
+            "tworzy odpowiednią liczbę linii decyzyjnych tak, aby odpowiednio podzielić płaszczyznę na grupy",
+            "samodzielnie rozpoznaje grupy danych, wagi wskazują środki grup",
+            "tworzy tyle linii decyzyjnych ile jest grup dzieląc podzieloną płaszczyznę"
         ],
-        "poprawnaOdpowiedz": "Nieskończoność",
-        "wyjasnienie": "Granica ciągu Fibonacciego to nieskończoność, ponieważ ciąg ten nie ma ograniczenia w rosnących wartościach."
+        "poprawnaOdpowiedz": "samodzielnie rozpoznaje grupy danych, wagi wskazują środki grup",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 7,
         "type": "single-choice",
-        "text": "W jaki sposób Grace Hopper przyczyniła się do powstania terminu \"pluskwa\" w kontekście informatyki?",
+        "text": "Metoda minimalizowania maksymalnych możliwych strat to:",
         "odpowiedzi": [
-            "Znalezienie prawdziwej ćmy w komputerze",
-            "Stworzenie programu o nazwie \"Bug\"",
-            "Napisanie pierwszego podręcznika o błędach programowania",
-            "Wygłoszenie przemówienia na temat błędów w kodzie"
+            "alorytm genetyczny",
+            "algorytm Max-min",
+            "algorytm Min-max "
         ],
-        "poprawnaOdpowiedz": "Znalezienie prawdziwej ćmy w komputerze",
-        "wyjasnienie": "Grace Hopper znalazła prawdziwą ćmę w komputerze, co doprowadziło do stworzenia terminu bug (pluskwa) w informatyce."
+        "poprawnaOdpowiedz": "algorytm Min-max ",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 8,
         "type": "single-choice",
-        "text": "Jaka jest podstawa systemu liczbowego używanego przez starożytnych Babilończyków?",
+        "text": "Populacja w algorytmie genetycznym to:",
         "odpowiedzi": [
-            "60",
-            "10",
-            "12",
-            "100"
+            "proces powielania chromosomów w stosunku zależnym od ich przystosowania",
+            "zbiór osobników o określonej liczebności",
+            "zdekodowana struktura, zbiór parametrów zadania"
         ],
-        "poprawnaOdpowiedz": "60",
-        "wyjasnienie": "System liczbowy Babilończyków miał podstawę 60, co jest jednym z najwcześniejszych przykładów systemu pozycyjnego."
+        "poprawnaOdpowiedz": "zbiór osobników o określonej liczebności",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 9,
         "type": "single-choice",
-        "text": "Ile cyfr zawiera system liczbowy Majów?",
+        "text": "Do wyznaczania najkrótszych ścieżek w grafie można użyć:",
         "odpowiedzi": [
-            "3",
-            "5",
-            "20",
-            "10"
+            "algorytm mrówkowy",
+            "obydwa algorytmy",
+            "algorytm Dijkstry"
         ],
-        "poprawnaOdpowiedz": "3",
-        "wyjasnienie": "System liczbowy Majów używał trzech cyfr, włączając w to zero, co było unikatowe wśród starożytnych cywilizacji."
+        "poprawnaOdpowiedz": "algorytm Dijkstry",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 10,
         "type": "single-choice",
-        "text": "W którym roku zakończono pracę nad komputerem ENIAC?",
+        "text": "Mutacją w algorytmie genetycznym nazywamy:",
         "odpowiedzi": [
-            "1946",
-            "1952",
-            "1939",
-            "1945"
+            "zmianę genów w pojedyńczym chromosomie",
+            "wymianę genów pomiędzy osobnikami",
+            "proces powielania chromosomów w stosuknu zależnym do ich przystosowania"
         ],
-        "poprawnaOdpowiedz": "1946",
-        "wyjasnienie": "Prace nad komputerem ENIAC zakończono w 1946 roku."
+        "poprawnaOdpowiedz": "zmianę genów w pojedyńczym chromosomie",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 11,
         "type": "single-choice",
-        "text": "Z ilu części składa się maszyna Babbage’a?",
+        "text": "Miarą odległości jest:",
         "odpowiedzi": [
-            "4",
-            "2",
-            "6",
-            "3"
+            "odległość Minkowskiego",
+            "obydwie pozostałe odpowiedzi są poprawne",
+            "odległość Manhattan"
         ],
-        "poprawnaOdpowiedz": "4",
-        "wyjasnienie": "Maszyna Babbage’a składała się z czterech głównych części, w tym mechanizmu obliczeniowego i mechanizmu drukującego."
+        "poprawnaOdpowiedz": "obydwie pozostałe odpowiedzi są poprawne",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 12,
         "type": "single-choice",
-        "text": "Kto i w jaki sposób ścisłe ujął problem kwadratury koła?",
+        "text": "Czy algorytm A* wykorzystuje wartość funkcji heurystycznej",
         "odpowiedzi": [
-            "Archimedes",
-            "Euclid",
-            "Newton",
-            "Aristotle"
+            "nie",
+            "uwzględnione jest to od wartości parametrów alfa i beta w tym algorytmie",
+            "tak"
         ],
-        "poprawnaOdpowiedz": "Archimedes",
-        "wyjasnienie": "Archimedes jako pierwszy przedstawił ścisłe ujęcie problemu kwadratury koła."
+        "poprawnaOdpowiedz": "tak",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 13,
         "type": "single-choice",
-        "text": "Czym jest kwadratura koła?",
+        "text": "Filtrowanie oparte na treści (Content-Based Recommendation) pozwala na:",
         "odpowiedzi": [
-            "Zadaniem polegającym na skonstruowaniu kwadratu o powierzchni równej danej okręgu",
-            "Teorią dotyczącą kształtu Ziemi",
-            "Metodą obliczania obwodu koła",
-            "Starożytną grą logiczną"
+            "rekomendowanie produktów w sklepie internetowym",
+            "poszukiwanie optymalnej drogi w zależności od trudności terenu",
+            "usuwanie słów uznawanych powszechnie za obraźliwe"
         ],
-        "poprawnaOdpowiedz": "Zadaniem polegającym na skonstruowaniu kwadratu o powierzchni równej danej okręgu",
-        "wyjasnienie": "Kwadratura koła to zadanie polegające na skonstruowaniu kwadratu o powierzchni równej danej okręgu przy użyciu jedynie linijki i cyrkla."
+        "poprawnaOdpowiedz": "rekomendowanie produktów w sklepie internetowym",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 14,
         "type": "single-choice",
-        "text": "Jakie jest najczęściej występujące pojęcie abstrakcyjne?",
+        "text": "Ograniczenie rozmiaru drzewa w algorytmie Min-max umożliwia algorytm:",
         "odpowiedzi": [
-            "Miłość",
-            "Sprawiedliwość",
-            "Piękno",
-            "Przestrzeń"
+            "metoda cięcia alfa-beta",
+            "metoda cięcia eta-gamma",
+            "żadna z metod nie umożliwia ograniczenia rozmiaru drzewa"
         ],
-        "poprawnaOdpowiedz": "Miłość",
-        "wyjasnienie": "Miłość jest często uznawana za najbardziej uniwersalne i najczęściej występujące pojęcie abstrakcyjne."
+        "poprawnaOdpowiedz": "metoda cięcia alfa-beta",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 15,
         "type": "single-choice",
-        "text": "Czego nie potrafili robić ludzie prehistoryczni, związane z matematyką?",
+        "text": "GPT-3 to system, który:",
         "odpowiedzi": [
-            "Liczyć",
-            "Rysować",
-            "Pisać",
-            "Myśleć abstrakcyjnie"
+            "jest frameworkiem do tworzenia sieci neuronowych",
+            "służy do generowania tekstów na każdy temat",
+            "system globalnych map pozwalający na dowolne wyznaczanie trasy"
         ],
-        "poprawnaOdpowiedz": "Liczyć",
-        "wyjasnienie": "Ludzie prehistoryczni prawdopodobnie nie potrafili liczyć w sposób, który rozumiemy obecnie."
+        "poprawnaOdpowiedz": "służy do generowania tekstów na każdy temat",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 16,
         "type": "single-choice",
-        "text": "Jak inaczej nazywa się system karbowy w kontekście liczenia?",
+        "text": "Grupowanie danych:",
         "odpowiedzi": [
-            "Jedynkowy",
-            "Dwójkowy",
-            "Trójkowy",
-            "Dziesiątkowy"
+            "to proces podziału zbioru danych na grupy",
+            "to przykład uczenia bez nadzoru",
+            "obydwie pozostałe odpowiedz są poprawne"
         ],
-        "poprawnaOdpowiedz": "Jedynkowy",
-        "wyjasnienie": "System karbowy, znany również jako system jedynkowy, jest najprostszym systemem liczbowym."
+        "poprawnaOdpowiedz": "obydwie pozostałe odpowiedz są poprawne",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 17,
         "type": "single-choice",
-        "text": "Co oznacza litera \"S\" w notacji rzymskiej bez kropki i z kropką?",
+        "text": "Pierwszym programem, który pokonał mistrza Go był:",
         "odpowiedzi": [
-            "½ bez kropki, 7/12 z kropką",
-            "5 bez kropki, 6 z kropką",
-            "1/3 bez kropki, 1/4 z kropką",
-            "1 bez kropki, 2 z kropką"
+            "AlphaGo",
+            "AlphaGo Zero",
+            "AlphaZero"
         ],
-        "poprawnaOdpowiedz": "½ bez kropki, 7/12 z kropką",
-        "wyjasnienie": "W notacji rzymskiej litera S oznaczała ½ bez kropki i 7/12 z kropką, co odpowiada różnym ułamkom."
+        "poprawnaOdpowiedz": "AlphaGo",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 18,
         "type": "single-choice",
-        "text": "Co to jest Quipu?",
+        "text": "Który z programów potrafi wygrać w szachy z arcymistrzami szachowymi:",
         "odpowiedzi": [
-            "Liczydło sznurkowe używane przez starożytne cywilizacje w Ameryce Południowej",
-            "Starożytny instrument muzyczny",
-            "Typ starożytnej wazy",
-            "Nazwa starożytnego miasta"
+            "AlphaZero",
+            "StockFish",
+            "oba programy"
         ],
-        "poprawnaOdpowiedz": "Liczydło sznurkowe używane przez starożytne cywilizacje w Ameryce Południowej",
-        "wyjasnienie": "Quipu to liczydło sznurkowe używane przez starożytne cywilizacje w Ameryce Południowej, zwłaszcza przez Inków, do zapisywania informacji."
+        "poprawnaOdpowiedz": "oba programy",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 19,
         "type": "single-choice",
-        "text": "Na jakiej zasadzie działa suwak logarytmiczny?",
+        "text": "Oblicza i przedstawia odpowiednią zawartość użytkownikowi na podstawie posiadanej wiedzy o użytkowniku, zawartości i interakcji pomiędzy użytkownikiem a danym algorytmem:",
         "odpowiedzi": [
-            "Na własnościach logarytmicznych",
-            "Na zasadzie mnożenia",
-            "Na zasadzie dzielenia",
-            "Na zasadzie potęgowania"
+            "algorytm ewolucyjny z ograniczeniami",
+            "algorytm Min-max",
+            "system rekomendacyjny\t"
         ],
-        "poprawnaOdpowiedz": "Na własnościach logarytmicznych",
-        "wyjasnienie": "Suwak logarytmiczny działa na zasadzie własności logarytmicznych, umożliwiając wykonywanie operacji matematycznych, takich jak mnożenie i dzielenie."
+        "poprawnaOdpowiedz": "system rekomendacyjny\t",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 20,
         "type": "single-choice",
-        "text": "Co oznacza termin \"Ludolfina\"?",
+        "text": "Przydzielenie obserwacji do odpowiedniej klasy to:",
         "odpowiedzi": [
-            "Liczba pi",
-            "Rodzaj kwadratu",
-            "Nazwa teoretycznej figury geometrycznej",
-            "Nazwa starożytnej jednostki miary"
+            "grupowanie",
+            "regresja",
+            "klasyfikacja\t"
         ],
-        "poprawnaOdpowiedz": "Liczba pi",
-        "wyjasnienie": "Ludolfina to inna nazwa liczby pi, która jest stosunkiem obwodu koła do jego średnicy."
+        "poprawnaOdpowiedz": "klasyfikacja\t",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 21,
         "type": "single-choice",
-        "text": "Kto i kiedy wprowadził cyfry hinduskie do Europy?",
+        "text": "Algorytmy mrówkowe można wykorzystać do:",
         "odpowiedzi": [
-            "Arabowie, w średniowieczu",
-            "Rzymianie, w czasach antycznych",
-            "Grecy, w czasach hellenistycznych",
-            "Wikingowie, w czasach wczesnośredniowiecznych"
+            "regresji",
+            "wszystkie pozostałe odpowiedzi są poprawne",
+            "wyszukiwania najbardziej optymalnej trasy",
+            "klasyfikacji"
         ],
-        "poprawnaOdpowiedz": "Arabowie, w średniowieczu",
-        "wyjasnienie": "Arabowie wprowadzili cyfry hinduskie do Europy w średniowieczu, co zrewolucjonizowało europejską matematykę."
+        "poprawnaOdpowiedz": "wyszukiwania najbardziej optymalnej trasy",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 22,
         "type": "single-choice",
-        "text": "Jak zapisuje się liczbę 450 w systemie rzymskim?",
+        "text": "Reguły wnioskowania:",
         "odpowiedzi": [
-            "CDL",
-            "CCL",
-            "DXX",
-            "CCC"
+            "to proces podziału zbioru danych na grupy",
+            "jest jednym z algorytmów grupowania danych",
+            "to sposób wyprowadzania ze zdań prawdziwych, zwanych przesłankami, zdań prawdziwych, zwanych wnioskami POPRAWNA"
         ],
-        "poprawnaOdpowiedz": "CDL",
-        "wyjasnienie": "Liczba 450 w systemie rzymskim zapisuje się jako CDL."
+        "poprawnaOdpowiedz": null,
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 23,
         "type": "single-choice",
-        "text": "W których cywilizacjach nie występowało zero?",
+        "text": "Gdzie znajdują zastosowania metody heurystyczne:",
         "odpowiedzi": [
-            "Starożytnym Rzymie i Grecji",
-            "Egipcie i Babilonii",
-            "Majach i Aztekach",
-            "Chinach i Japonii"
+            "tam, gdzie wymagane są małe ilości obliczeń",
+            "tam, gdzie wymagana są olbrzymie ilości obliczeń",
+            "trudno znaleźć zastosowanie dla metod heurystycznych"
         ],
-        "poprawnaOdpowiedz": "Starożytnym Rzymie i Grecji",
-        "wyjasnienie": "Starożytny Rzym i Grecja nie używały zera w swoich systemach liczbowych."
+        "poprawnaOdpowiedz": "tam, gdzie wymagana są olbrzymie ilości obliczeń",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 24,
         "type": "single-choice",
-        "text": "Który system liczbowy nie był systemem pozycyjnym?",
+        "text": "Sieć samoorganizująca charakteryzuje się tym, że:",
         "odpowiedzi": [
-            "Rzymski",
-            "Arabski",
-            "Babiloński",
-            "Majów"
+            "sieć, która nie ma algorytmu czenia",
+            "uczona jest algorytmem uczenia bez nauczyciela",
+            "uczona jest algorytmem uczenia z nauczycielem"
         ],
-        "poprawnaOdpowiedz": "Rzymski",
-        "wyjasnienie": "System liczbowy Rzymian nie był systemem pozycyjnym, co oznacza, że wartość cyfry nie zależała od jej pozycji."
+        "poprawnaOdpowiedz": "uczona jest algorytmem uczenia bez nauczyciela",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 25,
         "type": "single-choice",
-        "text": "Jaki jest siódmy wyraz ciągu Fibonacciego?",
+        "text": "DALL-E to system, który:",
         "odpowiedzi": [
-            "13",
-            "21",
-            "8",
-            "34"
+            "otwart oprogramowanie zawierające implementacje algorytmów z dziedziny sztucznej inteligencji",
+            "służy do generowania tekstów na każdy temat",
+            "generuje obrazy z opisów tekstowych przy użyciu zestawu danych par tekst-obraz"
         ],
-        "poprawnaOdpowiedz": "13",
-        "wyjasnienie": "Siódmy wyraz ciągu Fibonacciego to 13."
+        "poprawnaOdpowiedz": "generuje obrazy z opisów tekstowych przy użyciu zestawu danych par tekst-obraz",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 26,
         "type": "single-choice",
-        "text": "Które systemy liczbowe miały ograniczoną liczbę cyfr?",
+        "text": "Centroida:",
         "odpowiedzi": [
-            "Systemy pozycyjne",
-            "Systemy nieliniowe",
-            "Systemy logarytmiczne",
-            "Systemy algebraiczne"
+            "to jedna z miar odległości",
+            "jest jednym z algorytmów grupowania danych",
+            "to środek grupy, najczęściej występująca reprezentacja grup danych"
         ],
-        "poprawnaOdpowiedz": "Systemy pozycyjne",
-        "wyjasnienie": "Systemy pozycyjne, takie jak system dziesiętny, mają ograniczoną liczbę cyfr, które są powtarzane w różnych kombinacjach."
+        "poprawnaOdpowiedz": "to środek grupy, najczęściej występująca reprezentacja grup danych",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 27,
         "type": "single-choice",
-        "text": "Jaki jest najstarszy znany system liczbowy?",
+        "text": "Chromosomem w algorytmie genetycznym nazywamy:",
         "odpowiedzi": [
-            "Sumeryjski",
-            "Egipski",
-            "Grecki",
-            "Indyjski"
+            "wymianę genów pomiędzy osobnikami",
+            "zbiór osobników o określonej liczebności",
+            "to uporządkowane ciągi genów"
         ],
-        "poprawnaOdpowiedz": "Sumeryjski",
-        "wyjasnienie": "Najstarszym znanym systemem liczbowym jest system sumeryjski."
+        "poprawnaOdpowiedz": "to uporządkowane ciągi genów",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 28,
         "type": "single-choice",
-        "text": "Jaki znak występuje w systemie liczbowym Jonów?",
+        "text": "Który algorytm jest najbardziej optymalnym do wyszukiwania najkrótszej drogi w grze komputerowej:",
         "odpowiedzi": [
-            "Symbol M",
-            "Symbol Γ (gamma)",
-            "Symbol Δ (delta)",
-            "Symbol Ω (omega)"
+            "algorytm A*  POPRAWNA",
+            "algorytm mrówkowy",
+            "alorytm Dijkstry"
         ],
-        "poprawnaOdpowiedz": "Symbol M",
-        "wyjasnienie": "W systemie liczbowym Jonów występuje symbol M."
+        "poprawnaOdpowiedz": null,
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 29,
         "type": "single-choice",
-        "text": "Co oznaczała pozioma kreska nad liczbą w systemie rzymskim?",
+        "text": "Algorytm Fuzzy C-means:",
         "odpowiedzi": [
-            "Pomnożenie liczby przez 1000",
-            "Dzielenie liczby przez 2",
-            "Pomnożenie liczby przez 100",
-            "Odejmowanie jednostki"
+            "jest jednym z algorytmów mrówkowych",
+            "jest jednym z algorytmów grupowania danych",
+            "obydwie pozostałe odpowiedzi są poprawne"
         ],
-        "poprawnaOdpowiedz": "Pomnożenie liczby przez 1000",
-        "wyjasnienie": "Pozioma kreska nad liczbą w systemie rzymskim oznaczała pomnożenie tej liczby przez 1000."
+        "poprawnaOdpowiedz": "jest jednym z algorytmów grupowania danych",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 30,
         "type": "single-choice",
-        "text": "Na czym polega matematyczna teoria algorytmów?",
+        "text": "Wspólna filtracja (Collaborative Filtering):",
         "odpowiedzi": [
-            "Na badaniu procedur obliczeniowych",
-            "Na analizie struktur danych",
-            "Na projektowaniu efektywnych metod rozwiązywania problemów",
-            "Na badaniu teorii liczb"
+            "wykorzystuje oceny produktów udzielone przez użytkowników",
+            "pozwala na rekomendowanie produktów w sklepie internetowym",
+            "obie odpowiedzi są poprawne"
         ],
-        "poprawnaOdpowiedz": "Na badaniu procedur obliczeniowych",
-        "wyjasnienie": "Matematyczna teoria algorytmów polega na badaniu procedur obliczeniowych."
+        "poprawnaOdpowiedz": "obie odpowiedzi są poprawne",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 31,
         "type": "single-choice",
-        "text": "W jakich miejscach lub kulturach nie używa się systemu dziesiątkowego?",
+        "text": "Algorytmy ewolucyjne to:",
         "odpowiedzi": [
-            "W niektórych kulturach afrykańskich i amerykańskich plemion",
-            "W starożytnym Egipcie",
-            "W starożytnej Grecji",
-            "W średniowiecznej Europie"
+            "algorytmy oparte przede wszystkim na działaniu list tabu, posiadających informacje o odwiedzonych węzłach grafu",
+            "algorytmy grupujące dane",
+            "metody przeszukiwania przestrzeni rozwiązań, wykorzystujące zasady ewolucji biologicznej i dziedziczności    POPRAWNA"
         ],
-        "poprawnaOdpowiedz": "W niektórych kulturach afrykańskich i amerykańskich plemion",
-        "wyjasnienie": "W niektórych kulturach afrykańskich i amerykańskich plemion nie używa się systemu dziesiątkowego."
+        "poprawnaOdpowiedz": null,
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 32,
         "type": "single-choice",
-        "text": "Jak brzmi definicja cyfry?",
+        "text": "WTM (winner takes most) w sieci samoorganizującej jest algorytmem, który:",
         "odpowiedzi": [
-            "Umowny znak do zapisywania liczb",
-            "Najmniejsza jednostka informacji",
-            "Symbol używany w matematyce do reprezentowania stałych",
-            "Podstawowa jednostka systemu liczbowego"
+            "zapewnia zmianę wag neuronów, które sąsiadują z neuronem-zwycięzcą",
+            "zapewnia zmianę wag neuronów, które nie sąsiaduja z próbką podaną na wejście sieci",
+            "zapewnia zmianę wag neuronów, które nie sąsiadują z neuronem zwycięzcą"
         ],
-        "poprawnaOdpowiedz": "Umowny znak do zapisywania liczb",
-        "wyjasnienie": "Cyfra to umowny znak do zapisywania liczb."
+        "poprawnaOdpowiedz": "zapewnia zmianę wag neuronów, które sąsiadują z neuronem-zwycięzcą",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 33,
         "type": "single-choice",
-        "text": "Kto jest twórcą pierwszego w pełni programowalnego komputera?",
+        "text": "Blok wyostrzenia w sterowniku rozmytym:",
         "odpowiedzi": [
-            "Konrad Zuse",
-            "Alan Turing",
-            "John von Neumann",
-            "Charles Babbage"
+            "wartości rzeczywiste przekształca na zbiór rozmyty",
+            "stanowi zbiór reguł rozmytych. Przykład reguły: JEŻELI x jest A TO y jest B",
+            "zwraca wartość ostrą y obliczoną na podstawie wejściowej wartości zbioru rozmytego B'"
         ],
-        "poprawnaOdpowiedz": "Konrad Zuse",
-        "wyjasnienie": "Konrad Zuse jest uznawany za twórcę pierwszego w pełni programowalnego komputera."
+        "poprawnaOdpowiedz": "zwraca wartość ostrą y obliczoną na podstawie wejściowej wartości zbioru rozmytego B'",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 34,
         "type": "single-choice",
-        "text": "Jaki rodzaj sygnału przetwarzał komputer analogowy?",
+        "text": "Sieć samoorganizująca:",
         "odpowiedzi": [
-            "Ciągły sygnał",
-            "Sygnał cyfrowy",
-            "Sygnał impulsowy",
-            "Sygnał elektromagnetyczny"
+            "samodzielnie rozpoznaje grupy danych, wagi wskazują środki grup",
+            "tworzy tyle linii decyzyjnych, ile jest grup, dzieląc podzieloną płaszczyznę",
+            "tworzy odpowiednią liczbę linii decyzyjnych tak, aby odpowiednio podzielić płaszczyznę na grupy"
         ],
-        "poprawnaOdpowiedz": "Ciągły sygnał",
-        "wyjasnienie": "Komputery analogowe przetwarzały ciągłe sygnały."
+        "poprawnaOdpowiedz": "samodzielnie rozpoznaje grupy danych, wagi wskazują środki grup",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 35,
         "type": "single-choice",
-        "text": "Od jakiego systemu Rzymianie wzięli swoje ułamki?",
+        "text": "Baza reguł w sterowniku rozmytym:",
         "odpowiedzi": [
-            "Monetarnego",
-            "Agrarnego",
-            "Wojskowego",
-            "Handlowego"
+            "wartości rzeczywiste przekształca na zbiór rozmyty",
+            "stanowi zbiór reguł rozmytych. Przykład reguły: JEŻELI x jest A TO y jest B  POPRAWNA",
+            "zwraca wartość ostrą y obliczoną na podstawie wejściowej wartości zbioru rozmytego B'"
         ],
-        "poprawnaOdpowiedz": "Monetarnego",
-        "wyjasnienie": "Rzymianie wzięli swoje ułamki z systemu monetarnego."
+        "poprawnaOdpowiedz": null,
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 36,
         "type": "single-choice",
-        "text": "Kto wprowadził pojęcie liczby pi?",
+        "text": "Algorytm wstecznej propagacji błędów jest algorytmem, który:",
         "odpowiedzi": [
-            "Archimedes",
-            "Euclid",
-            "Newton",
-            "Aristoteles"
+            "zapewnia optymalny dobór wag tak, aby otrzymać poprawną odpowiedź na zadane wejście",
+            "obydwie odpowiedzi są poprawne",
+            "umożliwia uczenie sieci bez nauczyciela"
         ],
-        "poprawnaOdpowiedz": "Archimedes",
-        "wyjasnienie": "Archimedes wprowadził pojęcie liczby pi."
+        "poprawnaOdpowiedz": "zapewnia optymalny dobór wag tak, aby otrzymać poprawną odpowiedź na zadane wejście",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 37,
         "type": "single-choice",
-        "text": "Co osiągnął Hipokrates z Chios w dziedzinie matematyki?",
+        "text": "Grupa (Klaster):",
         "odpowiedzi": [
-            "Twierdzenie o półksiężycach",
-            "Odkrycie złotej proporcji",
-            "Wprowadzenie geometrii analitycznej",
-            "Rozwój teorii liczb"
+            "stanowi zbiór reguł rozmytych. Przykład reguły: JEŻELI x jest A TO y jest B",
+            "to zbiór obiektów \"podobnych\" do siebie i \"różniących\" się od obiektów należących do innych grup"
         ],
-        "poprawnaOdpowiedz": "Twierdzenie o półksiężycach",
-        "wyjasnienie": "Hipokrates z Chios osiągnął twierdzenie o półksiężycach."
+        "poprawnaOdpowiedz": "to zbiór obiektów \"podobnych\" do siebie i \"różniących\" się od obiektów należących do innych grup",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     },
     {
-        "id": 38,
         "type": "single-choice",
-        "text": "W jakim systemie liczbowym pracował ENIAC?",
+        "text": "Funkcja aktywacji to:",
         "odpowiedzi": [
-            "Dziesiątkowym",
-            "Dwójkowym",
-            "Szesnastkowym",
-            "Siódemkowym"
+            "Funkcja, która oblicza wartość aktywnego błędu w neuronie/perceptronie",
+            "Funkcja, według której obliczana jest wartość wyjściowa neuronu/perceptronu",
+            "Funkcja, którą wylicza się wartości wag neuronu/perceptronu w procesie uczenia wsteczną propagacją błędów"
         ],
-        "poprawnaOdpowiedz": "Dziesiątkowym",
-        "wyjasnienie": "ENIAC pracował w systemie liczbowym dziesiątkowym."
-    },
-    {
-        "id": 39,
-        "type": "single-choice",
-        "text": "Kto opracował pierwszy algorytmiczny język programowania?",
-        "odpowiedzi": [
-            "Konrad Zuse",
-            "Alan Turing",
-            "Ada Lovelace",
-            "John Backus"
-        ],
-        "poprawnaOdpowiedz": "Konrad Zuse",
-        "wyjasnienie": "Konrad Zuse opracował pierwszy algorytmiczny język programowania."
-    },
-    {
-        "id": 40,
-        "type": "single-choice",
-        "text": "Jakie firmy są znane z innowacji w dziedzinie pamięci komputerowej?",
-        "odpowiedzi": [
-            "HP i Microsoft",
-            "Apple i Samsung",
-            "IBM i Google",
-            "Intel i AMD"
-        ],
-        "poprawnaOdpowiedz": "HP i Microsoft",
-        "wyjasnienie": "HP i Microsoft są znane z innowacji w dziedzinie pamięci komputerowej."
-    },
-    {
-        "id": 41,
-        "type": "single-choice",
-        "text": "Kto jest twórcą maszyny analitycznej?",
-        "odpowiedzi": [
-            "Charles Babbage",
-            "Blaise Pascal",
-            "Gottfried Wilhelm Leibniz",
-            "John von Neumann"
-        ],
-        "poprawnaOdpowiedz": "Charles Babbage",
-        "wyjasnienie": "Charles Babbage jest twórcą maszyny analitycznej."
-    },
-    {
-        "id": 42,
-        "type": "single-choice",
-        "text": "Co to jest astrolabium i do czego służy?",
-        "odpowiedzi": [
-            "Starożytny instrument do obserwacji astronomicznych",
-            "Mechanizm zegarowy",
-            "Urządzenie nawigacyjne",
-            "Starożytny kalkulator"
-        ],
-        "poprawnaOdpowiedz": "Starożytny instrument do obserwacji astronomicznych",
-        "wyjasnienie": "Astrolabium to starożytny instrument do obserwacji astronomicznych."
-    },
-    {
-        "id": 43,
-        "type": "single-choice",
-        "text": "Jaki podział wprowadził Leonardo Fibonacci, znany jako \"Złoty podział\"?",
-        "odpowiedzi": [
-            "Podział oparty na proporcjach sekwencji Fibonacciego",
-            "Podział na liczby pierwsze i złożone",
-            "Podział geometryczny oparty na stosunku złotym",
-            "Podział na liczby parzyste i nieparzyste"
-        ],
-        "poprawnaOdpowiedz": "Podział oparty na proporcjach sekwencji Fibonacciego",
-        "wyjasnienie": "Złoty podział Leonarda Fibonacciego opiera się na proporcjach sekwencji Fibonacciego."
-    },
-    {
-        "id": 44,
-        "type": "single-choice",
-        "text": "Jakie jest jedno z najczęściej występujących pojęć abstrakcyjnych w kontekście finansów?",
-        "odpowiedzi": [
-            "Procent od pożyczki",
-            "Wartość nominalna",
-            "Stopa zwrotu",
-            "Kapitalizacja odsetek"
-        ],
-        "poprawnaOdpowiedz": "Procent od pożyczki",
-        "wyjasnienie": "Jednym z najczęściej występujących pojęć abstrakcyjnych w kontekście finansów jest procent od pożyczki."
-    },
-    {
-        "id": 45,
-        "type": "single-choice",
-        "text": "Co oznaczał znak litery \"S\" w języku rzymskim w kontekście ułamków?",
-        "odpowiedzi": [
-            "Ułamek semis (1/2 lub 6/12)",
-            "Ułamek dodatek (1/3 lub 4/12)",
-            "Ułamek kwadrans (1/4 lub 3/12)",
-            "Ułamek octans (1/8 lub 1,5/12)"
-        ],
-        "poprawnaOdpowiedz": "Ułamek semis (1/2 lub 6/12)",
-        "wyjasnienie": "Litera S w języku rzymskim w kontekście ułamków oznaczała ułamek semis (1/2 lub 6/12)."
-    },
-    {
-        "id": 46,
-        "type": "single-choice",
-        "text": "Jaki jest inny znany termin na określenie komputera ENIAC?",
-        "odpowiedzi": [
-            "Electronic Numerical Integrator and Computer",
-            "Electronic Data Processing Machine",
-            "Automatic Computing Engine",
-            "Digital Electronic Mainframe"
-        ],
-        "poprawnaOdpowiedz": "Electronic Numerical Integrator and Computer",
-        "wyjasnienie": "Inny znany termin na określenie komputera ENIAC to Electronic Numerical Integrator and Computer."
-    },
-    {
-        "id": 47,
-        "type": "single-choice",
-        "text": "Jaką generację komputerów obecnie intensywnie używamy i nad jaką generacją trwają zaawansowane prace?",
-        "odpowiedzi": [
-            "Czwartą generację, trwają prace nad piątą",
-            "Trzecią generację, trwają prace nad czwartą",
-            "Drugą generację, trwają prace nad trzecią",
-            "Pierwszą generację, trwają prace nad drugą"
-        ],
-        "poprawnaOdpowiedz": "Czwartą generację, trwają prace nad piątą",
-        "wyjasnienie": "Obecnie intensywnie używamy komputerów czwartej generacji, a trwają zaawansowane prace nad komputerami piątej generacji."
+        "poprawnaOdpowiedz": "Funkcja, według której obliczana jest wartość wyjściowa neuronu/perceptronu",
+        "wyjasnienie": "Brak",
+        "zdobytePunkty": 100
     }
 ]
